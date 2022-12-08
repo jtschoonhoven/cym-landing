@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Box, useTheme } from '@mui/material';
+import Toolbar from './components/toolbar/Toolbar';
+import Hero from './components/hero/Hero';
+import styled from '@emotion/styled';
+import ToolbarAlert from './components/toolbar/ToolbarAlert';
+import About from './components/about/About';
 
-function App() {
+const AppWrapper = styled(Box)`
+  padding-bottom: 30px;
+`;
+
+const App: React.FC = () => {
+  const theme = useTheme();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper sx={{ backgroundColor: theme.palette.secondary.light }}>
+      <ToolbarAlert />
+      <Toolbar />
+      <Hero />
+      <About />
+    </AppWrapper>
   );
-}
+};
 
 export default App;
