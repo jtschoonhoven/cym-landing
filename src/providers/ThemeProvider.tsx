@@ -1,5 +1,6 @@
 import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material';
 import { PropsWithChildren } from 'react';
+import '@fontsource/prompt';
 
 const theme = createTheme({
   palette: {
@@ -15,13 +16,19 @@ const theme = createTheme({
       paper: '#424242',
     },
   },
+  typography: {
+    fontFamily: 'Prompt, Arial',
+  },
   components: {
-    MuiAppBar: {
-      styleOverrides: {
-        root: {
-          // backgroundColor: '#333',
-        },
-      },
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-family: 'Prompt, Arial';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+        }
+      `,
     },
   },
 });

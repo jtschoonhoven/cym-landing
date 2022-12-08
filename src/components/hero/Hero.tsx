@@ -13,7 +13,7 @@ const Wrapper = styled(Box)`
 `;
 
 const HeaderWord = styled.span`
-  letter-spacing: -0.3rem;
+  letter-spacing: -0.1rem;
   line-height: 6rem;
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
@@ -27,6 +27,7 @@ const HeaderWord = styled.span`
 `;
 
 const Subtitle = styled(Typography)`
+  letter-spacing: -0.05rem;
   margin-top: 5px;
   width: fit-content;
   background-color: rgba(255, 255, 255, 0.2);
@@ -37,6 +38,7 @@ const Subtitle = styled(Typography)`
 `;
 
 const Description = styled(Typography)`
+  letter-spacing: -0.05rem;
   margin-top: 5px;
   width: fit-content;
   background-color: rgba(255, 255, 255, 0.2);
@@ -56,7 +58,7 @@ const Hero: React.FC = () => {
     <Wrapper theme={theme}>
       <HeroVideo height={HERO_HEIGHT_PX}>
         <Container sx={{ display: 'flex', height: HERO_HEIGHT_PX, flexDirection: 'column', justifyContent: 'center' }}>
-          <Typography variant="h1" sx={{ fontSize: { xs: '4.5rem', sm: '6.5rem' } }}>
+          <Typography variant="h1" sx={{ fontSize: { xs: '4rem', sm: '6rem' } }}>
             <HeaderWord>Change</HeaderWord>
             <HeaderWord>Your</HeaderWord>
             <HeaderWord>Mind.</HeaderWord>
