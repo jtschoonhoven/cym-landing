@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Box, useTheme } from '@mui/material';
 
 const DEFAULT_HEIGHT = '400px';
 

@@ -1,5 +1,14 @@
 import React from 'react';
-import { AppBar, Button, IconButton, styled, Toolbar as MuiToolbar, Typography } from '@mui/material';
+import {
+  AppBar,
+  Button,
+  IconButton,
+  styled,
+  Toolbar as MuiToolbar,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import ToolbarDrawer from './ToolbarDrawer';
 import VerticallyCentered from '../util/vertically-centered/VerticallyCentered';
@@ -33,6 +42,8 @@ const ToolbarBtn = styled(Button)`
  */
 const Toolbar: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
+  const theme = useTheme();
+  const isXs = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <>
@@ -62,11 +73,11 @@ const Toolbar: React.FC = () => {
               {/* OPTIONAL LOGO GOES HERE */}
             </Typography>
             {/* ABOUT US */}
-            <ToolbarBtn size="large" variant="outlined">
+            <ToolbarBtn size={isXs ? 'medium' : 'large'} variant="outlined">
               About us
             </ToolbarBtn>
             {/* GET TICKETS */}
-            <ToolbarBtn size="large" variant="contained" color="secondary">
+            <ToolbarBtn size={isXs ? 'medium' : 'large'} variant="contained" color="secondary">
               Get Tickets
             </ToolbarBtn>
           </XlToolBar>
