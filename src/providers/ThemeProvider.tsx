@@ -1,17 +1,14 @@
 import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material';
 import { PropsWithChildren } from 'react';
 
-const { palette } = createTheme();
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1f8e6c',
-      light: '#b5e1d4',
+      main: '#25282F',
     },
     secondary: {
-      dark: '#b32756',
-      main: '#ef3661',
-      light: '#fde5ec',
+      main: '#569388',
+      light: '#BFD9D4',
     },
     background: {
       default: '#303030',

@@ -9,7 +9,7 @@ const HERO_HEIGHT_PX = 500;
 const Wrapper = styled(Box)`
   width: 100vw;
   border-top: 20px solid ${({ theme }: { theme: Theme }) => theme.palette.primary.dark};
-  border-bottom: 20px solid ${({ theme }: { theme: Theme }) => theme.palette.grey[700]};
+  border-bottom: 20px solid ${({ theme }: { theme: Theme }) => theme.palette.grey[900]};
 `;
 
 const HeaderWord = styled.span`

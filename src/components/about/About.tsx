@@ -24,7 +24,7 @@ const About: React.FC = () => {
       </Container>
       <HeroImage
         src={phrenologyImg}
-        borderTop={`10px solid ${theme.palette.secondary.main}`}
+        borderTop={`10px solid ${theme.palette.secondary.dark}`}
         borderBottom={`10px solid ${theme.palette.grey[700]}`}
       />
     </>
