@@ -16,31 +16,34 @@ const HeaderWord = styled.span`
   letter-spacing: -0.3rem;
   line-height: 6rem;
   display: block;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #f3f3f3;
   width: fit-content;
   margin: 4px 0 0 0;
   text-transform: uppercase;
   font-weight: 700;
   padding: 0 10px 0 10px;
+  filter: drop-shadow(8px 4px 3px #000);
 `;
 
 const Subtitle = styled(Typography)`
   margin-top: 5px;
   width: fit-content;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   font-weight: 900;
   color: #0c0c0c;
   padding: 0 10px 0 10px;
+  filter: drop-shadow(8px 4px 5px #ccc);
 `;
 
 const Description = styled(Typography)`
   margin-top: 5px;
   width: fit-content;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   font-weight: 900;
   color: #0c0c0c;
   padding: 0 10px 0 10px;
+  filter: drop-shadow(8px 4px 5px #ccc);
 `;
 
 /**
