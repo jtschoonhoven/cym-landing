@@ -77,7 +77,7 @@ const Toolbar: React.FC = () => {
               About us
             </ToolbarBtn>
             {/* GET TICKETS */}
-            <ToolbarBtn size={isXs ? 'medium' : 'large'} variant="contained" color="secondary">
+            <ToolbarBtn size={isXs ? 'medium' : 'large'} variant="contained" color="secondary" disabled>
               Get Tickets
             </ToolbarBtn>
           </XlToolBar>

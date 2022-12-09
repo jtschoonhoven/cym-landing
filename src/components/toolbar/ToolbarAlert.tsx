@@ -28,7 +28,7 @@ const ToolbarAlert: React.FC = () => {
   return (
     <AppBar position="static" color="secondary">
       <Toolbar>
-        <AlertText>Coming April, 2023. Tickets on sale soon.</AlertText>
+        <AlertText>Coming to San Francisco April, 2023. Tickets on sale soon.</AlertText>
       </Toolbar>
     </AppBar>
   );
