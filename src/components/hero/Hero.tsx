@@ -8,6 +8,7 @@ import { COLORS } from '../../providers/ThemeProvider';
 const HERO_HEIGHT_PX = 600;
 
 const Wrapper = styled(Box)`
+  background-color: ${({ theme }) => theme.palette.grey[900]};
   width: 100vw;
   border-top: 20px solid black;
   border-bottom: 20px solid ${({ theme }: { theme: Theme }) => theme.palette.grey[900]};

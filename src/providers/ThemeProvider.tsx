@@ -34,20 +34,20 @@ const theme = createTheme({
     fontFamily: 'Prompt, Arial',
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+      @font-face {
+        font-family: 'Prompt, Arial';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+      }
+      `,
+    },
     MuiAppBar: {
       styleOverrides: {
         root: { backgroundColor: grey[900] },
       },
-    },
-    MuiCssBaseline: {
-      styleOverrides: `
-        @font-face {
-          font-family: 'Prompt, Arial';
-          font-style: normal;
-          font-display: swap;
-          font-weight: 400;
-        }
-      `,
     },
   },
 });
