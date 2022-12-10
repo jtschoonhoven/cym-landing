@@ -12,7 +12,11 @@ export const COLORS = {
   magenta: '#FF00FF',
 };
 
+const defaultTheme = createTheme();
+
 const theme = createTheme({
+  // @ts-expect-error
+  mode: 'dark',
   palette: {
     primary: {
       main: COLORS.wintergreen,
@@ -22,8 +26,8 @@ const theme = createTheme({
       light: COLORS.opal,
     },
     background: {
-      default: grey[900],
-      paper: grey[800],
+      default: grey[300],
+      paper: COLORS.opal,
     },
     action: {
       disabledBackground: grey[400],
@@ -32,6 +36,64 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: 'Prompt, Arial',
+    h1: {
+      color: grey[100],
+      fontSize: '6rem',
+      letterSpacing: '-0.1rem',
+      lineHeight: '7rem',
+      textTransform: 'uppercase',
+      fontWeight: 700,
+      width: 'fit-content',
+      filter: 'drop-shadow(8px 4px 3px #000)',
+      [defaultTheme.breakpoints.down('sm')]: { fontSize: '4rem' },
+    },
+    h2: {
+      color: grey[100],
+      fontSize: '4rem',
+      letterSpacing: '-0.04rem',
+      lineHeight: '4rem',
+      textTransform: 'uppercase',
+      fontWeight: 700,
+      [defaultTheme.breakpoints.down('sm')]: { fontSize: '3rem' },
+    },
+    h3: {
+      color: grey[100],
+      fontSize: '3rem',
+      lineHeight: '3rem',
+      letterSpacing: '-0.03rem',
+      fontWeight: 700,
+      [defaultTheme.breakpoints.down('sm')]: { fontSize: '2rem' },
+    },
+    subtitle1: {
+      color: grey[900],
+      fontSize: '1.4rem',
+      lineHeight: '2.2rem',
+      letterSpacing: '-0.04rem',
+      fontWeight: 900,
+      [defaultTheme.breakpoints.down('sm')]: { fontSize: '1.2rem' },
+    },
+    subtitle2: {
+      color: grey[900],
+      fontSize: '1.2rem',
+      lineHeight: '1.6rem',
+      letterSpacing: '-0.03rem',
+      fontWeight: 900,
+      [defaultTheme.breakpoints.down('sm')]: { fontSize: '1rem' },
+    },
+    body1: {
+      color: grey[900],
+      fontSize: '1.2rem',
+      lineHeight: '1.6rem',
+      letterSpacing: '-0.02rem',
+      [defaultTheme.breakpoints.down('sm')]: { fontSize: '1rem' },
+    },
+    body2: {
+      color: grey[900],
+      fontSize: '1.1rem',
+      lineHeight: '1.4rem',
+      letterSpacing: '-0.01rem',
+      [defaultTheme.breakpoints.down('sm')]: { fontSize: '0.9rem' },
+    },
   },
   components: {
     MuiCssBaseline: {
@@ -47,6 +109,14 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: { backgroundColor: grey[900] },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          // backgroundColor: grey[900],
+          padding: 10,
+        },
       },
     },
   },

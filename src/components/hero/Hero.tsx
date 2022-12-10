@@ -4,6 +4,9 @@ import { Box } from '@mui/system';
 import styled from '@emotion/styled';
 import HeroVideo from './HeroVideo';
 import { COLORS } from '../../providers/ThemeProvider';
+import Underlined from '../typography/Underlined';
+import Bold from '../typography/Bold';
+import Oblique from '../typography/Oblique';
 
 const HERO_HEIGHT_PX = 600;
 
@@ -15,39 +18,28 @@ const Wrapper = styled(Box)`
 `;
 
 const HeaderWord = styled.span`
-  letter-spacing: -0.1rem;
-  line-height: 6rem;
   display: block;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #f3f3f3;
   width: fit-content;
   margin: 4px 0 0 0;
-  text-transform: uppercase;
-  font-weight: 700;
   padding: 0 10px 0 10px;
-  filter: drop-shadow(8px 4px 3px #000);
+  background-color: rgba(0, 0, 0, 0.4);
 `;
 
 const Subtitle = styled(Typography)`
-  letter-spacing: -0.05rem;
   margin-top: 10px;
   width: fit-content;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-weight: 900;
-  color: #0c0c0c;
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 0 10px 0 10px;
   filter: drop-shadow(8px 4px 5px #ccc);
 `;
 
 const Description = styled(Typography)`
-  letter-spacing: -0.04rem;
   margin-top: 10px;
   width: fit-content;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   font-weight: 500;
-  color: #0c0c0c;
   padding: 10px 10px 10px 10px;
-  filter: drop-shadow(8px 4px 5px #ccc);
+  filter: drop-shadow(8px 4px 7px #ccc);
 `;
 
 /**
@@ -60,28 +52,28 @@ const Hero: React.FC = () => {
     <Wrapper theme={theme}>
       <HeroVideo height={HERO_HEIGHT_PX}>
         <Container sx={{ display: 'flex', height: HERO_HEIGHT_PX, flexDirection: 'column', justifyContent: 'center' }}>
-          <Typography variant="h1" sx={{ fontSize: { xs: '4rem', sm: '6rem' } }}>
+          <Typography variant="h1" sx={{ backgroundColor: 'initial' }}>
             <HeaderWord>
-              <span style={{ textDecoration: 'underline', textDecorationColor: COLORS.cyan }}>C</span>hange
+              <Underlined color={COLORS.cyan}>C</Underlined>hange
             </HeaderWord>
             <HeaderWord>
-              <span style={{ textDecoration: 'underline', textDecorationColor: COLORS.yellow }}>Y</span>our
+              <Underlined color={COLORS.yellow}>Y</Underlined>our
             </HeaderWord>
             <HeaderWord>
-              <span style={{ textDecoration: 'underline', textDecorationColor: COLORS.magenta }}>M</span>ind.
+              <Underlined color={COLORS.magenta}>M</Underlined>ind.
             </HeaderWord>
           </Typography>
-          <Subtitle variant="subtitle1" sx={{ fontSize: { xs: '1rem', sm: '1.35rem' } }}>
-            the immersive experience
-          </Subtitle>
-          <Description sx={{ fontSize: { xs: '1rem', sm: '1.2rem' } }}>
-            <span style={{ fontWeight: 900, fontSize: '1.3rem' }}>
-              Choose yourself. <span style={{ fontStyle: 'italic' }}>Change Your Mind.</span>
-            </span>
+          <Subtitle variant="subtitle1">the immersive experience</Subtitle>
+          <Description variant="subtitle2">
+            <Bold>
+              Choose yourself. <Oblique>Change Your Mind.</Oblique>
+            </Bold>
             <br />
             Personality editing is finally here. Our trained clinicians are ready to provide you with your fully custom
             persona. It's fast, affordable, and{' '}
-            <span style={{ fontStyle: 'italic', textDecoration: 'underline' }}>completely safe</span>*.
+            <Oblique>
+              <Underlined>completely safe</Underlined>*
+            </Oblique>
           </Description>
           <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
             <Button

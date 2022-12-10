@@ -35,7 +35,7 @@ const HeroVideo: React.FC<Props> = ({ height, initialWidthPx, children }) => {
       <video
         src={videoSrc}
         style={{
-          filter: 'grayscale(80%) invert(100%) brightness(50%) blur(1px)',
+          filter: 'grayscale(80%) invert(100%) brightness(50%)',
           display: 'block',
           objectFit: 'cover',
           objectPosition: '50% 50%',
