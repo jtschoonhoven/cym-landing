@@ -13,6 +13,7 @@ const Toolbar = styled(MuiToolbar)({
 });
 
 const AlertText = styled(Typography)`
+  color: white;
   padding: 5px 20px 4px 20px;
   font-size: 1.2em;
   text-transform: uppercase;

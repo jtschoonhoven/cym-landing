@@ -7,6 +7,9 @@ import { COLORS } from '../../providers/ThemeProvider';
 import Underlined from '../typography/Underlined';
 import Bold from '../typography/Bold';
 import Oblique from '../typography/Oblique';
+import H1 from '../typography/H1';
+import Subtitle1 from '../typography/Subtitle1';
+import Subtitle2 from '../typography/Subtitle2';
 
 const HERO_HEIGHT_PX = 600;
 
@@ -17,30 +20,15 @@ const Wrapper = styled(Box)`
   border-bottom: 20px solid ${({ theme }: { theme: Theme }) => theme.palette.grey[900]};
 `;
 
-const HeaderWord = styled.span`
-  display: block;
-  width: fit-content;
-  margin: 4px 0 0 0;
-  padding: 0 10px 0 10px;
-  background-color: rgba(0, 0, 0, 0.4);
-`;
-
-const Subtitle = styled(Typography)`
-  margin-top: 10px;
-  width: fit-content;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 0 10px 0 10px;
-  filter: drop-shadow(8px 4px 5px #ccc);
-`;
-
-const Description = styled(Typography)`
-  margin-top: 10px;
-  width: fit-content;
-  background-color: rgba(255, 255, 255, 0.4);
-  font-weight: 500;
-  padding: 10px 10px 10px 10px;
-  filter: drop-shadow(8px 4px 7px #ccc);
-`;
+const Title: React.FC<React.PropsWithChildren> = ({ children }) => (
+  <H1
+    color="white"
+    bgColor={'rgba(0, 0, 0, 0.5)'}
+    sx={{ margin: '4px 0 0 0', lineHeight: '6rem', fontSize: '6rem', display: 'block' }}
+  >
+    {children}
+  </H1>
+);
 
 /**
  * Above-the-fold banner for the landing page.
@@ -52,29 +40,26 @@ const Hero: React.FC = () => {
     <Wrapper theme={theme}>
       <HeroVideo height={HERO_HEIGHT_PX}>
         <Container sx={{ display: 'flex', height: HERO_HEIGHT_PX, flexDirection: 'column', justifyContent: 'center' }}>
-          <Typography variant="h1" sx={{ backgroundColor: 'initial' }}>
-            <HeaderWord>
-              <Underlined color={COLORS.cyan}>C</Underlined>hange
-            </HeaderWord>
-            <HeaderWord>
-              <Underlined color={COLORS.yellow}>Y</Underlined>our
-            </HeaderWord>
-            <HeaderWord>
-              <Underlined color={COLORS.magenta}>M</Underlined>ind.
-            </HeaderWord>
-          </Typography>
-          <Subtitle variant="subtitle1">the immersive experience</Subtitle>
-          <Description variant="subtitle2">
-            <Bold>
-              Choose yourself. <Oblique>Change Your Mind.</Oblique>
-            </Bold>
-            <br />
+          <Title>
+            <Underlined color={COLORS.cyan}>C</Underlined>hange
+          </Title>
+          <Title>
+            <Underlined color={COLORS.yellow}>Y</Underlined>our
+          </Title>
+          <Title>
+            <Underlined color={COLORS.magenta}>M</Underlined>ind.
+          </Title>
+          <Subtitle1>the immersive experience</Subtitle1>
+          <Subtitle1>
+            Choose yourself. <Oblique>Change Your Mind.</Oblique>
+          </Subtitle1>
+          <Subtitle2 sx={{ marginTop: 0 }}>
             Personality editing is finally here. Our trained clinicians are ready to provide you with your fully custom
             persona. It's fast, affordable, and{' '}
             <Oblique>
               <Underlined>completely safe</Underlined>*
             </Oblique>
-          </Description>
+          </Subtitle2>
           <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
             <Button
               size={isXs ? 'medium' : 'large'}

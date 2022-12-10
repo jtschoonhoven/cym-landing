@@ -75,7 +75,7 @@ const theme = createTheme({
     subtitle2: {
       color: grey[900],
       fontSize: '1.2rem',
-      lineHeight: '1.6rem',
+      lineHeight: '2rem',
       letterSpacing: '-0.03rem',
       fontWeight: 900,
       [defaultTheme.breakpoints.down('sm')]: { fontSize: '1rem' },
@@ -85,6 +85,7 @@ const theme = createTheme({
       fontSize: '1.2rem',
       lineHeight: '1.6rem',
       letterSpacing: '-0.02rem',
+      marginTop: 10,
       [defaultTheme.breakpoints.down('sm')]: { fontSize: '1rem' },
     },
     body2: {
