@@ -1,21 +1,25 @@
 {
   "files": {
     "main.css": "/nursesoffice/static/css/main.1679913a.css",
-    "main.js": "/nursesoffice/static/js/main.670ade05.js",
-    "static/media/hero.mp4": "/nursesoffice/static/media/hero.3b3afe88d829d8c1bc02.mp4",
+    "main.js": "/nursesoffice/static/js/main.1d3a442f.js",
+    "static/media/hero.mp4": "/nursesoffice/static/media/hero.a35a91e8332b75082e3f.mp4",
     "static/media/phrenology.jpg": "/nursesoffice/static/media/phrenology.52dee58f364c3c587ffd.jpg",
     "static/media/axon.jpg": "/nursesoffice/static/media/axon.2ecd075f4e881cf918f0.jpg",
     "static/media/prompt-all-400-normal.woff": "/nursesoffice/static/media/prompt-all-400-normal.c475c304eec941b66047.woff",
+    "static/media/staff.svg": "/nursesoffice/static/media/staff.edf0f1be1bf74a6bd4419f0b8f20b26c.svg",
     "static/media/prompt-latin-400-normal.woff2": "/nursesoffice/static/media/prompt-latin-400-normal.03568dfaabfa694e7a08.woff2",
     "static/media/prompt-latin-ext-400-normal.woff2": "/nursesoffice/static/media/prompt-latin-ext-400-normal.717fc72c75c07806e9bf.woff2",
     "static/media/prompt-thai-400-normal.woff2": "/nursesoffice/static/media/prompt-thai-400-normal.d0099dced32e7a5c5beb.woff2",
+    "static/media/brain.svg": "/nursesoffice/static/media/brain.90b49f36119d76523d419a74b6b17bae.svg",
     "static/media/prompt-vietnamese-400-normal.woff2": "/nursesoffice/static/media/prompt-vietnamese-400-normal.68d14b8a66db1db3d189.woff2",
+    "static/media/eye.svg": "/nursesoffice/static/media/eye.f453310d649ce6d4b484a3e32dc3d031.svg",
+    "static/media/heart.svg": "/nursesoffice/static/media/heart.2d86ac98e4e1fdba56abb0ea3839ba77.svg",
     "index.html": "/nursesoffice/index.html",
     "main.1679913a.css.map": "/nursesoffice/static/css/main.1679913a.css.map",
-    "main.670ade05.js.map": "/nursesoffice/static/js/main.670ade05.js.map"
+    "main.1d3a442f.js.map": "/nursesoffice/static/js/main.1d3a442f.js.map"
   },
   "entrypoints": [
     "static/css/main.1679913a.css",
-    "static/js/main.670ade05.js"
+    "static/js/main.1d3a442f.js"
   ]
 }
