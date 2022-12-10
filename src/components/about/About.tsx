@@ -8,6 +8,7 @@ import {
   CardContent,
   CardActions,
   Button,
+  Link,
 } from '@mui/material';
 import React from 'react';
 import phrenologyImg from '../../assets/images/phrenology.jpg';
@@ -105,6 +106,10 @@ const About: React.FC = () => {
           Change Your Mind includes 1-1 interactions between participants and performers, binaural audio, 1-way mirrors,
           deep faked video, personality exams, flashing lights, unscripted moments, branching narrative, and, in one
           scene, all of these simultaneously. The result is heartbreaking, intense, and ultimately, uplifting.
+        </Typography>
+        <Typography variant="body1" sx={{ marginTop: 3 }}>
+          To get in touch, please email{' '}
+          <Link href="mailto:sayhi@saynothingandleave.com">sayhi@saynothingandleave.com</Link>
         </Typography>
       </Container>
       <HeroImage
