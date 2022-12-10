@@ -1,16 +1,10 @@
 {
   "files": {
     "main.css": "/nursesoffice/static/css/main.1679913a.css",
-    "main.js": "/nursesoffice/static/js/main.185adab4.js",
-    "static/media/swirls.mp4": "/nursesoffice/static/media/swirls.38baac1fcec941c1f093.mp4",
-    "static/media/eyes-smile.mp4": "/nursesoffice/static/media/eyes-smile.112877c9f88a93cb6e82.mp4",
-    "static/media/eyes-looking.mp4": "/nursesoffice/static/media/eyes-looking.b0b0a725ef1f67a13dbc.mp4",
-    "static/media/blue-drops.mp4": "/nursesoffice/static/media/blue-drops.35ee23661b56a972a448.mp4",
-    "static/media/head-model.mp4": "/nursesoffice/static/media/head-model.3c43cce6b8be8aa486f4.mp4",
-    "static/media/blue-orange.mp4": "/nursesoffice/static/media/blue-orange.015837a8fc9bde666bc8.mp4",
-    "static/media/orange-drops.mp4": "/nursesoffice/static/media/orange-drops.dceb4aa1dff3b59a316c.mp4",
-    "static/media/phrenology.jpg": "/nursesoffice/static/media/phrenology.0c06e51ae4600d510226.jpg",
-    "static/media/axon.jpg": "/nursesoffice/static/media/axon.f4f805dc12ddd3fb2750.jpg",
+    "main.js": "/nursesoffice/static/js/main.670ade05.js",
+    "static/media/hero.mp4": "/nursesoffice/static/media/hero.3b3afe88d829d8c1bc02.mp4",
+    "static/media/phrenology.jpg": "/nursesoffice/static/media/phrenology.52dee58f364c3c587ffd.jpg",
+    "static/media/axon.jpg": "/nursesoffice/static/media/axon.2ecd075f4e881cf918f0.jpg",
     "static/media/prompt-all-400-normal.woff": "/nursesoffice/static/media/prompt-all-400-normal.c475c304eec941b66047.woff",
     "static/media/prompt-latin-400-normal.woff2": "/nursesoffice/static/media/prompt-latin-400-normal.03568dfaabfa694e7a08.woff2",
     "static/media/prompt-latin-ext-400-normal.woff2": "/nursesoffice/static/media/prompt-latin-ext-400-normal.717fc72c75c07806e9bf.woff2",
@@ -18,10 +12,10 @@
     "static/media/prompt-vietnamese-400-normal.woff2": "/nursesoffice/static/media/prompt-vietnamese-400-normal.68d14b8a66db1db3d189.woff2",
     "index.html": "/nursesoffice/index.html",
     "main.1679913a.css.map": "/nursesoffice/static/css/main.1679913a.css.map",
-    "main.185adab4.js.map": "/nursesoffice/static/js/main.185adab4.js.map"
+    "main.670ade05.js.map": "/nursesoffice/static/js/main.670ade05.js.map"
   },
   "entrypoints": [
     "static/css/main.1679913a.css",
-    "static/js/main.185adab4.js"
+    "static/js/main.670ade05.js"
   ]
 }
