@@ -81,8 +81,7 @@ const Hero: React.FC = () => {
             <br />
             Personality editing is finally here. Our trained clinicians are ready to provide you with your fully custom
             persona. It's fast, affordable, and{' '}
-            <span style={{ fontStyle: 'italic', textDecoration: 'underline' }}>completely safe*</span> so you can truly{' '}
-            <span style={{ fontWeight: 900 }}>#ChooseYourself</span>.
+            <span style={{ fontStyle: 'italic', textDecoration: 'underline' }}>completely safe</span>*.
           </Description>
           <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
             <Button
