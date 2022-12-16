@@ -120,6 +120,18 @@ const theme = createTheme({
         },
       },
     },
+    MuiButton: {
+      styleOverrides: {
+        sizeLarge: {
+          fontSize: '1.3rem',
+          [defaultTheme.breakpoints.down('sm')]: { fontSize: '1rem' },
+        },
+        sizeMedium: {
+          fontSize: '1rem',
+          [defaultTheme.breakpoints.down('sm')]: { fontSize: '0.8rem' },
+        },
+      },
+    },
   },
 });
 

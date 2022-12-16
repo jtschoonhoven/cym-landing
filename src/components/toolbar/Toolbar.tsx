@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  AppBar,
-  Button,
-  IconButton,
-  styled,
-  Toolbar as MuiToolbar,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from '@mui/material';
+import { AppBar as MuiAppBar, Button, IconButton, styled, Toolbar as MuiToolbar, Typography } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import ToolbarDrawer from './ToolbarDrawer';
 import VerticallyCentered from '../util/vertically-centered/VerticallyCentered';
@@ -18,6 +9,10 @@ export interface ToolbarItem {
 }
 
 const TOOLBAR_HEIGHT_PX = 100;
+
+const AppBar = styled(MuiAppBar)`
+  background-color: rgba(16, 16, 16, 0.9);
+`;
 
 const XlToolBar = styled(MuiToolbar)(({ theme }) => ({
   alignItems: 'flex-start',
@@ -42,12 +37,10 @@ const ToolbarBtn = styled(Button)`
  */
 const Toolbar: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
-  const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <>
-      <AppBar position="static" sx={{ height: TOOLBAR_HEIGHT_PX }}>
+      <AppBar position="sticky" sx={{ height: TOOLBAR_HEIGHT_PX }}>
         <VerticallyCentered>
           <XlToolBar>
             {/* Drawer-open icon for mobile */}
@@ -73,11 +66,11 @@ const Toolbar: React.FC = () => {
               {/* OPTIONAL LOGO GOES HERE */}
             </Typography>
             {/* ABOUT US */}
-            <ToolbarBtn size={isXs ? 'medium' : 'large'} variant="outlined">
+            <ToolbarBtn size="medium" variant="outlined">
               About us
             </ToolbarBtn>
             {/* GET TICKETS */}
-            <ToolbarBtn size={isXs ? 'medium' : 'large'} variant="contained" color="secondary" disabled>
+            <ToolbarBtn size="medium" variant="contained" color="secondary" disabled>
               Get Tickets
             </ToolbarBtn>
           </XlToolBar>
