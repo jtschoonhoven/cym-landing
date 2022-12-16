@@ -17,10 +17,10 @@ const Body = styled(Typography)`
   filter: drop-shadow(8px 4px 5px #ccc);
 `;
 
-const StyledImage = styled.img`
+const StyledImage = styled.img<{ objectPosition?: string }>`
   display: block;
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: ${({ objectPosition }) => objectPosition || '50% 50%'};
   width: ${({ width }) => width || '100%'};
   height: ${({ height }) => height || DEFAULT_HEIGHT};
   margin: 20px 0 20px 0;
@@ -34,6 +34,7 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement>, PropsWithChil
   body2?: string;
   borderTop?: string;
   borderBottom?: string;
+  objectPosition?: string;
 }
 
 /**
@@ -49,6 +50,7 @@ const HeroImage: React.FC<Props> = ({
   body1,
   body2,
   height,
+  objectPosition,
   ...imgProps
 }) => {
   return (
@@ -72,7 +74,12 @@ const HeroImage: React.FC<Props> = ({
           </Container>
         </Box>
       ) : null}
-      <StyledImage height={height} {...imgProps} />
+      <StyledImage
+        height={height}
+        objectPosition={objectPosition}
+        {...imgProps}
+        style={{ borderTop, borderBottom, ...imgProps.style }}
+      />
     </Box>
   );
 };

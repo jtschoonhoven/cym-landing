@@ -36,7 +36,6 @@ const Title: React.FC<React.PropsWithChildren> = ({ children }) => (
  */
 const Hero: React.FC = () => {
   const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <Wrapper theme={theme}>
       <HeroVideo height={HERO_HEIGHT_PX}>
@@ -62,17 +61,11 @@ const Hero: React.FC = () => {
             </Oblique>
           </Subtitle2>
           <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
-            <Button
-              size={isXs ? 'medium' : 'large'}
-              variant="contained"
-              color="secondary"
-              sx={{ fontWeight: 700 }}
-              disabled
-            >
-              Get Tickets
+            <Button size="large" variant="contained" color="secondary" disabled>
+              <Bold>Get Tickets</Bold>
             </Button>
             <Box component="span" sx={{ width: '20px' }} />
-            <Button size={isXs ? 'medium' : 'large'} variant="contained" color="primary" sx={{ fontWeight: 700 }}>
+            <Button size="large" variant="contained" color="primary" sx={{ fontWeight: 700 }}>
               Press Info
             </Button>
           </Box>
