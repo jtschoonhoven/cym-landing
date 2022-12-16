@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, useTheme } from '@mui/material';
+import { Paper } from '@mui/material';
 import Toolbar from './components/toolbar/Toolbar';
 import Hero from './components/hero/Hero';
 import styled from '@emotion/styled';
@@ -11,8 +11,6 @@ const AppWrapper = styled(Paper)`
 `;
 
 const App: React.FC = () => {
-  const theme = useTheme();
-
   return (
     <AppWrapper>
       <ToolbarAlert />

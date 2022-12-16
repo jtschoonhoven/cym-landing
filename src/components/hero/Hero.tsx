@@ -21,11 +21,7 @@ const Wrapper = styled(Box)`
 `;
 
 const Title: React.FC<React.PropsWithChildren> = ({ children }) => (
-  <H1
-    color="white"
-    bgColor={'rgba(0, 0, 0, 0.5)'}
-    sx={{ margin: '4px 0 0 0', lineHeight: '6rem', fontSize: '6rem', display: 'block' }}
-  >
+  <H1 color="white" bgColor={'rgba(0, 0, 0, 0.5)'} sx={{ margin: '4px 0 0 0', lineHeight: '6rem', fontSize: '6rem' }}>
     {children}
   </H1>
 );

@@ -11,7 +11,8 @@ export interface ToolbarItem {
 const TOOLBAR_HEIGHT_PX = 100;
 
 const AppBar = styled(MuiAppBar)`
-  background-color: rgba(16, 16, 16, 0.9);
+  background-color: rgba(16, 16, 16, 0.95);
+  background-image: initial;
 `;
 
 const XlToolBar = styled(MuiToolbar)(({ theme }) => ({
