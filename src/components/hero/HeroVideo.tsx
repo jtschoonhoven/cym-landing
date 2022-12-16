@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import React, { PropsWithChildren } from 'react';
-import videoSrc from '../../assets/video/hero.mp4';
+import videoSrc from '../../assets/video/teaser_md.mp4';
 
 interface Props extends PropsWithChildren {
   height: number;
@@ -31,14 +31,14 @@ const HeroVideo: React.FC<Props> = ({ height, initialWidthPx, children }) => {
 
   return (
     <Box ref={containerRef}>
-      <Box sx={{ position: 'absolute', float: 'left', zIndex: 1 }}>{children}</Box>
+      <Box sx={{ position: 'absolute', float: 'left', zIndex: 1, width: '100%' }}>{children}</Box>
       <video
         src={videoSrc}
         style={{
-          filter: 'grayscale(80%) invert(100%) brightness(50%)',
+          filter: 'grayscale(50%) brightness(50%)',
           display: 'block',
           objectFit: 'cover',
-          objectPosition: '50% 50%',
+          objectPosition: '50% 95%',
           height,
           width,
         }}

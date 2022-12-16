@@ -10,6 +10,7 @@ import Oblique from '../typography/Oblique';
 import H1 from '../typography/H1';
 import Subtitle1 from '../typography/Subtitle1';
 import Subtitle2 from '../typography/Subtitle2';
+import { hexToRgb } from '../../services/color-service';
 
 const HERO_HEIGHT_PX = 600;
 
@@ -36,6 +37,7 @@ const Title: React.FC<React.PropsWithChildren> = ({ children }) => (
  */
 const Hero: React.FC = () => {
   const theme = useTheme();
+  const bgColor = 'rgb(255, 255, 255, 0.5)';
   return (
     <Wrapper theme={theme}>
       <HeroVideo height={HERO_HEIGHT_PX}>
@@ -49,17 +51,7 @@ const Hero: React.FC = () => {
           <Title>
             <Underlined color={COLORS.magenta}>M</Underlined>ind.
           </Title>
-          <Subtitle1>the immersive experience</Subtitle1>
-          <Subtitle1>
-            Choose yourself. <Oblique>Change Your Mind.</Oblique>
-          </Subtitle1>
-          <Subtitle2 sx={{ marginTop: 0 }}>
-            Personality editing is finally here. Our trained clinicians are ready to provide you with your fully custom
-            persona. It's fast, affordable, and{' '}
-            <Oblique>
-              <Underlined>completely safe</Underlined>*
-            </Oblique>
-          </Subtitle2>
+          <Subtitle1 bgColor={bgColor}>the immersive experience</Subtitle1>
           <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
             <Button size="large" variant="contained" color="secondary" disabled>
               <Bold>Get Tickets</Bold>

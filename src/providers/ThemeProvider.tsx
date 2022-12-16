@@ -123,8 +123,8 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         sizeLarge: {
-          fontSize: '1.3rem',
-          [defaultTheme.breakpoints.down('sm')]: { fontSize: '1rem' },
+          fontSize: '1.5rem',
+          [defaultTheme.breakpoints.down('sm')]: { fontSize: '1.2rem' },
         },
         sizeMedium: {
           fontSize: '1rem',
