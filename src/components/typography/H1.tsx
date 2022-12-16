@@ -6,18 +6,19 @@ interface Props extends React.PropsWithChildren, TypographyProps {
   component?: React.ElementType;
   color?: string;
   bgColor?: string;
+  noise?: boolean;
 }
 
 /**
  * Custom Header 1 component with extra style options.
  */
-const H1: React.FC<Props> = ({ children, variant, color, bgColor, sx, ...typographyProps }) => {
+const H1: React.FC<Props> = ({ children, variant, color, bgColor, noise = true, sx, ...typographyProps }) => {
   const theme = useTheme();
-  color = color === undefined ? theme.palette.primary.light : color;
+  color = color === undefined ? theme.palette.secondary.light : color;
   bgColor = bgColor === undefined ? 'black' : bgColor;
   return (
     <Typography variant={variant || 'h1'} {...typographyProps} sx={{ marginBottom: 4, display: 'block', ...sx }}>
-      <Colored color={color} bgColor={bgColor}>
+      <Colored color={color} bgColor={bgColor} noise={noise}>
         {children}
       </Colored>
     </Typography>
