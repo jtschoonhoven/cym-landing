@@ -1,5 +1,6 @@
 import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material';
 import React from 'react';
+import ListItemButtonGetTickets from '../button/ListItemButtonGetTickets';
 
 const WIDTH_PX = 240;
 
@@ -31,14 +32,12 @@ const ToolbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
       >
         <Box onClick={onClose} sx={{ textAlign: 'center' }}>
           <Typography variant="h6" sx={{ my: 2 }}>
-            MUI
+            CYM
           </Typography>
           <Divider />
           <List>
             <ListItem disablePadding>
-              <ListItemButton sx={{ textAlign: 'center' }}>
-                <ListItemText primary="Get Tickets" />
-              </ListItemButton>
+              <ListItemButtonGetTickets />
             </ListItem>
           </List>
         </Box>

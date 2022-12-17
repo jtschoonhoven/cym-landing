@@ -56,17 +56,6 @@ const Toolbar: React.FC = () => {
                 <MenuIcon />
               </IconButton>
             </Typography>
-            {/* Logo for Desktop */}
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                flexGrow: 1,
-                display: { xs: 'none', sm: 'block' },
-              }}
-            >
-              {/* OPTIONAL LOGO GOES HERE */}
-            </Typography>
             <ButtonGetTickets />
           </XlToolBar>
         </VerticallyCentered>
