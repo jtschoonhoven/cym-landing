@@ -1,26 +1,30 @@
 {
   "files": {
     "main.css": "/nursesoffice/static/css/main.1679913a.css",
-    "main.js": "/nursesoffice/static/js/main.278ae3be.js",
+    "main.js": "/nursesoffice/static/js/main.f29ce0ac.js",
     "static/media/teaser_md.mp4": "/nursesoffice/static/media/teaser_md.b566156b8311b7bdb02c.mp4",
     "static/media/phrenology.jpg": "/nursesoffice/static/media/phrenology.52dee58f364c3c587ffd.jpg",
     "static/media/ripples.jpg": "/nursesoffice/static/media/ripples.f1a02092bf8cded6f7ea.jpg",
+    "static/media/axon.jpg": "/nursesoffice/static/media/axon.2ecd075f4e881cf918f0.jpg",
     "static/media/nurse.jpg": "/nursesoffice/static/media/nurse.abb8fb2985575fcce23b.jpg",
     "static/media/anxiety.jpg": "/nursesoffice/static/media/anxiety.3edb615969d46eceef63.jpg",
     "static/media/pill.jpg": "/nursesoffice/static/media/pill.8153e41e02308953f0f1.jpg",
     "static/media/surgeon.jpg": "/nursesoffice/static/media/surgeon.9a0dbe5376c53d08a046.jpg",
     "static/media/prompt-all-400-normal.woff": "/nursesoffice/static/media/prompt-all-400-normal.c475c304eec941b66047.woff",
     "static/media/balloons.jpg": "/nursesoffice/static/media/balloons.9a5262450a0936f51f24.jpg",
+    "static/media/ellie.jpg": "/nursesoffice/static/media/ellie.027c16bad313c407e819.jpg",
+    "static/media/alex.jpg": "/nursesoffice/static/media/alex.9f6f04a7e8b698ebe1e7.jpg",
+    "static/media/jon.jpg": "/nursesoffice/static/media/jon.16b453f99387cf0105d5.jpg",
     "static/media/prompt-latin-400-normal.woff2": "/nursesoffice/static/media/prompt-latin-400-normal.03568dfaabfa694e7a08.woff2",
     "static/media/prompt-latin-ext-400-normal.woff2": "/nursesoffice/static/media/prompt-latin-ext-400-normal.717fc72c75c07806e9bf.woff2",
     "static/media/prompt-thai-400-normal.woff2": "/nursesoffice/static/media/prompt-thai-400-normal.d0099dced32e7a5c5beb.woff2",
     "static/media/prompt-vietnamese-400-normal.woff2": "/nursesoffice/static/media/prompt-vietnamese-400-normal.68d14b8a66db1db3d189.woff2",
     "index.html": "/nursesoffice/index.html",
     "main.1679913a.css.map": "/nursesoffice/static/css/main.1679913a.css.map",
-    "main.278ae3be.js.map": "/nursesoffice/static/js/main.278ae3be.js.map"
+    "main.f29ce0ac.js.map": "/nursesoffice/static/js/main.f29ce0ac.js.map"
   },
   "entrypoints": [
     "static/css/main.1679913a.css",
-    "static/js/main.278ae3be.js"
+    "static/js/main.f29ce0ac.js"
   ]
 }
