@@ -15,7 +15,6 @@ export const CheckoutContext = React.createContext<Props>({
  */
 const CheckoutProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
-  console.log(isOpen);
   return <CheckoutContext.Provider value={{ isOpen, setIsOpen }}>{children}</CheckoutContext.Provider>;
 };
 
