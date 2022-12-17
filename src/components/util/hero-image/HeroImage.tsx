@@ -55,7 +55,7 @@ const HeroImage: React.FC<Props> = ({
   ...imgProps
 }) => {
   return (
-    <Box sx={sx}>
+    <Box sx={{ borderTop, borderBottom, ...sx }}>
       {h1 || h2 || subtitle1 || body1 || body2 || children ? (
         <Box sx={{ position: 'absolute', float: 'left', zIndex: 1 }}>
           <Container
@@ -75,12 +75,7 @@ const HeroImage: React.FC<Props> = ({
           </Container>
         </Box>
       ) : null}
-      <StyledImage
-        height={height}
-        objectPosition={objectPosition}
-        {...imgProps}
-        style={{ borderTop, borderBottom, ...imgProps.style }}
-      />
+      <StyledImage height={height} objectPosition={objectPosition} {...imgProps} style={{ ...imgProps.style }} />
     </Box>
   );
 };
