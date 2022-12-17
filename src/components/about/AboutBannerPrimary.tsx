@@ -5,7 +5,7 @@ import Subtitle1 from '../typography/Subtitle1';
 import { useTheme } from '@mui/material';
 import H2 from '../typography/H2';
 
-export const ABOUT_BANNER_PRIMARY_ID = 'about-banner-primary';
+export const ABOUT_BANNER_PRIMARY_ID = 'about';
 
 /**
  * The lead banner in the below-the-fold content section.

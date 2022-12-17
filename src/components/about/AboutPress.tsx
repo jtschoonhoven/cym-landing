@@ -4,7 +4,7 @@ import Bold from '../typography/Bold';
 import H2 from '../typography/H2';
 import Oblique from '../typography/Oblique';
 
-export const ABOUT_PRESS_ID = 'about-press';
+export const ABOUT_PRESS_ID = 'press-info';
 
 /**
  * Press info.

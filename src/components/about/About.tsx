@@ -7,6 +7,7 @@ import AboutPress from './AboutPress';
 import AboutIcons from './AboutIcons';
 import AboutBannerPrimary from './AboutBannerPrimary';
 import AboutBannerSecondary from './AboutBannerSecondary';
+import AboutStaff from './AboutStaff';
 
 /**
  * The primary component for below-the-fold content.
@@ -19,11 +20,13 @@ const About: React.FC = () => {
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutSteps />} />
       <AboutBannerSecondary />
       {/* <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutIcons />} /> */}
-      {/* <HeroImage
+      <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutStaff />} />
+      <HeroImage
         src={axonImg}
+        sx={{ marginTop: 4 }}
         borderTop={`30px solid ${theme.palette.secondary.dark}`}
         borderBottom={`30px solid ${theme.palette.grey[700]}`}
-      /> */}
+      />
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutPress />} />
     </>
   );

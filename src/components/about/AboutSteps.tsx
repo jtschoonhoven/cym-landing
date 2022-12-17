@@ -19,8 +19,6 @@ import surgeonImg from '../../assets/images/surgeon.jpg';
 import ButtonGetTickets from '../button/ButtonGetTickets';
 import { useIsSmallerThan } from '../../services/size-service';
 
-export const ABOUT_STEPS_ID = 'about-steps';
-
 const TimelineDot = styled(MuiTimelineDot)({
   backgroundColor: 'black',
   padding: '5px 10px 5px 10px',
@@ -46,7 +44,7 @@ const AboutSteps: React.FC = () => {
 
   return (
     <>
-      <Timeline id={ABOUT_STEPS_ID} position="alternate">
+      <Timeline position="alternate">
         {/* BOOK */}
         <TimelineItem sx={{ flexDirection: isSm ? 'row-reverse' : 'row' }}>
           <TimelineOppositeContent>
