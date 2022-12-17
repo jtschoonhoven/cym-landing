@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nursesoffice/static/css/main.1679913a.css",
-    "main.js": "/nursesoffice/static/js/main.cd57f73a.js",
+    "main.js": "/nursesoffice/static/js/main.e6a2218a.js",
     "static/media/teaser_md.mp4": "/nursesoffice/static/media/teaser_md.b566156b8311b7bdb02c.mp4",
     "static/media/phrenology.jpg": "/nursesoffice/static/media/phrenology.52dee58f364c3c587ffd.jpg",
     "static/media/ripples.jpg": "/nursesoffice/static/media/ripples.f1a02092bf8cded6f7ea.jpg",
@@ -17,10 +17,10 @@
     "static/media/prompt-vietnamese-400-normal.woff2": "/nursesoffice/static/media/prompt-vietnamese-400-normal.68d14b8a66db1db3d189.woff2",
     "index.html": "/nursesoffice/index.html",
     "main.1679913a.css.map": "/nursesoffice/static/css/main.1679913a.css.map",
-    "main.cd57f73a.js.map": "/nursesoffice/static/js/main.cd57f73a.js.map"
+    "main.e6a2218a.js.map": "/nursesoffice/static/js/main.e6a2218a.js.map"
   },
   "entrypoints": [
     "static/css/main.1679913a.css",
-    "static/js/main.cd57f73a.js"
+    "static/js/main.e6a2218a.js"
   ]
 }
