@@ -35,7 +35,9 @@ const AboutPress: React.FC = () => {
       </Typography>
       <Typography variant="body1" sx={{ textAlign: 'center' }}>
         <Link href="mailto:sayhi@saynothingandleave.com">
-          <Button variant="contained">Send us an email</Button>
+          <Button variant="contained" size="large">
+            Send us an email
+          </Button>
         </Link>
       </Typography>
     </>

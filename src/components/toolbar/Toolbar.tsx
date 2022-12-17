@@ -3,6 +3,7 @@ import { AppBar as MuiAppBar, Button, IconButton, styled, Toolbar as MuiToolbar,
 import { Menu as MenuIcon } from '@mui/icons-material';
 import ToolbarDrawer from './ToolbarDrawer';
 import VerticallyCentered from '../util/vertically-centered/VerticallyCentered';
+import ButtonGetTickets from '../button/ButtonGetTickets';
 
 export interface ToolbarItem {
   text: string;
@@ -66,14 +67,7 @@ const Toolbar: React.FC = () => {
             >
               {/* OPTIONAL LOGO GOES HERE */}
             </Typography>
-            {/* ABOUT US */}
-            <ToolbarBtn size="medium" variant="outlined">
-              About us
-            </ToolbarBtn>
-            {/* GET TICKETS */}
-            <ToolbarBtn size="medium" variant="contained" color="secondary" disabled>
-              Get Tickets
-            </ToolbarBtn>
+            <ButtonGetTickets />
           </XlToolBar>
         </VerticallyCentered>
       </AppBar>

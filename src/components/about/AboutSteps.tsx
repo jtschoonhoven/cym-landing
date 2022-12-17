@@ -18,6 +18,7 @@ import pillImg from '../../assets/images/pill.jpg';
 import balloonsImg from '../../assets/images/balloons.jpg';
 import surgeonImg from '../../assets/images/surgeon.jpg';
 import { useIsSmallerThan } from '../../services/size-service';
+import ButtonGetTickets from '../button/ButtonGetTickets';
 
 const TimelineDot = styled(MuiTimelineDot)({
   backgroundColor: 'black',
@@ -48,9 +49,7 @@ const AboutSteps: React.FC = () => {
             <TimelineFlexBox>
               <H3>Book your first appointment</H3>
               <Typography variant="body1">Appointments are available in 15 minute intervals.</Typography>
-              <Button variant="contained" size="large" disabled>
-                Get Tickets
-              </Button>
+              <ButtonGetTickets size="large" />
             </TimelineFlexBox>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -67,7 +66,7 @@ const AboutSteps: React.FC = () => {
             <TimelineFlexBox>
               <H3>Receive your complimentary Personality Assessment</H3>
               <Typography variant="body1">We'll get to know you so we can make you better.</Typography>
-              <Button variant="outlined" size="large">
+              <Button variant="contained" size="large">
                 Try it out online
               </Button>
             </TimelineFlexBox>
@@ -86,7 +85,7 @@ const AboutSteps: React.FC = () => {
             <TimelineFlexBox>
               <H3>Ingest our patented Personality Improvement Pill</H3>
               <Typography variant="body1">Appointments are available in 15 minute intervals.</Typography>
-              <Button variant="outlined" size="large">
+              <Button variant="contained" size="large">
                 Learn more
               </Button>
             </TimelineFlexBox>
@@ -105,7 +104,7 @@ const AboutSteps: React.FC = () => {
             <TimelineFlexBox>
               <H3>Undergo our Personality Improvement Procedure</H3>
               <Typography variant="body1">A quick and painless intervention for a brand new you.</Typography>
-              <Button variant="outlined" size="large">
+              <Button variant="contained" size="large">
                 Open image gallery
               </Button>
             </TimelineFlexBox>

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button, Container, Theme, useTheme } from '@mui/material';
+import { Container, Theme, useTheme } from '@mui/material';
 import { Box } from '@mui/system';
 import styled from '@emotion/styled';
 import HeroVideo from './HeroVideo';
 import { COLORS } from '../../providers/ThemeProvider';
 import Underlined from '../typography/Underlined';
-import Bold from '../typography/Bold';
 import H1 from '../typography/H1';
 import Subtitle1 from '../typography/Subtitle1';
+import ButtonGetTickets from '../button/ButtonGetTickets';
 
 const HERO_HEIGHT_PX = 600;
 
@@ -30,7 +30,7 @@ const Title: React.FC<React.PropsWithChildren> = ({ children }) => (
 );
 
 /**
- * Above-the-fold banner for the landing page.
+ * Above-the-fold hero banner for the landing page.
  */
 const Hero: React.FC = () => {
   const theme = useTheme();
@@ -50,13 +50,7 @@ const Hero: React.FC = () => {
           </Title>
           <Subtitle1 bgColor={bgColor}>the immersive experience</Subtitle1>
           <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 2 }}>
-            <Button size="large" variant="contained" color="secondary" disabled>
-              <Bold>Get Tickets</Bold>
-            </Button>
-            <Box component="span" sx={{ width: '20px' }} />
-            <Button size="large" variant="contained" color="primary" sx={{ fontWeight: 700 }}>
-              Press Info
-            </Button>
+            <ButtonGetTickets size="large" />
           </Box>
         </Container>
       </HeroVideo>
