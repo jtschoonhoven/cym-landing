@@ -9,7 +9,6 @@ import {
   TimelineOppositeContent,
   TimelineSeparator,
 } from '@mui/lab';
-import H2 from '../typography/H2';
 import H3 from '../typography/H3';
 import HeroImage from '../util/hero-image/HeroImage';
 import nurseImg from '../../assets/images/nurse.jpg';
@@ -17,8 +16,10 @@ import anxietyImg from '../../assets/images/anxiety.jpg';
 import pillImg from '../../assets/images/pill.jpg';
 import balloonsImg from '../../assets/images/balloons.jpg';
 import surgeonImg from '../../assets/images/surgeon.jpg';
-import { useIsSmallerThan } from '../../services/size-service';
 import ButtonGetTickets from '../button/ButtonGetTickets';
+import { useIsSmallerThan } from '../../services/size-service';
+
+export const ABOUT_STEPS_ID = 'about-steps';
 
 const TimelineDot = styled(MuiTimelineDot)({
   backgroundColor: 'black',
@@ -37,12 +38,15 @@ const TimelineFlexBox = styled(Box)({
   height: '100%',
 });
 
+/**
+ * Step-by-step explanation of the experience.
+ */
 const AboutSteps: React.FC = () => {
   const isSm = useIsSmallerThan('md');
+
   return (
     <>
-      {/* <H2>How it Works</H2> */}
-      <Timeline position="alternate">
+      <Timeline id={ABOUT_STEPS_ID} position="alternate">
         {/* BOOK */}
         <TimelineItem sx={{ flexDirection: isSm ? 'row-reverse' : 'row' }}>
           <TimelineOppositeContent>

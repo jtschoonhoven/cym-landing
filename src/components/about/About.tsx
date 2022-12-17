@@ -18,12 +18,12 @@ const About: React.FC = () => {
       <AboutBannerPrimary />
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutSteps />} />
       <AboutBannerSecondary />
-      <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutIcons />} />
-      <HeroImage
+      {/* <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutIcons />} /> */}
+      {/* <HeroImage
         src={axonImg}
         borderTop={`30px solid ${theme.palette.secondary.dark}`}
         borderBottom={`30px solid ${theme.palette.grey[700]}`}
-      />
+      /> */}
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutPress />} />
     </>
   );

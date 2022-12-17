@@ -5,6 +5,8 @@ import HeroImage from '../util/hero-image/HeroImage';
 import Subtitle1 from '../typography/Subtitle1';
 import { useTheme } from '@mui/material';
 
+export const ABOUT_BANNER_PRIMARY_ID = 'about-banner-primary';
+
 /**
  * The lead banner in the below-the-fold content section.
  */
@@ -13,6 +15,7 @@ const AboutBannerPrimary: React.FC = () => {
   return (
     <>
       <HeroImage
+        id={ABOUT_BANNER_PRIMARY_ID}
         src={ripplesImg}
         sx={{ marginTop: 0 }}
         height="500px"

@@ -4,13 +4,15 @@ import Bold from '../typography/Bold';
 import H2 from '../typography/H2';
 import Oblique from '../typography/Oblique';
 
+export const ABOUT_PRESS_ID = 'about-press';
+
 /**
  * Press info.
  */
 const AboutPress: React.FC = () => {
   return (
     <>
-      <H2>Press Info</H2>
+      <H2 id={ABOUT_PRESS_ID}>Press Info</H2>
       <Typography variant="body1">
         <Bold>Change Your Mind </Bold>
         is the first production by artist collective <Bold>[Say Nothing and Leave] </Bold>
