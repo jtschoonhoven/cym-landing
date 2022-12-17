@@ -40,7 +40,7 @@ const AboutSteps: React.FC = () => {
   const isSm = useIsSmallerThan('md');
   return (
     <>
-      <H2>How it Works</H2>
+      {/* <H2>How it Works</H2> */}
       <Timeline position="alternate">
         {/* BOOK */}
         <TimelineItem sx={{ flexDirection: isSm ? 'row-reverse' : 'row' }}>
@@ -128,7 +128,6 @@ const AboutSteps: React.FC = () => {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot>5</TimelineDot>
-            <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
             <HeroImage src={balloonsImg} height="300px" />

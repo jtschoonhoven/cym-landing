@@ -1,4 +1,4 @@
-import { Link, Typography } from '@mui/material';
+import { Button, Link, Typography } from '@mui/material';
 import React from 'react';
 import Bold from '../typography/Bold';
 import H2 from '../typography/H2';
@@ -31,7 +31,12 @@ const AboutPress: React.FC = () => {
       </Typography>
       <Typography variant="body1">
         To get in touch, please email{' '}
-        <Link href="mailto:sayhi@saynothingandleave.com">sayhi@saynothingandleave.com</Link>
+        <Link href="mailto:sayhi@saynothingandleave.com">sayhi@saynothingandleave.com</Link>.
+      </Typography>
+      <Typography variant="body1" sx={{ textAlign: 'center' }}>
+        <Link href="mailto:sayhi@saynothingandleave.com">
+          <Button variant="contained">Send us an email</Button>
+        </Link>
       </Typography>
     </>
   );

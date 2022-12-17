@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, SxProps, Theme, Typography } from '@mui/material';
 import { PropsWithChildren } from 'react';
 import H1 from '../../typography/H1';
 import H2 from '../../typography/H2';
@@ -23,7 +23,6 @@ const StyledImage = styled.img<{ objectPosition?: string }>`
   object-position: ${({ objectPosition }) => objectPosition || '50% 50%'};
   width: ${({ width }) => width || '100%'};
   height: ${({ height }) => height || DEFAULT_HEIGHT};
-  margin: 20px 0 20px 0;
 `;
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement>, PropsWithChildren {
@@ -35,6 +34,7 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement>, PropsWithChil
   borderTop?: string;
   borderBottom?: string;
   objectPosition?: string;
+  sx?: SxProps<Theme>;
 }
 
 /**
@@ -51,10 +51,11 @@ const HeroImage: React.FC<Props> = ({
   body2,
   height,
   objectPosition,
+  sx,
   ...imgProps
 }) => {
   return (
-    <Box>
+    <Box sx={sx}>
       {h1 || h2 || subtitle1 || body1 || body2 || children ? (
         <Box sx={{ position: 'absolute', float: 'left', zIndex: 1 }}>
           <Container

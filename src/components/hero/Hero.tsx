@@ -1,16 +1,13 @@
 import React from 'react';
-import { Button, Container, Theme, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Button, Container, Theme, useTheme } from '@mui/material';
 import { Box } from '@mui/system';
 import styled from '@emotion/styled';
 import HeroVideo from './HeroVideo';
 import { COLORS } from '../../providers/ThemeProvider';
 import Underlined from '../typography/Underlined';
 import Bold from '../typography/Bold';
-import Oblique from '../typography/Oblique';
 import H1 from '../typography/H1';
 import Subtitle1 from '../typography/Subtitle1';
-import Subtitle2 from '../typography/Subtitle2';
-import { hexToRgb } from '../../services/color-service';
 
 const HERO_HEIGHT_PX = 600;
 
@@ -18,7 +15,7 @@ const Wrapper = styled(Box)`
   background-color: ${({ theme }) => theme.palette.grey[900]};
   width: 100vw;
   border-top: 20px solid black;
-  border-bottom: 20px solid ${({ theme }: { theme: Theme }) => theme.palette.grey[900]};
+  border-bottom: 30px solid ${({ theme }: { theme: Theme }) => theme.palette.primary.main};
 `;
 
 const Title: React.FC<React.PropsWithChildren> = ({ children }) => (

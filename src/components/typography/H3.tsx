@@ -20,7 +20,6 @@ const H3: React.FC<Props> = ({ children, variant, color, bgColor, noise = false,
       variant={variant || 'h3'}
       {...typographyProps}
       sx={{
-        marginBottom: 4,
         display: 'block',
         textShadow: `4px 2px 4px ${theme.palette.primary.light}`,
         ...sx,
