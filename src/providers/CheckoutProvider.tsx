@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const CheckoutContext = React.createContext<Props>({
-  isOpen: true,
+  isOpen: false,
   setIsOpen: (isOpen) => null,
 });
 
@@ -14,7 +14,7 @@ export const CheckoutContext = React.createContext<Props>({
  * Expose the current state of the checkout modal.
  */
 const CheckoutProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = React.useState(false);
   console.log(isOpen);
   return <CheckoutContext.Provider value={{ isOpen, setIsOpen }}>{children}</CheckoutContext.Provider>;
 };
