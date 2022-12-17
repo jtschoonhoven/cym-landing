@@ -1,30 +1,26 @@
 {
   "files": {
     "main.css": "/nursesoffice/static/css/main.1679913a.css",
-    "main.js": "/nursesoffice/static/js/main.47c96fe9.js",
+    "main.js": "/nursesoffice/static/js/main.c6db37c7.js",
     "static/media/teaser_md.mp4": "/nursesoffice/static/media/teaser_md.b566156b8311b7bdb02c.mp4",
     "static/media/phrenology.jpg": "/nursesoffice/static/media/phrenology.52dee58f364c3c587ffd.jpg",
-    "static/media/axon.jpg": "/nursesoffice/static/media/axon.2ecd075f4e881cf918f0.jpg",
+    "static/media/ripples.jpg": "/nursesoffice/static/media/ripples.f1a02092bf8cded6f7ea.jpg",
     "static/media/nurse.jpg": "/nursesoffice/static/media/nurse.abb8fb2985575fcce23b.jpg",
     "static/media/anxiety.jpg": "/nursesoffice/static/media/anxiety.3edb615969d46eceef63.jpg",
     "static/media/pill.jpg": "/nursesoffice/static/media/pill.8153e41e02308953f0f1.jpg",
     "static/media/surgeon.jpg": "/nursesoffice/static/media/surgeon.9a0dbe5376c53d08a046.jpg",
     "static/media/prompt-all-400-normal.woff": "/nursesoffice/static/media/prompt-all-400-normal.c475c304eec941b66047.woff",
     "static/media/balloons.jpg": "/nursesoffice/static/media/balloons.9a5262450a0936f51f24.jpg",
-    "static/media/staff.svg": "/nursesoffice/static/media/staff.edf0f1be1bf74a6bd4419f0b8f20b26c.svg",
     "static/media/prompt-latin-400-normal.woff2": "/nursesoffice/static/media/prompt-latin-400-normal.03568dfaabfa694e7a08.woff2",
     "static/media/prompt-latin-ext-400-normal.woff2": "/nursesoffice/static/media/prompt-latin-ext-400-normal.717fc72c75c07806e9bf.woff2",
     "static/media/prompt-thai-400-normal.woff2": "/nursesoffice/static/media/prompt-thai-400-normal.d0099dced32e7a5c5beb.woff2",
-    "static/media/brain.svg": "/nursesoffice/static/media/brain.90b49f36119d76523d419a74b6b17bae.svg",
     "static/media/prompt-vietnamese-400-normal.woff2": "/nursesoffice/static/media/prompt-vietnamese-400-normal.68d14b8a66db1db3d189.woff2",
-    "static/media/eye.svg": "/nursesoffice/static/media/eye.f453310d649ce6d4b484a3e32dc3d031.svg",
-    "static/media/heart.svg": "/nursesoffice/static/media/heart.2d86ac98e4e1fdba56abb0ea3839ba77.svg",
     "index.html": "/nursesoffice/index.html",
     "main.1679913a.css.map": "/nursesoffice/static/css/main.1679913a.css.map",
-    "main.47c96fe9.js.map": "/nursesoffice/static/js/main.47c96fe9.js.map"
+    "main.c6db37c7.js.map": "/nursesoffice/static/js/main.c6db37c7.js.map"
   },
   "entrypoints": [
     "static/css/main.1679913a.css",
-    "static/js/main.47c96fe9.js"
+    "static/js/main.c6db37c7.js"
   ]
 }
