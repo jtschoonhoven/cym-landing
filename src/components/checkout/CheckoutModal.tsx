@@ -18,16 +18,18 @@ const CheckoutModal: React.FC = () => {
       <Dialog fullWidth maxWidth="xl" open={isOpen} onClose={() => setIsOpen(false)} keepMounted>
         <Container sx={{ marginBottom: 1, marginTop: 2 }}>
           <Alert severity="error" sx={{ justifyContent: 'center' }}>
-            <AlertTitle>
-              <Bold>Warning! This performance includes the following:</Bold>
-            </AlertTitle>
-            <ul>
-              <li>Flashing lights</li>
-              <li>Incidental physical touch by performers</li>
-              <li>Themes of mental illness, injury, and medical trauma</li>
-              <li>Active movement in small spaces (may not be possible for people with limited mobility)</li>
-              <li>Participants will wear headphones and goggles and consume one (vegan) sugar pill</li>
-            </ul>
+            <Box style={{ display: isConfirmed ? 'none' : 'block' }}>
+              <AlertTitle>
+                <Bold>Warning! This performance includes the following:</Bold>
+              </AlertTitle>
+              <ul>
+                <li>Flashing lights</li>
+                <li>Incidental physical touch by performers</li>
+                <li>Themes of mental illness, injury, and medical trauma</li>
+                <li>Active movement in small spaces (may not be possible for people with limited mobility)</li>
+                <li>Participants will wear headphones and goggles and consume one (vegan) sugar pill</li>
+              </ul>
+            </Box>
             <Bold>I confirm that I am at least 18 years old and I am aware of the content warnings.</Bold>
             <br />
             <Button
@@ -37,7 +39,7 @@ const CheckoutModal: React.FC = () => {
               sx={{ width: '100%' }}
             >
               <Checkbox checked={isConfirmed} color="default" onChange={() => setIsConfirmed(!isConfirmed)} />{' '}
-              <Bold>Confirm and select tickets</Bold>
+              <Bold>{isConfirmed ? 'Confirmed' : 'Confirm and select tickets'}</Bold>
             </Button>
           </Alert>
         </Container>
