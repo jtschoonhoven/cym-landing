@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero';
 import styled from '@emotion/styled';
 import ToolbarAlert from './components/toolbar/ToolbarAlert';
 import About from './components/about/About';
+import CheckoutModal from './components/checkout/CheckoutModal';
 
 const AppWrapper = styled(Paper)`
   padding-bottom: 30px;
@@ -12,12 +13,15 @@ const AppWrapper = styled(Paper)`
 
 const App: React.FC = () => {
   return (
-    <AppWrapper>
-      <ToolbarAlert />
-      <Toolbar />
-      <Hero />
-      <About />
-    </AppWrapper>
+    <>
+      <CheckoutModal />
+      <AppWrapper>
+        <ToolbarAlert />
+        <Toolbar />
+        <Hero />
+        <About />
+      </AppWrapper>
+    </>
   );
 };
 

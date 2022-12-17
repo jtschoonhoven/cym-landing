@@ -101,6 +101,9 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiDialog: {
+      styleOverrides: { paper: { backgroundColor: '#fff', backgroundImage: 'none' } },
+    },
     MuiCssBaseline: {
       styleOverrides: `
       @font-face {
