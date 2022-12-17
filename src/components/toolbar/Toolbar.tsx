@@ -45,7 +45,7 @@ const Toolbar: React.FC = () => {
         <VerticallyCentered>
           <XlToolBar>
             {/* Drawer-open icon for mobile */}
-            <Typography variant="h6" component="div" sx={{ mr: 2, display: { sm: 'none' } }}>
+            <Typography variant="h6" component="div" sx={{ mr: 2 }}>
               <IconButton
                 color="inherit"
                 aria-label="open drawer"
