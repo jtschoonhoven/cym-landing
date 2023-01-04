@@ -2,6 +2,7 @@ import React from 'react';
 import { Alert, AlertTitle, Box, Button, Checkbox, Container, Dialog } from '@mui/material';
 import { CheckoutContext } from '../../providers/CheckoutProvider';
 import Bold from '../typography/Bold';
+import EmailSignup from '../email-signup/EmailSignup';
 
 export const CHECKOUT_MODAL_CONTAINER_ID = 'checkout-modal';
 export const CHECKOUT_MODAL_CONTAINER_HEIGHT_PX = 500;
@@ -17,7 +18,11 @@ const CheckoutModal: React.FC = () => {
     <>
       <Dialog fullWidth maxWidth="xl" open={isOpen} onClose={() => setIsOpen(false)} keepMounted>
         <Container sx={{ marginBottom: 1, marginTop: 2 }}>
-          <Alert severity="error" sx={{ justifyContent: 'center' }}>
+          <Alert severity="info" sx={{ justifyContent: 'center' }}>
+            Tickets are not yet available. Please check back soon.
+          </Alert>
+          <EmailSignup />
+          {/* <Alert severity="error" sx={{ justifyContent: 'center' }}>
             <Box style={{ display: isConfirmed ? 'none' : 'block' }}>
               <AlertTitle>
                 <Bold>Warning! This performance includes the following:</Bold>
@@ -41,15 +46,15 @@ const CheckoutModal: React.FC = () => {
               <Checkbox checked={isConfirmed} color="default" onChange={() => setIsConfirmed(!isConfirmed)} />{' '}
               <Bold>{isConfirmed ? 'Confirmed' : 'Confirm and select tickets'}</Bold>
             </Button>
-          </Alert>
+          </Alert> */}
         </Container>
-        <Box
+        {/* <Box
           id={CHECKOUT_MODAL_CONTAINER_ID}
           sx={{
             filter: isConfirmed ? '' : 'grayscale(1) blur(2px)',
             pointerEvents: isConfirmed ? '' : 'none',
           }}
-        />
+        /> */}
       </Dialog>
     </>
   );
