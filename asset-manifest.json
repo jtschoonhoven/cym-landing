@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b2fcd1b5.css",
-    "main.js": "/static/js/main.b9013169.js",
+    "main.js": "/static/js/main.c29aa4b7.js",
     "static/media/teaser_md.mp4": "/static/media/teaser_md.b566156b8311b7bdb02c.mp4",
     "static/media/phrenology.jpg": "/static/media/phrenology.52dee58f364c3c587ffd.jpg",
     "static/media/ripples.jpg": "/static/media/ripples.f1a02092bf8cded6f7ea.jpg",
@@ -21,10 +21,10 @@
     "static/media/prompt-vietnamese-400-normal.woff2": "/static/media/prompt-vietnamese-400-normal.68d14b8a66db1db3d189.woff2",
     "index.html": "/index.html",
     "main.b2fcd1b5.css.map": "/static/css/main.b2fcd1b5.css.map",
-    "main.b9013169.js.map": "/static/js/main.b9013169.js.map"
+    "main.c29aa4b7.js.map": "/static/js/main.c29aa4b7.js.map"
   },
   "entrypoints": [
     "static/css/main.b2fcd1b5.css",
-    "static/js/main.b9013169.js"
+    "static/js/main.c29aa4b7.js"
   ]
 }
