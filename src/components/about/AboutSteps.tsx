@@ -68,9 +68,9 @@ const AboutSteps: React.FC = () => {
             <TimelineFlexBox>
               <H3>Receive your complimentary Personality Assessment</H3>
               <Typography variant="body1">We'll get to know you so we can make you better.</Typography>
-              <Button variant="contained" size="large">
+              {/* <Button variant="contained" size="large">
                 Try it out online
-              </Button>
+              </Button> */}
             </TimelineFlexBox>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -86,10 +86,10 @@ const AboutSteps: React.FC = () => {
           <TimelineOppositeContent>
             <TimelineFlexBox>
               <H3>Ingest our patented Personality Improvement Pill</H3>
-              <Typography variant="body1">Appointments are available in 15 minute intervals.</Typography>
-              <Button variant="contained" size="large">
+              {/* <Typography variant="body1">Increase your sensitivity to the procedure.</Typography> */}
+              {/* <Button variant="contained" size="large">
                 Learn more
-              </Button>
+              </Button> */}
             </TimelineFlexBox>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -106,9 +106,9 @@ const AboutSteps: React.FC = () => {
             <TimelineFlexBox>
               <H3>Undergo our Personality Improvement Procedure</H3>
               <Typography variant="body1">A quick and painless intervention for a brand new you.</Typography>
-              <Button variant="contained" size="large">
+              {/* <Button variant="contained" size="large">
                 Open image gallery
-              </Button>
+              </Button> */}
             </TimelineFlexBox>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -124,7 +124,7 @@ const AboutSteps: React.FC = () => {
           <TimelineOppositeContent>
             <TimelineFlexBox>
               <H3>Live happily ever after</H3>
-              <Typography variant="body1">Nothing could possibly go wrong.</Typography>
+              {/* <Typography variant="body1">Nothing could possibly go wrong.</Typography> */}
             </TimelineFlexBox>
           </TimelineOppositeContent>
           <TimelineSeparator>
