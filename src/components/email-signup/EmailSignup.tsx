@@ -1,6 +1,4 @@
 import React from 'react';
-import H2 from '../typography/H2';
-import H3 from '../typography/H3';
 
 /**
  * An embedded Mailchimp email signup form.
