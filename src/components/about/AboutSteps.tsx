@@ -104,7 +104,7 @@ const AboutSteps: React.FC = () => {
         <TimelineItem sx={{ flexDirection: isSm ? 'row-reverse' : 'row' }}>
           <TimelineOppositeContent>
             <TimelineFlexBox>
-              <H3>Undergo our Personality Improvement Procedure</H3>
+              <H3>Undergo our Personality Editing Procedure</H3>
               <Typography variant="body1">A quick and painless intervention for a brand new you.</Typography>
               {/* <Button variant="contained" size="large">
                 Open image gallery

@@ -19,7 +19,12 @@ const AboutStaff: React.FC = () => {
           <AboutCard imgSrc={alex} title="Jonathan Schoonhoven" text="Writer, Producer" />
         </Grid>
         <Grid md={4} xs={6}>
-          <AboutCard imgSrc={ellie} title="Ellie DiBerardino" text="Writer, Producer" />
+          <AboutCard
+            imgSrc={ellie}
+            title="Ellie DiBerardino"
+            text="Writer, Producer"
+            href="https://elliediberardino.com/"
+          />
         </Grid>
         <Grid md={4} xs={6}>
           <AboutCard imgSrc={jon} title="Alex Howard" text="Tech Lead, Producer" />

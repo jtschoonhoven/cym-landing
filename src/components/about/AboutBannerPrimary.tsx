@@ -24,7 +24,7 @@ const AboutBannerPrimary: React.FC = () => {
       >
         <H2>The New Science of Personality Editing</H2>
         <Subtitle1 sx={{ marginTop: 0 }}>
-          Change Your Mind is leading provider of cosmetic personality adjustments. So you can be the person you're
+          Change Your Mind is the leading provider of cosmetic personality adjustments. So you can be the person you're
           truly meant to be.
         </Subtitle1>
       </HeroImage>
