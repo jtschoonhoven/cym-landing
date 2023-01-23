@@ -22,9 +22,9 @@ const AboutPress: React.FC = () => {
         radical and unusual "art."
       </Typography>
       <Typography variant="body1">
-        This immersive performance explores themes of identity, consciousness, and mental health. Participants are
-        subjected to psychologically intense stimuli and difficult choices. No matter which choice they make, they will
-        certainly <Oblique>change their mind</Oblique>.
+        This immersive performance explores themes of identity and consciousness. Participants are subjected to
+        psychologically intense stimuli and difficult choices. No matter which choice they make, they will certainly{' '}
+        <Oblique>change their mind</Oblique>.
       </Typography>
       <Typography variant="body1">
         Change Your Mind includes 1-1 interactions between participants and performers, binaural audio, 1-way mirrors,
