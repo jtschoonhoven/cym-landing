@@ -21,12 +21,22 @@ const Transition = React.forwardRef(function Transition(
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+const isNoSleepLanding = () => {
+  if (window.location.pathname.includes('nosleep')) {
+    return true;
+  }
+  if (window.location.hash.includes('nosleep')) {
+    return true;
+  }
+  return false;
+};
+
 /**
  * A landing page specific to the No Sleep show.
  * Displays a full-screen modal if "nosleep" is in the URL path.
  */
 const NoSleepLanding: React.FC = () => {
-  const [isOpen, setIsOpen] = React.useState(window.location.pathname.includes('nosleep'));
+  const [isOpen, setIsOpen] = React.useState(isNoSleepLanding());
 
   const onClose = () => {
     setIsOpen(false);
