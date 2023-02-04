@@ -5,6 +5,8 @@ import EmailSignup from '../email-signup/EmailSignup';
 import Subtitle1 from '../typography/Subtitle1';
 import HeroTitle from '../hero/HeroTitle';
 import wheelIcon from '../../assets/images/wheel-icon.png';
+import cymLogo from '../../assets/images/cym-title.png';
+import Grid from '@mui/material/Unstable_Grid2';
 
 /**
  * A MUI transition component.
@@ -24,7 +26,6 @@ const Transition = React.forwardRef(function Transition(
  * Displays a full-screen modal if "nosleep" is in the URL path.
  */
 const NoSleepLanding: React.FC = () => {
-  const theme = useTheme();
   const [isOpen, setIsOpen] = React.useState(window.location.pathname.includes('nosleep'));
 
   const onClose = () => {
@@ -35,39 +36,44 @@ const NoSleepLanding: React.FC = () => {
   return (
     <>
       <Dialog
-        fullWidth
-        maxWidth="xl"
+        fullScreen
         open={isOpen}
         onClose={onClose}
         TransitionComponent={Transition}
-        PaperProps={{ sx: { height: '100%', backgroundColor: theme.palette.grey[900] } }}
+        PaperProps={{ sx: { height: '100%', backgroundColor: 'black' } }}
       >
-        <Container
-          maxWidth="xs"
-          sx={{
-            height: '100%',
-            marginTop: 5,
-            // backgroundImage: `url("${wheelIcon}")`,
-            // backgroundRepeat: 'no-repeat',
-            // backgroundPosition: 'right',
-            // backgroundSize: 'contain',
-          }}
-        >
-          <Box
-            style={
-              {
-                // backgroundImage: `url("${wheelIcon}")`,
-                // backgroundRepeat: 'no-repeat',
-                // backgroundPosition: 'right',
-                // backgroundSize: 'contain',
-              }
-            }
-          ></Box>
-          <HeroTitle />
+        <Container maxWidth="xs" sx={{ height: '100%', marginTop: 5 }}>
+          <Grid container spacing={1}>
+            <Grid
+              xs={6}
+              sx={{
+                minHeight: '200px',
+                height: '20vh',
+                backgroundImage: `url("${cymLogo}")`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'right',
+                backgroundSize: 'contain',
+              }}
+            />
+            <Grid
+              xs={6}
+              sx={{
+                minHeight: '200px',
+                height: '20vh',
+                backgroundImage: `url("${wheelIcon}")`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'right',
+                backgroundSize: 'contain',
+              }}
+            />
+          </Grid>
           <EmailSignup
             title={
               <>
-                <Subtitle1 sx={{ marginBottom: 2 }}>Subscribe to be notified when tickets go on sale!</Subtitle1>
+                <Subtitle1 sx={{ marginBottom: 2 }}>
+                  Change Your Mind is an immersive show coming to San Francisco in April. Subscribe to be notified when
+                  tickets go on sale!
+                </Subtitle1>
               </>
             }
           />
