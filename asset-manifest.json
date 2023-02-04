@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.b2fcd1b5.css",
-    "main.js": "/static/js/main.d8da7372.js",
+    "main.js": "/static/js/main.8d666d11.js",
     "static/media/teaser_md.mp4": "/static/media/teaser_md.b566156b8311b7bdb02c.mp4",
     "static/media/phrenology.jpg": "/static/media/phrenology.52dee58f364c3c587ffd.jpg",
     "static/media/ripples.jpg": "/static/media/ripples.f1a02092bf8cded6f7ea.jpg",
     "static/media/axon.jpg": "/static/media/axon.2ecd075f4e881cf918f0.jpg",
     "static/media/nurse.jpg": "/static/media/nurse.abb8fb2985575fcce23b.jpg",
+    "static/media/cym-title.png": "/static/media/cym-title.2be8dac0e9b98b75c21b.png",
     "static/media/anxiety.jpg": "/static/media/anxiety.3edb615969d46eceef63.jpg",
     "static/media/pill.jpg": "/static/media/pill.8153e41e02308953f0f1.jpg",
     "static/media/surgeon.jpg": "/static/media/surgeon.9a0dbe5376c53d08a046.jpg",
     "static/media/prompt-all-400-normal.woff": "/static/media/prompt-all-400-normal.c475c304eec941b66047.woff",
     "static/media/balloons.jpg": "/static/media/balloons.9a5262450a0936f51f24.jpg",
     "static/media/ellie.jpg": "/static/media/ellie.027c16bad313c407e819.jpg",
+    "static/media/wheel-icon.png": "/static/media/wheel-icon.97b0f03ca670c3b7ddf4.png",
     "static/media/alex.jpg": "/static/media/alex.9f6f04a7e8b698ebe1e7.jpg",
     "static/media/jon.jpg": "/static/media/jon.16b453f99387cf0105d5.jpg",
     "static/media/prompt-latin-400-normal.woff2": "/static/media/prompt-latin-400-normal.03568dfaabfa694e7a08.woff2",
@@ -21,10 +23,10 @@
     "static/media/prompt-vietnamese-400-normal.woff2": "/static/media/prompt-vietnamese-400-normal.68d14b8a66db1db3d189.woff2",
     "index.html": "/index.html",
     "main.b2fcd1b5.css.map": "/static/css/main.b2fcd1b5.css.map",
-    "main.d8da7372.js.map": "/static/js/main.d8da7372.js.map"
+    "main.8d666d11.js.map": "/static/js/main.8d666d11.js.map"
   },
   "entrypoints": [
     "static/css/main.b2fcd1b5.css",
-    "static/js/main.d8da7372.js"
+    "static/js/main.8d666d11.js"
   ]
 }
