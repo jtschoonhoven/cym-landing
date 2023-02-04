@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import ToolbarAlert from './components/toolbar/ToolbarAlert';
 import About from './components/about/About';
 import CheckoutModal from './components/checkout/CheckoutModal';
+import NoSleepLanding from './components/no-sleep/NoSleepLanding';
 
 const AppWrapper = styled(Paper)`
   padding-bottom: 30px;
@@ -16,6 +17,7 @@ const App: React.FC = () => {
     <>
       <CheckoutModal />
       <AppWrapper>
+        <NoSleepLanding />
         <ToolbarAlert />
         <Toolbar />
         <Hero />
