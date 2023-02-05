@@ -41,6 +41,7 @@ const NoSleepLanding: React.FC = () => {
   const onClose = () => {
     setIsOpen(false);
     window.location.pathname = '/';
+    window.location.hash = '';
   };
 
   return (
