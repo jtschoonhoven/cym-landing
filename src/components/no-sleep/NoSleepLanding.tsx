@@ -85,6 +85,7 @@ const NoSleepLanding: React.FC = () => {
             </Grid>
             <Grid xs={12}>
               <EmailSignup
+                color="white"
                 title={
                   <>
                     <Subtitle1 sx={{ marginBottom: 2 }}>
