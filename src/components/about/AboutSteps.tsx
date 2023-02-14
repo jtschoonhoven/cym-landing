@@ -12,7 +12,7 @@ import {
 import H3 from '../typography/H3';
 import HeroImage from '../util/hero-image/HeroImage';
 import nurseImg from '../../assets/images/nurse.jpg';
-import anxietyImg from '../../assets/images/anxiety.jpg';
+import wheelTeaserImg from '../../assets/images/wheel-teaser.png';
 import pillImg from '../../assets/images/pill.jpg';
 import balloonsImg from '../../assets/images/balloons.jpg';
 import surgeonImg from '../../assets/images/surgeon.jpg';
@@ -50,7 +50,9 @@ const AboutSteps: React.FC = () => {
           <TimelineOppositeContent>
             <TimelineFlexBox>
               <H3>Book your first appointment</H3>
-              <Typography variant="body1">Appointments are available in 15 minute intervals.</Typography>
+              <Typography variant="body1">
+                Appointments are available in 15 minute intervals at our Haight St. clinic in San Francisco.
+              </Typography>
               <ButtonGetTickets size="large" />
             </TimelineFlexBox>
           </TimelineOppositeContent>
@@ -66,8 +68,10 @@ const AboutSteps: React.FC = () => {
         <TimelineItem>
           <TimelineOppositeContent>
             <TimelineFlexBox>
-              <H3>Receive your complimentary Personality Assessment</H3>
-              <Typography variant="body1">We'll get to know you so we can make you better.</Typography>
+              <H3>Diagnose your Personality Pathology</H3>
+              <Typography variant="body1">
+                Answer some simple questions and we'll determine which Personality Pathology is holding you back.
+              </Typography>
               {/* <Button variant="contained" size="large">
                 Try it out online
               </Button> */}
@@ -78,7 +82,7 @@ const AboutSteps: React.FC = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={anxietyImg} height="300px" />
+            <HeroImage src={wheelTeaserImg} height="300px" />
           </TimelineContent>
         </TimelineItem>
         {/* PILL */}
@@ -104,7 +108,7 @@ const AboutSteps: React.FC = () => {
         <TimelineItem sx={{ flexDirection: isSm ? 'row-reverse' : 'row' }}>
           <TimelineOppositeContent>
             <TimelineFlexBox>
-              <H3>Undergo our Personality Editing Procedure</H3>
+              <H3>Complete the Personality Edit Procedure</H3>
               <Typography variant="body1">A quick and painless intervention for a brand new you.</Typography>
               {/* <Button variant="contained" size="large">
                 Open image gallery
@@ -123,7 +127,7 @@ const AboutSteps: React.FC = () => {
         <TimelineItem sx={{ flexDirection: isSm ? 'row-reverse' : 'row' }}>
           <TimelineOppositeContent>
             <TimelineFlexBox>
-              <H3>Live happily ever after</H3>
+              <H3>Unlock the real you. Be the person you're meant to be.</H3>
               {/* <Typography variant="body1">Nothing could possibly go wrong.</Typography> */}
             </TimelineFlexBox>
           </TimelineOppositeContent>

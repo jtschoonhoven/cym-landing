@@ -1,9 +1,10 @@
 import React from 'react';
 import { Typography, Unstable_Grid2 as Grid } from '@mui/material';
 import AboutCard from './AboutCard';
-import alex from '../../assets/images/alex.jpg';
-import ellie from '../../assets/images/ellie.jpg';
-import jon from '../../assets/images/jon.jpg';
+import alex from '../../assets/images/alex.png';
+import ellie from '../../assets/images/ellie.png';
+import jon from '../../assets/images/jon.png';
+import larry from '../../assets/images/larry.png';
 import H2 from '../typography/H2';
 
 /**
@@ -15,10 +16,13 @@ const AboutStaff: React.FC = () => {
       <H2 sx={{ marginBottom: 0 }}>Staff</H2>
       <Typography variant="body1">Our expert technicians are eager to assist you.</Typography>
       <Grid container spacing={3} marginTop={1}>
-        <Grid md={4} xs={6}>
-          <AboutCard imgSrc={alex} title="Jonathan Schoonhoven" text="Writer, Producer" />
+        <Grid md={3} xs={6}>
+          <AboutCard imgSrc={larry} title="Dr. Masc" text="Performed by Larry Bogad" href="https://www.lmbogad.com/" />
         </Grid>
-        <Grid md={4} xs={6}>
+        <Grid md={3} xs={6}>
+          <AboutCard imgSrc={jon} title="Jon Schoonhoven" text="Director, Writer, Producer" />
+        </Grid>
+        <Grid md={3} xs={6}>
           <AboutCard
             imgSrc={ellie}
             title="Ellie DiBerardino"
@@ -26,8 +30,8 @@ const AboutStaff: React.FC = () => {
             href="https://elliediberardino.com/"
           />
         </Grid>
-        <Grid md={4} xs={6}>
-          <AboutCard imgSrc={jon} title="Alex Howard" text="Tech Lead, Producer" />
+        <Grid md={3} xs={6}>
+          <AboutCard imgSrc={alex} title="Alex Howard" text="Tech Lead, Producer" />
         </Grid>
       </Grid>
     </>
