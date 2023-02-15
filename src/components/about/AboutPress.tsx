@@ -18,8 +18,8 @@ const AboutPress: React.FC = () => {
         is the first production by artist collective <Bold>[Say Nothing and Leave] </Bold>
         to be made available to the general public. Born in the seedy underbelly of the Bay Area's underground immersive
         theater scene, Change Your Mind offers a rare opportunity to witness the gritty, transgressive performance style
-        that is unique to San Francisco. We are proud to be located in the spiritual home of our favorite brand of
-        radical and unusual "art."
+        that is unique to San Francisco. We are proud to be located on Haight St., the spiritual home of our favorite
+        brand of radical and unusual "art."
       </Typography>
       <Typography variant="body1">
         This immersive performance explores themes of identity and consciousness. Participants are subjected to
@@ -28,8 +28,8 @@ const AboutPress: React.FC = () => {
       </Typography>
       <Typography variant="body1">
         Change Your Mind includes 1-1 interactions between participants and performers, binaural audio, 1-way mirrors,
-        deep faked video, personality exams, flashing lights, unscripted moments, branching narrative, and, in one
-        scene, all of these simultaneously. The result is heartbreaking, intense, and ultimately, uplifting.
+        flashing lights, unscripted moments, branching narrative, and, in one scene, all of these simultaneously. The
+        result is heartbreaking, intense, and ultimately, uplifting.
       </Typography>
       <Typography variant="body1">
         To get in touch, please email{' '}
