@@ -15,7 +15,7 @@ const onOrderComplete = () => {
 
 const CONFIG = {
   widgetType: 'checkout',
-  eventId: '567446286117',
+  eventId: '568447079517',
   iframeContainerId: CHECKOUT_MODAL_CONTAINER_ID,
   iframeContainerHeight: CHECKOUT_MODAL_CONTAINER_HEIGHT_PX,
   onOrderComplete,
