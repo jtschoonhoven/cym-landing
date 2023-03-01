@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, AlertTitle, Box, Button, Checkbox, Container, Dialog } from '@mui/material';
+import { Alert, AlertTitle, Box, Button, Checkbox, Container, Dialog, Typography } from '@mui/material';
 import { CheckoutContext } from '../../providers/CheckoutProvider';
 import Bold from '../typography/Bold';
 import EmailSignup from '../email-signup/EmailSignup';
@@ -28,15 +28,20 @@ const CheckoutModal: React.FC = () => {
               <Bold>Warning! This performance includes the following:</Bold>
             </AlertTitle>
             <ul>
-              <li>Flashing lights</li>
+              <li>Loud noises</li>
+              <li>Bright and flashing lights</li>
               <li>Themes of mental illness and hospitalization</li>
-              <li>Movement that may be challenging for people with limited mobility (wheelchairs OK)</li>
-              <li>Use of over-ear headphones and goggles, put on by a technician</li>
+              <li>Movement that may be challenging for people with limited mobility (most wheelchairs OK)</li>
               <li>Sight and hearing restricted by headphones and goggles</li>
-              <li>Ingesting one sugar pill (vegan and gluten free)</li>
             </ul>
+            <Typography variant="body2">
+              That said, this is not a "scary" experience and we hope you leave feeling inspired.
+            </Typography>
+            <br />
             {/* </Box> */}
-            {/* <Bold>I confirm that I am at least 18 years old and I am aware of the content warnings.</Bold> */}
+            <Bold>
+              By purchasing a ticket I confirm I am at least 18 years old and I am aware of the content warnings.
+            </Bold>
             <br />
             {/* <Button
               variant="contained"
