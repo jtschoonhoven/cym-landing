@@ -5,7 +5,6 @@
 
 import { CHECKOUT_MODAL_CONTAINER_HEIGHT_PX, CHECKOUT_MODAL_CONTAINER_ID } from '../components/checkout/CheckoutModal';
 
-export const EVENT_URL = 'https://www.eventbrite.com/e/change-your-mind-the-immersive-experience-tickets-490870335387';
 const ORDER_COMPLETE_LISTENERS: Array<() => void> = [];
 
 const onOrderComplete = () => {
@@ -16,7 +15,7 @@ const onOrderComplete = () => {
 
 const CONFIG = {
   widgetType: 'checkout',
-  eventId: '490870335387',
+  eventId: '567446286117',
   iframeContainerId: CHECKOUT_MODAL_CONTAINER_ID,
   iframeContainerHeight: CHECKOUT_MODAL_CONTAINER_HEIGHT_PX,
   onOrderComplete,
@@ -57,5 +56,4 @@ export default {
   init,
   addOnOrderCompleteListener,
   removeOnOrderCompleteListener,
-  EVENT_URL,
 };

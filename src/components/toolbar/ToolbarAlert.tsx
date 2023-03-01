@@ -1,5 +1,6 @@
-import { AppBar as MuiAppBar, Toolbar as MuiToolbar, Typography, styled } from '@mui/material';
 import React from 'react';
+import { AppBar as MuiAppBar, Toolbar as MuiToolbar, Typography, styled, Link } from '@mui/material';
+import { CheckoutContext } from '../../providers/CheckoutProvider';
 
 const AppBar = styled(MuiAppBar)(({ theme }) => ({
   height: 'auto',
@@ -27,10 +28,17 @@ const AlertText = styled(Typography)`
  * Alert text that displays above the primary toolbar, used for ticketing announcements, etc.
  */
 const ToolbarAlert: React.FC = () => {
+  const { setIsOpen } = React.useContext(CheckoutContext);
   return (
     <AppBar position="static" color="secondary">
       <Toolbar>
-        <AlertText>Coming to San Francisco April, 2023. Tickets on sale soon.</AlertText>
+        <AlertText>
+          Coming to San Francisco April, 2023.{' '}
+          <Link sx={{ color: 'white' }} onClick={() => setIsOpen(true)}>
+            Tickets on sale now
+          </Link>
+          !
+        </AlertText>
       </Toolbar>
     </AppBar>
   );

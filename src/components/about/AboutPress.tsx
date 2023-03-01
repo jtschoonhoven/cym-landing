@@ -28,8 +28,8 @@ const AboutPress: React.FC = () => {
       </Typography>
       <Typography variant="body1">
         Change Your Mind includes 1-1 interactions between participants and performers, binaural audio, 1-way mirrors,
-        flashing lights, unscripted moments, branching narrative, and, in one scene, all of these simultaneously. The
-        result is heartbreaking, intense, and ultimately, uplifting.
+        unscripted moments, branching narrative, and, in one scene, all of these simultaneously. The result is
+        heartbreaking, intense, and ultimately, uplifting.
       </Typography>
       <Typography variant="body1">
         To get in touch, please email{' '}
