@@ -10,11 +10,21 @@ export const CheckoutContext = React.createContext<Props>({
   setIsOpen: (isOpen) => null,
 });
 
+const isTicketingLanding = () => {
+  if (window.location.pathname.includes('tickets')) {
+    return true;
+  }
+  if (window.location.hash.includes('tickets')) {
+    return true;
+  }
+  return false;
+};
+
 /**
  * Expose the current state of the checkout modal.
  */
 const CheckoutProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(isTicketingLanding());
   return <CheckoutContext.Provider value={{ isOpen, setIsOpen }}>{children}</CheckoutContext.Provider>;
 };
 
