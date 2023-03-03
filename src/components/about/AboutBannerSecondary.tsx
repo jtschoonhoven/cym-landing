@@ -20,7 +20,7 @@ const AboutBannerSecondary: React.FC = () => {
         <Subtitle1>
           <Bold>Change Your Mind </Bold>is the world's first clinic to offer fully custom personality adjustments. Our
           experimental technology unlocks rapid and dramatic changes in identity, habits, anxiety, agreeableness, and
-          much more. All from the comfort of our luxurious San Francisco clinic. For less than the cost of a single
+          much more, all from the comfort of our luxurious San Francisco clinic. For less than the cost of a single
           session of traditional talk therapy, you can have a brand new personality—in days instead of months.
         </Subtitle1>
       </HeroImage>
