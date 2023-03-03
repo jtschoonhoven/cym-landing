@@ -7,12 +7,14 @@ import {
   Box,
   Container,
   Dialog,
+  Link,
   Typography,
   useTheme,
 } from '@mui/material';
 import { CheckoutContext } from '../../providers/CheckoutProvider';
 import Bold from '../typography/Bold';
 import { ExpandMore } from '@mui/icons-material';
+import { setInnerHTML } from '../util/inner-html';
 
 export const CHECKOUT_MODAL_CONTAINER_ID = 'checkout-modal';
 export const CHECKOUT_MODAL_CONTAINER_HEIGHT_PX = 500;
@@ -53,11 +55,50 @@ const CheckoutModal: React.FC = () => {
               </ul>
               <Typography variant="body2">
                 <Bold>That said, this is not a "scary" experience and we hope you leave feeling inspired!</Bold>
-                <br /><br />If you are interested in undergoing a personality editing treatment but are not able to afford the
-                treatment price at this time, please reach out to us at <a href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Reduced%20price%20ticket%20request">sayhi@saynothingandleave.com</a>.
-                <br /><br />
-                Appointments are available between <Bold>April 7 and April 29</Bold>. Specific appointment times listed below.
               </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMore />}>
+              <Bold>FAQs</Bold>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Bold>How long does this experience take?</Bold>
+              <ul>
+                <li>You can expect to be in and out of the clinic within an hour.</li>
+              </ul>
+              <Bold>Can I book an appointment with friends?</Bold>
+              <ul>
+                <li>
+                  You are welcome to book appointments as a group, but please note that you will each undergo your own
+                  individual treatment alone.
+                </li>
+              </ul>
+              <Bold>Is this wheelchair accessible?</Bold>
+              <ul>
+                <li>
+                  Yes. Normal wheelchairs under 34" wide are fine. Note that there is a tight corner in the venue that
+                  may not be accessible to some electric scooters. Please email{' '}
+                  <a href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Accessibility inquiry">
+                    sayhi@saynothingandleave.com
+                  </a>{' '}
+                  with any questions.
+                </li>
+              </ul>
+              <Bold>
+                I’m really interested in receiving a personality editing treatment, but I cannot afford it. What should
+                I do?
+              </Bold>
+              <ul>
+                <li>
+                  We want to do whatever we can to ensure everyone can benefit from cosmetic personality enhancement.
+                  Please email us at{' '}
+                  <a href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Reduced%20price%20ticket%20request">
+                    sayhi@saynothingandleave.com
+                  </a>{' '}
+                  and we will see what we can do.
+                </li>
+              </ul>
             </AccordionDetails>
           </Accordion>
           <br />
@@ -69,7 +110,18 @@ const CheckoutModal: React.FC = () => {
           //   filter: isConfirmed ? '' : 'grayscale(1) blur(2px)',
           //   pointerEvents: isConfirmed ? '' : 'none',
           // }}
-        />
+        >
+          <span
+            dangerouslySetInnerHTML={{ __html: `` }}
+            ref={(element) => {
+              if (!element) return;
+              setInnerHTML(
+                element,
+                `<div class="tt-widget"><div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/events/saynothingandleave/869469/select-date?ref=website_widget" target="_blank">Click here to buy tickets</a><br /><small><a href="https://www.tickettailor.com?rf=wdg_138656" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://cdn.tickettailor.com/js/widgets/min/widget.js" data-url="https://www.tickettailor.com/events/saynothingandleave/869469/select-date" data-type="inline" data-inline-minimal="true" data-inline-show-logo="false" data-inline-bg-fill="false" data-inline-inherit-ref-from-url-param="" data-inline-ref="website_widget"></script></div>`,
+              );
+            }}
+          ></span>
+        </Box>
       </Dialog>
     </>
   );
