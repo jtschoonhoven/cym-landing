@@ -10,7 +10,7 @@ export const CheckoutContext = React.createContext<Props>({
   setIsOpen: (isOpen) => null,
 });
 
-const isTicketingLanding = () => window.location.pathname.includes('tickets')
+const isTicketingLanding = () => window.location.hash.includes('tickets');
 
 /**
  * Expose the current state of the checkout modal.
