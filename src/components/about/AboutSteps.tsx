@@ -51,7 +51,7 @@ const AboutSteps: React.FC = () => {
             <TimelineFlexBox>
               <H3>Book your first appointment</H3>
               <Typography variant="body1">
-                Appointments are available in 15 minute intervals at our Haight St. clinic in San Francisco.
+                Appointments are available in 50 minute intervals at our Haight St. clinic in San Francisco.
               </Typography>
               <ButtonGetTickets size="large" />
             </TimelineFlexBox>
@@ -90,7 +90,7 @@ const AboutSteps: React.FC = () => {
           <TimelineOppositeContent>
             <TimelineFlexBox>
               <H3>Ingest our patented Personality Improvement Pill</H3>
-              {/* <Typography variant="body1">Increase your sensitivity to the procedure.</Typography> */}
+              <Typography variant="body1">It's vegan and gluten free.</Typography>
               {/* <Button variant="contained" size="large">
                 Learn more
               </Button> */}
