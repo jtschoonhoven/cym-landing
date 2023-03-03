@@ -8,6 +8,7 @@ import AboutIcons from './AboutIcons';
 import AboutBannerPrimary from './AboutBannerPrimary';
 import AboutBannerSecondary from './AboutBannerSecondary';
 import AboutStaff from './AboutStaff';
+import AboutFAQs, { ABOUT_FAQS_PRIMARY_ID } from './AboutFAQs';
 
 /**
  * The primary component for below-the-fold content.
@@ -21,6 +22,7 @@ const About: React.FC = () => {
       <AboutBannerSecondary />
       {/* <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutIcons />} /> */}
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutStaff />} />
+      <Container id={ABOUT_FAQS_PRIMARY_ID} maxWidth="lg" sx={{ marginTop: 5, paddingTop: 5, borderTop:`30px solid ${theme.palette.secondary.dark}` }} children={<AboutFAQs />} />
       <HeroImage
         src={axonImg}
         sx={{ marginTop: 4 }}

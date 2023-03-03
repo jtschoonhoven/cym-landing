@@ -6,6 +6,7 @@ import { ABOUT_BANNER_PRIMARY_ID } from '../about/AboutBannerPrimary';
 import { ABOUT_PRESS_ID } from '../about/AboutPress';
 import Subtitle1 from '../typography/Subtitle1';
 import Colored from '../typography/Colored';
+import { ABOUT_FAQS_PRIMARY_ID } from '../about/AboutFAQs';
 
 const WIDTH_PX = 240;
 
@@ -55,6 +56,10 @@ const ToolbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
             <Divider />
             <ListItem>
               <ToolbarDrawerButton text="About" href={`#${ABOUT_BANNER_PRIMARY_ID}`} />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ToolbarDrawerButton text="FAQs" href={`#${ABOUT_FAQS_PRIMARY_ID}`} />
             </ListItem>
             <Divider />
             <ListItem>

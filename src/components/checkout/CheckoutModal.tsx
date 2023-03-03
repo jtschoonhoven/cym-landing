@@ -15,6 +15,7 @@ import { CheckoutContext } from '../../providers/CheckoutProvider';
 import Bold from '../typography/Bold';
 import { ExpandMore } from '@mui/icons-material';
 import { setInnerHTML } from '../util/inner-html';
+import FrequentlyAskedQuestionsList from '../faq/FrequentlyAskedQuestionsList';
 
 export const CHECKOUT_MODAL_CONTAINER_ID = 'checkout-modal';
 export const CHECKOUT_MODAL_CONTAINER_HEIGHT_PX = 500;
@@ -63,42 +64,7 @@ const CheckoutModal: React.FC = () => {
               <Bold>FAQs</Bold>
             </AccordionSummary>
             <AccordionDetails>
-              <Bold>How long does this experience take?</Bold>
-              <ul>
-                <li>You can expect to be in and out of the clinic within an hour.</li>
-              </ul>
-              <Bold>Can I book an appointment with friends?</Bold>
-              <ul>
-                <li>
-                  You are welcome to book appointments as a group, but please note that you will each undergo your own
-                  individual treatment alone.
-                </li>
-              </ul>
-              <Bold>Is this wheelchair accessible?</Bold>
-              <ul>
-                <li>
-                  Yes. Normal wheelchairs under 34" wide are fine. Note that there is a tight corner in the venue that
-                  may not be accessible to some electric scooters. Please email{' '}
-                  <a href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Accessibility inquiry">
-                    sayhi@saynothingandleave.com
-                  </a>{' '}
-                  with any questions.
-                </li>
-              </ul>
-              <Bold>
-                I’m really interested in receiving a personality editing treatment, but I cannot afford it. What should
-                I do?
-              </Bold>
-              <ul>
-                <li>
-                  We want to do whatever we can to ensure everyone can benefit from cosmetic personality enhancement.
-                  Please email us at{' '}
-                  <a href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Reduced%20price%20ticket%20request">
-                    sayhi@saynothingandleave.com
-                  </a>{' '}
-                  and we will see what we can do.
-                </li>
-              </ul>
+              <FrequentlyAskedQuestionsList />
             </AccordionDetails>
           </Accordion>
           <br />
