@@ -34,7 +34,7 @@ const ToolbarAlert: React.FC = () => {
       <Toolbar>
         <AlertText>
           Coming to San Francisco April, 2023.{' '}
-          <Link sx={{ color: 'white' }} onClick={() => setIsOpen(true)}>
+          <Link sx={{ color: 'white', cursor: "pointer" }} onClick={() => setIsOpen(true)}>
             Tickets on sale now
           </Link>
           !

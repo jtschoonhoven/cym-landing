@@ -53,6 +53,10 @@ const CheckoutModal: React.FC = () => {
               </ul>
               <Typography variant="body2">
                 <Bold>That said, this is not a "scary" experience and we hope you leave feeling inspired!</Bold>
+                <br /><br />If you are interested in undergoing a personality editing treatment but are not able to afford the
+                treatment price at this time, please reach out to us at <a href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Reduced%20price%20ticket%20request">sayhi@saynothingandleave.com</a>.
+                <br /><br />
+                Appointments are available between <Bold>April 7 and April 29</Bold>. Specific appointment times listed below.
               </Typography>
             </AccordionDetails>
           </Accordion>
