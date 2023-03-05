@@ -6,7 +6,7 @@ const FrequentlyAskedQuestionsList = () => (
     <Bold>Is Change Your Mind a real healthcare facility?</Bold>
     <ul>
       <li>
-        No. This is a piece of interactive theater where you will have a fictional experience set in a mental health
+        No. This is a piece of interactive theater where you will have a fictional experience set in a wellness
         facility.
       </li>
     </ul>
@@ -20,12 +20,12 @@ const FrequentlyAskedQuestionsList = () => (
     </ul>
     <Bold>How long does this experience take?</Bold>
     <ul>
-      <li>You can expect to be in and out of the clinic within an hour.</li>
+      <li>You can expect to be in and out of the clinic in less than one hour.</li>
     </ul>
     <Bold>What time should I arrive?</Bold>
     <ul>
       <li>
-        Please arrive at your scheduled appointment time—no need to arrive early. If you arrive {'>'}15min late, we may
+        Please arrive at your scheduled appointment time—no need to arrive early. If you arrive {'>'}10min late, we may
         not be able to acommodate you.
       </li>
     </ul>
@@ -45,7 +45,7 @@ const FrequentlyAskedQuestionsList = () => (
     </ul>
     <Bold>How much do tickets cost?</Bold>
     <ul>
-      <li>Tickets are $50 or $60 depending on appointment time.</li>
+      <li>Tickets are $49</li>
     </ul>
     <Bold>
       I’m really interested in receiving a personality editing treatment, but I cannot afford it. What should I do?
