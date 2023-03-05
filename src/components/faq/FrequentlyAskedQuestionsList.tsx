@@ -26,7 +26,7 @@ const FrequentlyAskedQuestionsList = () => (
     <ul>
       <li>
         Please arrive at your scheduled appointment time—no need to arrive early. If you arrive {'>'}10min late, we may
-        not be able to acommodate you.
+        not be able to accommodate you.
       </li>
     </ul>
     <Bold>What should I wear?</Bold>
@@ -40,7 +40,7 @@ const FrequentlyAskedQuestionsList = () => (
     <ul>
       <li>
         You are welcome to book appointments as a group, but please note that you will each undergo your own individual
-        treatment alone.
+        treatment.
       </li>
     </ul>
     <Bold>How much do tickets cost?</Bold>
