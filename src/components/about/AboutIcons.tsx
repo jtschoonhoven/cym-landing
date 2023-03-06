@@ -5,7 +5,6 @@ import eyeImg from '../../assets/images/eye.svg';
 import staffImg from '../../assets/images/staff.svg';
 import brainImg from '../../assets/images/brain.svg';
 import heartImg from '../../assets/images/heart.svg';
-import H2 from '../typography/H2';
 
 /**
  * A grid of Cards with associated actions.

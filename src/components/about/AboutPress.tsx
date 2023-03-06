@@ -3,6 +3,7 @@ import React from 'react';
 import Bold from '../typography/Bold';
 import H2 from '../typography/H2';
 import Oblique from '../typography/Oblique';
+import AboutPressKit from './AboutPressKit';
 
 export const ABOUT_PRESS_ID = 'press-info';
 
@@ -15,7 +16,10 @@ const AboutPress: React.FC = () => {
       <H2 id={ABOUT_PRESS_ID}>Press Info</H2>
       <Typography variant="body1">
         <Bold>Change Your Mind </Bold>
-        is the first production by artist collective <Link href="https://saynothingandleave.com"><Bold>[Say Nothing and Leave] </Bold></Link>
+        is the first production by artist collective{' '}
+        <Link href="https://saynothingandleave.com">
+          <Bold>[Say Nothing and Leave] </Bold>
+        </Link>
         to be made available to the general public. Born in the seedy underbelly of the Bay Area's underground immersive
         theater scene, Change Your Mind offers a rare opportunity to witness the gritty, transgressive performance style
         that is unique to San Francisco. We are proud to be located on Haight St., the spiritual home of our favorite
@@ -42,6 +46,7 @@ const AboutPress: React.FC = () => {
           </Button>
         </Link>
       </Typography>
+      <AboutPressKit />
     </>
   );
 };
