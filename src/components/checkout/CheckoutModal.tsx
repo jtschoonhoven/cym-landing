@@ -64,7 +64,7 @@ const CheckoutModal: React.FC = () => {
               <Bold>FAQs</Bold>
             </AccordionSummary>
             <AccordionDetails>
-              <FrequentlyAskedQuestionsList />
+              <FrequentlyAskedQuestionsList isTicketsPage />
             </AccordionDetails>
           </Accordion>
           <br />
