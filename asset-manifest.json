@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b2fcd1b5.css",
-    "main.js": "/static/js/main.ff3e823a.js",
+    "main.js": "/static/js/main.a417d40e.js",
     "static/media/teaser_md.mp4": "/static/media/teaser_md.b566156b8311b7bdb02c.mp4",
     "static/media/larry-sincere.png": "/static/media/larry-sincere.f8a0a74d085139888eda.png",
     "static/media/larry-aliens.png": "/static/media/larry-aliens.7a4357d431eede508952.png",
@@ -30,10 +30,10 @@
     "index.html": "/index.html",
     "static/media/cym-title.svg": "/static/media/cym-title.d6770df43277eb79c7ef4d9038b5f6c9.svg",
     "main.b2fcd1b5.css.map": "/static/css/main.b2fcd1b5.css.map",
-    "main.ff3e823a.js.map": "/static/js/main.ff3e823a.js.map"
+    "main.a417d40e.js.map": "/static/js/main.a417d40e.js.map"
   },
   "entrypoints": [
     "static/css/main.b2fcd1b5.css",
-    "static/js/main.ff3e823a.js"
+    "static/js/main.a417d40e.js"
   ]
 }
