@@ -46,7 +46,7 @@ const AboutPress: React.FC = () => {
               Send us an email
             </Button>
           </Link>
-          <Link href="http://serve.saynothingandleave.com/api/public/dl/taZ2kylX" target="_blank">
+          <Link href="http://serve.saynothingandleave.com/share/taZ2kylX" target="_blank">
             <Button variant="contained" size="large">
               Download press kit
             </Button>
