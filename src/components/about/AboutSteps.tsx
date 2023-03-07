@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, styled, Typography } from '@mui/material';
+import { Box, styled, Typography } from '@mui/material';
 import {
   Timeline,
   TimelineConnector as MuiTimelineConnector,
@@ -11,11 +11,11 @@ import {
 } from '@mui/lab';
 import H3 from '../typography/H3';
 import HeroImage from '../util/hero-image/HeroImage';
-import nurseImg from '../../assets/images/nurse.jpg';
+import larryHandsImg from '../../assets/images/larry-hands.png';
 import wheelTeaserImg from '../../assets/images/wheel-teaser.png';
 import pillImg from '../../assets/images/pill.jpg';
 import balloonsImg from '../../assets/images/balloons.jpg';
-import surgeonImg from '../../assets/images/surgeon.jpg';
+import limbicImg from '../../assets/images/limbic-system.png';
 import ButtonGetTickets from '../button/ButtonGetTickets';
 import { useIsSmallerThan } from '../../services/size-service';
 
@@ -61,7 +61,7 @@ const AboutSteps: React.FC = () => {
             <TimelineConnector sx={{ backgroundColor: 'black' }} />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={nurseImg} height="300px" objectPosition="80% 50%" />
+            <HeroImage src={larryHandsImg} height="300px" objectPosition="50% 50%" />
           </TimelineContent>
         </TimelineItem>
         {/* ASSESS */}
@@ -120,7 +120,7 @@ const AboutSteps: React.FC = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={surgeonImg} height="300px" />
+            <HeroImage src={limbicImg} height="300px" />
           </TimelineContent>
         </TimelineItem>
         {/* END */}

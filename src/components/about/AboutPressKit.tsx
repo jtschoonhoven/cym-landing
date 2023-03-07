@@ -44,7 +44,7 @@ const AboutPressKit: React.FC = () => {
                 src={img.src}
                 alt={img.title}
                 loading="lazy"
-                style={{ overflow: 'hidden', objectFit: 'cover', objectPosition: '70% 30%' }}
+                style={{ overflow: 'hidden', objectFit: 'cover', objectPosition: '50% 30%' }}
                 onClick={(e) => onClick(img.src)}
               />
             </ImageListItem>
