@@ -1,6 +1,6 @@
 import { Box, Fade, ImageList, ImageListItem, Modal } from '@mui/material';
 import React from 'react';
-import textLogoImg from '../../assets/images/cym-title.svg';
+import textLogoImg from '../../assets/images/cym-title.png';
 import circleLogoImg from '../../assets/images/circle-logo.svg';
 import limbicImg from '../../assets/images/limbic-system.png';
 import larryHandsImg from '../../assets/images/larry-hands.png';
@@ -44,7 +44,12 @@ const AboutPressKit: React.FC = () => {
                 src={img.src}
                 alt={img.title}
                 loading="lazy"
-                style={{ overflow: 'hidden', objectFit: 'cover', objectPosition: '50% 30%' }}
+                style={{
+                  overflow: 'hidden',
+                  objectFit: 'cover',
+                  objectPosition: '50% 30%',
+                  backgroundColor: '#262A3C',
+                }}
                 onClick={(e) => onClick(img.src)}
               />
             </ImageListItem>
