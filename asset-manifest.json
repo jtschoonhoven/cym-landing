@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.b2fcd1b5.css",
-    "main.js": "/static/js/main.a417d40e.js",
+    "main.js": "/static/js/main.95bf7dcd.js",
+    "static/media/limbic-system.png": "/static/media/limbic-system.96e986bc038b89753300.png",
+    "static/media/larry-hands.png": "/static/media/larry-hands.43fb3ce76631d17b1b4e.png",
     "static/media/teaser_md.mp4": "/static/media/teaser_md.b566156b8311b7bdb02c.mp4",
     "static/media/larry-sincere.png": "/static/media/larry-sincere.f8a0a74d085139888eda.png",
     "static/media/larry-aliens.png": "/static/media/larry-aliens.7a4357d431eede508952.png",
-    "static/media/limbic-system.png": "/static/media/limbic-system.f19da7341ba409a478df.png",
-    "static/media/larry-hands.png": "/static/media/larry-hands.da6ef69cabc2a17bedb8.png",
     "static/media/wheel-teaser.png": "/static/media/wheel-teaser.8297ce0699afc26fe6c4.png",
     "static/media/phrenology.jpg": "/static/media/phrenology.52dee58f364c3c587ffd.jpg",
     "static/media/alex.png": "/static/media/alex.b99b44211233d1540041.png",
@@ -15,10 +15,8 @@
     "static/media/larry.png": "/static/media/larry.125dd6cadc9e66fb695b.png",
     "static/media/ripples.jpg": "/static/media/ripples.f1a02092bf8cded6f7ea.jpg",
     "static/media/axon.jpg": "/static/media/axon.2ecd075f4e881cf918f0.jpg",
-    "static/media/nurse.jpg": "/static/media/nurse.abb8fb2985575fcce23b.jpg",
     "static/media/cym-title.png": "/static/media/cym-title.2be8dac0e9b98b75c21b.png",
     "static/media/pill.jpg": "/static/media/pill.8153e41e02308953f0f1.jpg",
-    "static/media/surgeon.jpg": "/static/media/surgeon.9a0dbe5376c53d08a046.jpg",
     "static/media/prompt-all-400-normal.woff": "/static/media/prompt-all-400-normal.c475c304eec941b66047.woff",
     "static/media/balloons.jpg": "/static/media/balloons.9a5262450a0936f51f24.jpg",
     "static/media/wheel-icon.png": "/static/media/wheel-icon.97b0f03ca670c3b7ddf4.png",
@@ -30,10 +28,10 @@
     "index.html": "/index.html",
     "static/media/cym-title.svg": "/static/media/cym-title.d6770df43277eb79c7ef4d9038b5f6c9.svg",
     "main.b2fcd1b5.css.map": "/static/css/main.b2fcd1b5.css.map",
-    "main.a417d40e.js.map": "/static/js/main.a417d40e.js.map"
+    "main.95bf7dcd.js.map": "/static/js/main.95bf7dcd.js.map"
   },
   "entrypoints": [
     "static/css/main.b2fcd1b5.css",
-    "static/js/main.a417d40e.js"
+    "static/js/main.95bf7dcd.js"
   ]
 }
