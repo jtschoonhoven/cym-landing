@@ -12,12 +12,12 @@ const AppWrapper = styled(Paper)`
   padding-bottom: 30px;
 `;
 
-const useScrollToLocation = () => {
-  const scrolledRef = React.useRef(false);
+const App: React.FC = () => {
   const { hash } = window.location;
   const hashRef = React.useRef(hash);
+  const scrolledRef = React.useRef(false);
 
-  React.useEffect(() => {
+  window.onload = () => {
     if (hash) {
       // We want to reset if the hash has changed
       if (hashRef.current !== hash) {
@@ -35,11 +35,7 @@ const useScrollToLocation = () => {
         }
       }
     }
-  });
-};
-
-const App: React.FC = () => {
-  useScrollToLocation();
+  };
 
   return (
     <>
