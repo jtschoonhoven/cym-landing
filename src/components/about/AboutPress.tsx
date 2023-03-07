@@ -1,4 +1,4 @@
-import { Button, Link, Typography } from '@mui/material';
+import { Button, Link, Stack, Typography } from '@mui/material';
 import React from 'react';
 import Bold from '../typography/Bold';
 import H2 from '../typography/H2';
@@ -40,11 +40,18 @@ const AboutPress: React.FC = () => {
         <Link href="mailto:sayhi@saynothingandleave.com">sayhi@saynothingandleave.com</Link>.
       </Typography>
       <Typography variant="body1" sx={{ textAlign: 'center' }}>
-        <Link href="mailto:sayhi@saynothingandleave.com">
-          <Button variant="contained" size="large">
-            Send us an email
-          </Button>
-        </Link>
+        <Stack spacing={2} direction="row" alignItems="center" justifyContent="center">
+          <Link href="mailto:sayhi@saynothingandleave.com">
+            <Button variant="contained" size="large">
+              Send us an email
+            </Button>
+          </Link>
+          <Link href="http://serve.saynothingandleave.com/api/public/dl/taZ2kylX/" target="_blank">
+            <Button variant="contained" size="large">
+              Download press kit
+            </Button>
+          </Link>
+        </Stack>
       </Typography>
       <AboutPressKit />
     </>
