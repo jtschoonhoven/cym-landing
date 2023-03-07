@@ -15,7 +15,7 @@ interface Props extends PropsWithChildren {
 const HeroVideo: React.FC<Props> = ({ height, initialWidthPx, children }) => {
   const [width, setWidth] = React.useState(initialWidthPx || window.outerWidth);
   const containerRef = React.createRef<HTMLDivElement>();
-  const [isMuted, setMuted] = React.useState(false);
+  const [isMuted, setMuted] = React.useState(true);
 
   // Watch for resize events and change the video width
   React.useEffect(() => {
