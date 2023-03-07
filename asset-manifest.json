@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b2fcd1b5.css",
-    "main.js": "/static/js/main.b05eee0c.js",
+    "main.js": "/static/js/main.959f9ede.js",
     "static/media/limbic-system.png": "/static/media/limbic-system.96e986bc038b89753300.png",
     "static/media/larry-hands.png": "/static/media/larry-hands.43fb3ce76631d17b1b4e.png",
     "static/media/teaser_md.mp4": "/static/media/teaser_md.b566156b8311b7bdb02c.mp4",
@@ -27,10 +27,10 @@
     "static/media/circle-logo.svg": "/static/media/circle-logo.e8d8fc91a4ea606851e1e4ee1ec8d1cd.svg",
     "index.html": "/index.html",
     "main.b2fcd1b5.css.map": "/static/css/main.b2fcd1b5.css.map",
-    "main.b05eee0c.js.map": "/static/js/main.b05eee0c.js.map"
+    "main.959f9ede.js.map": "/static/js/main.959f9ede.js.map"
   },
   "entrypoints": [
     "static/css/main.b2fcd1b5.css",
-    "static/js/main.b05eee0c.js"
+    "static/js/main.959f9ede.js"
   ]
 }
