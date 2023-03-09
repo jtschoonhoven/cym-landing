@@ -22,6 +22,14 @@ const SafetyInformation = () => {
       simulations of medical procedures.
       <br />
       <br />
+      <Bold>COVID policy:</Bold> Masks are not required, but participants are welcome to wear a mask if they choose.
+      Please do not attend if you have symptoms of COVID-19. If you develop symptoms before your showing, contact us at{' '}
+      <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Cancellation%20request">
+        sayhi@saynothingandleave.com
+      </Link>{' '}
+      to cancel or reschedule.
+      <br />
+      <br />
       If you have any questions regarding safety or accessibility, please contact us at{' '}
       <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Safety%20Inquiry">
         sayhi@saynothingandleave.com
