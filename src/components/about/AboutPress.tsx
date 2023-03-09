@@ -37,11 +37,11 @@ const AboutPress: React.FC = () => {
       </Typography>
       <Typography variant="body1">
         To get in touch, please email{' '}
-        <Link href="mailto:sayhi@saynothingandleave.com">sayhi@saynothingandleave.com</Link>.
+        <Link href="mailto:press@saynothingandleave.com">press@saynothingandleave.com</Link>.
       </Typography>
       <Typography variant="body1" sx={{ textAlign: 'center' }}>
         <Stack spacing={2} direction="row" alignItems="center" justifyContent="center">
-          <Link href="mailto:sayhi@saynothingandleave.com">
+          <Link href="mailto:press@saynothingandleave.com">
             <Button variant="contained" size="large">
               Send us an email
             </Button>
