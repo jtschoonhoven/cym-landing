@@ -45,13 +45,6 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
           be able to accommodate you.
         </li>
       </ul>
-      <Bold>What should I wear?</Bold>
-      <ul>
-        <li>
-          Please refrain from wearing any large, extravagant headwear that would difficult for you to quickly remove.
-          Other than that, any clothing is fine.
-        </li>
-      </ul>
       <Bold>Can I book an appointment with friends?</Bold>
       <ul>
         <li>
@@ -79,15 +72,7 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       </ul>
       <Bold>Is there an age limit?</Bold>
       <ul>
-        <li>Since this is a solo experience, Change Your Mind is only available to those 18 and older.</li>
-      </ul>
-      <Bold>Is this a scary experience?</Bold>
-      <ul>
-        <li>
-          Portions of the experience may be sensorially overwhelming, and some themes (mental illness, hospitalization)
-          may be a bit unsettling for some participants. However, this is not a horror experience, there are no jump
-          scares, and we hope the conclusion of the experience leaves you feeling uplifted and inspired.
-        </li>
+        <li>Change Your Mind is only available to those 18 and older.</li>
       </ul>
       <Bold>Is this an escape room?</Bold>
       <ul>
@@ -96,7 +81,7 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       <Bold>Is this wheelchair accessible?</Bold>
       <ul>
         <li>
-          Yes. Normal wheelchairs under 34" wide are fine. Note that there is a tight corner in the venue that may not
+          Yes. Wheelchairs under 34" wide are fine. Note that there is a tight corner in the venue that may not
           be accessible to some electric scooters. Please email{' '}
           <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Accessibility inquiry">
             sayhi@saynothingandleave.com

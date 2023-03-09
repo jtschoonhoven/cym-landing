@@ -16,6 +16,7 @@ import Bold from '../typography/Bold';
 import { ExpandMore } from '@mui/icons-material';
 import { setInnerHTML } from '../util/inner-html';
 import FrequentlyAskedQuestionsList from '../faq/FrequentlyAskedQuestionsList';
+import SafetyInformation from '../faq/SafetyInformation';
 
 export const CHECKOUT_MODAL_CONTAINER_ID = 'checkout-modal';
 export const CHECKOUT_MODAL_CONTAINER_HEIGHT_PX = 500;
@@ -57,6 +58,14 @@ const CheckoutModal: React.FC = () => {
               <Typography variant="body2">
                 <Bold>That said, this is not a "scary" experience and we hope you leave feeling inspired!</Bold>
               </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMore />}>
+              <Bold>Safety Information</Bold>
+            </AccordionSummary>
+            <AccordionDetails>
+              <SafetyInformation />
             </AccordionDetails>
           </Accordion>
           <Accordion>
