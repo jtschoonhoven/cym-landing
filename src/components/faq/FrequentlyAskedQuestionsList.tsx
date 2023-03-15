@@ -68,7 +68,7 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       </ul>
       <Bold>What is your cancellation and refund policy?</Bold>
       <ul>
-        <li>Please contact <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Cancellation%20request">sayhi@saynothingandleave.com</Link> if you need to cancel or reschedule your show time.</li>
+        <li>We can offer full refunds if you contact us to cancel at least one week before your show time. Please contact <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Cancellation%20request">sayhi@saynothingandleave.com</Link> if you need to cancel or reschedule.</li>
       </ul>
       <Bold>Is there an age limit?</Bold>
       <ul>

@@ -15,7 +15,7 @@ const SafetyInformation = () => {
       <Bold>Content Advisories:</Bold> Mental illness, hospitalization, dark confined spaces.
       <br />
       <br />
-      <Bold>Physical Risks:</Bold> Bright and flashing lights may present a risk to photosensitive participants.
+      <Bold>Physical Risks:</Bold> Bright and flashing lights may present a risk to photosensitive participants. Small rooms may be difficult to navigate for those with limited mobility.
       <br />
       <br />
       <Bold>Psychological Risks:</Bold> This experience involves deep introspection, intense emotional stimuli, and
