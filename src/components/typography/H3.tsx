@@ -1,6 +1,5 @@
 import { Typography, TypographyProps, useTheme } from '@mui/material';
 import React from 'react';
-import { hexToRgb } from '../../services/color-service';
 import Colored from './Colored';
 
 interface Props extends React.PropsWithChildren, TypographyProps {
@@ -15,13 +14,14 @@ interface Props extends React.PropsWithChildren, TypographyProps {
  */
 const H3: React.FC<Props> = ({ children, variant, color, bgColor, noise = false, sx, ...typographyProps }) => {
   const theme = useTheme();
+  color = color || theme.palette.grey[900];
   return (
     <Typography
       variant={variant || 'h3'}
       {...typographyProps}
       sx={{
         display: 'block',
-        textShadow: `4px 2px 4px ${theme.palette.primary.light}`,
+        // textShadow: `4px 2px 4px ${theme.palette.primary.light}`,
         ...sx,
       }}
     >

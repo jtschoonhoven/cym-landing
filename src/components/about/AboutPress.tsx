@@ -53,7 +53,7 @@ const AboutPress: React.FC = () => {
           </Link>
         </Stack>
       </Typography>
-      <AboutPressKit />
+      {/* <AboutPressKit /> */}
     </>
   );
 };

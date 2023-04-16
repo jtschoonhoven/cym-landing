@@ -6,7 +6,7 @@ import '@fontsource/prompt';
 export const COLORS = {
   raisin: '#2f3140',
   wintergreen: '#b93995',
-  opal: '#c7ebda',
+  opal: '#fcf5e3',
   cyan: '#00FFFF',
   yellow: '#FFFF00',
   magenta: '#FF00FF',
