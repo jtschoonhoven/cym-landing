@@ -68,13 +68,13 @@ const AboutStaff: React.FC = () => {
           <AboutCard imgSrc={bryan} title="Bryan  Bigler" text="CYM Technician" href="https://www.bryanbigler.com" />
         </Grid>
         <Grid md={2} xs={4}>
-          <AboutCard imgSrc={dan} title="Danthony Jacobs" text="CYM Technician" href="https://danthony.website" />
+          <AboutCard imgSrc={dan} title="Danthony" text="CYM Technician" href="https://danthony.website" />
         </Grid>
         <Grid md={2} xs={4}>
           <AboutCard imgSrc={elise} title="Elise Liu" text="CYM Technician" />
         </Grid>
         <Grid md={2} xs={4}>
-          <AboutCard imgSrc={evin} title="Evin Wolverton" text="CYM Technician" />
+          <AboutCard imgSrc={evin} title="Evin Wolverton" text="CYM Technician" href="https://evinwolverton.com" />
         </Grid>
         <Grid md={2} xs={4}>
           <AboutCard imgSrc={hannah} title="Hannah Schoonhoven" text="CYM Technician" />
