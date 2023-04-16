@@ -11,11 +11,12 @@ import {
 } from '@mui/lab';
 import H3 from '../typography/H3';
 import HeroImage from '../util/hero-image/HeroImage';
-import larryHandsImg from '../../assets/images/Dr-Masc-with-Folded-Hands-by-LM-Bogad-photographer-Alex-Howard.png';
-import wheelTeaserImg from '../../assets/images/wheel-teaser.png';
-import pillImg from '../../assets/images/pill.jpg';
-import balloonsImg from '../../assets/images/balloons.jpg';
-import limbicImg from '../../assets/images/limbic-system.png';
+
+import pillImg from '../../assets/images/pills.jpg';
+import appointmentImg from '../../assets/images/appointment.jpg';
+import diagnoseImg from '../../assets/images/diagnose.jpg';
+import recoveryImg from '../../assets/images/recovery.jpg';
+import headsetImg from '../../assets/images/headset.jpg';
 import ButtonGetTickets from '../button/ButtonGetTickets';
 import { useIsSmallerThan } from '../../services/size-service';
 
@@ -61,7 +62,7 @@ const AboutSteps: React.FC = () => {
             <TimelineConnector sx={{ backgroundColor: 'black' }} />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={larryHandsImg} height="300px" objectPosition="50% 50%" />
+            <HeroImage src={appointmentImg} height="300px" objectPosition="50% 50%" />
           </TimelineContent>
         </TimelineItem>
         {/* ASSESS */}
@@ -82,7 +83,7 @@ const AboutSteps: React.FC = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={wheelTeaserImg} height="300px" />
+            <HeroImage src={diagnoseImg} height="300px" />
           </TimelineContent>
         </TimelineItem>
         {/* PILL */}
@@ -120,14 +121,14 @@ const AboutSteps: React.FC = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={limbicImg} height="300px" />
+            <HeroImage src={headsetImg} height="300px" />
           </TimelineContent>
         </TimelineItem>
         {/* END */}
         <TimelineItem sx={{ flexDirection: isSm ? 'row-reverse' : 'row' }}>
           <TimelineOppositeContent>
             <TimelineFlexBox>
-              <H3>Unlock the real you. Be the person you're meant to be.</H3>
+              <H3>Be the person you're truly meant to be.</H3>
               {/* <Typography variant="body1">Nothing could possibly go wrong.</Typography> */}
             </TimelineFlexBox>
           </TimelineOppositeContent>
@@ -135,7 +136,7 @@ const AboutSteps: React.FC = () => {
             <TimelineDot>5</TimelineDot>
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={balloonsImg} height="300px" />
+            <HeroImage src={recoveryImg} height="300px" />
           </TimelineContent>
         </TimelineItem>
       </Timeline>

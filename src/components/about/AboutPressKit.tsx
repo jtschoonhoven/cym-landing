@@ -1,11 +1,11 @@
 import { Box, Fade, ImageList, ImageListItem, Modal } from '@mui/material';
 import React from 'react';
-import textLogoImg from '../../assets/images/text-logo.png';
-import circleLogoImg from '../../assets/images/circle-logo.svg';
-import limbicImg from '../../assets/images/limbic-system.png';
-import larryHandsImg from '../../assets/images/Dr-Masc-with-Folded-Hands-by-LM-Bogad-photographer-Alex-Howard.png';
-import larrySincereImg from '../../assets/images/Dr-Masc-looking-Sincere-by-LM-Bogad-photographer-Alex-Howard.png';
-import larryAliensImg from '../../assets/images/Dr-Masc-with-Open-Hands-by-LM-Bogad-photographer-Alex-Howard.png';
+// import textLogoImg from '../../assets/images/text-logo.png';
+// import circleLogoImg from '../../assets/images/circle-logo.svg';
+// import limbicImg from '../../assets/images/limbic-system.png';
+// import larryHandsImg from '../../assets/images/Dr-Masc-with-Folded-Hands-by-LM-Bogad-photographer-Alex-Howard.png';
+// import larrySincereImg from '../../assets/images/Dr-Masc-looking-Sincere-by-LM-Bogad-photographer-Alex-Howard.png';
+// import larryAliensImg from '../../assets/images/Dr-Masc-with-Open-Hands-by-LM-Bogad-photographer-Alex-Howard.png';
 
 interface ImgInfo {
   src: string;
@@ -13,12 +13,12 @@ interface ImgInfo {
 }
 
 const IMAGES: ImgInfo[] = [
-  { src: textLogoImg, title: 'Text Logo' },
-  { src: larrySincereImg, title: 'Dr. Masc' },
-  { src: larryAliensImg, title: 'Dr. Masc' },
-  { src: larryHandsImg, title: 'Dr. Masc' },
-  { src: limbicImg, title: 'Harmful Antisocial Tendencies' },
-  { src: circleLogoImg, title: 'Circle Logo' },
+  // { src: textLogoImg, title: 'Text Logo' },
+  // { src: larrySincereImg, title: 'Dr. Masc' },
+  // { src: larryAliensImg, title: 'Dr. Masc' },
+  // { src: larryHandsImg, title: 'Dr. Masc' },
+  // { src: limbicImg, title: 'Harmful Antisocial Tendencies' },
+  // { src: circleLogoImg, title: 'Circle Logo' },
 ];
 
 const AboutPressKit: React.FC = () => {

@@ -3,8 +3,8 @@ import React from 'react';
 import { TransitionProps } from '@mui/material/transitions';
 import EmailSignup from '../email-signup/EmailSignup';
 import Subtitle1 from '../typography/Subtitle1';
-import wheelIcon from '../../assets/images/wheel-icon.png';
-import cymLogo from '../../assets/images/text-logo.png';
+// import wheelIcon from '../../assets/images/wheel-icon.png';
+// import cymLogo from '../../assets/images/text-logo.png';
 import Grid from '@mui/material/Unstable_Grid2';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -65,7 +65,7 @@ const NoSleepLanding: React.FC = () => {
                 sx={{
                   minHeight: '200px',
                   height: '20vh',
-                  backgroundImage: `url("${cymLogo}")`,
+                  // backgroundImage: `url("${cymLogo}")`,
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'right',
                   backgroundSize: 'contain',
@@ -76,7 +76,7 @@ const NoSleepLanding: React.FC = () => {
                 sx={{
                   minHeight: '200px',
                   height: '20vh',
-                  backgroundImage: `url("${wheelIcon}")`,
+                  // backgroundImage: `url("${wheelIcon}")`,
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'right',
                   backgroundSize: 'contain',
