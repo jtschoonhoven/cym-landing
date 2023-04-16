@@ -4,9 +4,9 @@ import { grey } from '@mui/material/colors';
 import '@fontsource/prompt';
 
 export const COLORS = {
-  raisin: '#25282F',
-  wintergreen: '#569388',
-  opal: '#BFD9D4',
+  raisin: '#2f3140',
+  wintergreen: '#b93995',
+  opal: '#c7ebda',
   cyan: '#00FFFF',
   yellow: '#FFFF00',
   magenta: '#FF00FF',
