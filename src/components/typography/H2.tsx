@@ -1,6 +1,7 @@
 import { Typography, TypographyProps, useTheme } from '@mui/material';
 import React from 'react';
 import Colored from './Colored';
+import { COLORS } from '../../providers/ThemeProvider';
 
 interface Props extends React.PropsWithChildren, TypographyProps {
   component?: React.ElementType;
@@ -14,7 +15,7 @@ interface Props extends React.PropsWithChildren, TypographyProps {
 const H2: React.FC<Props> = ({ children, variant, color, bgColor, sx, ...typographyProps }) => {
   const theme = useTheme();
   color = color === undefined ? theme.palette.secondary.light : color;
-  bgColor = bgColor === undefined ? 'black' : bgColor;
+  bgColor = bgColor === undefined ? COLORS.raisin : bgColor;
   return (
     <Typography
       variant={variant || 'h2'}
@@ -25,7 +26,7 @@ const H2: React.FC<Props> = ({ children, variant, color, bgColor, sx, ...typogra
         ...sx,
       }}
     >
-      <Colored color={color} bgColor={bgColor}>
+      <Colored color={color} bgColor={bgColor} noise={false}>
         {children}
       </Colored>
     </Typography>

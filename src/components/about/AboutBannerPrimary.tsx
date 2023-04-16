@@ -4,6 +4,7 @@ import HeroImage from '../util/hero-image/HeroImage';
 import Subtitle1 from '../typography/Subtitle1';
 import { useTheme } from '@mui/material';
 import H2 from '../typography/H2';
+import { COLORS } from '../../providers/ThemeProvider';
 
 export const ABOUT_BANNER_PRIMARY_ID = 'about';
 
@@ -19,8 +20,8 @@ const AboutBannerPrimary: React.FC = () => {
         src={ripplesImg}
         sx={{ marginTop: 0 }}
         height="500px"
-        borderTop={`50px solid ${theme.palette.grey[900]}`}
-        borderBottom={`50px solid ${theme.palette.grey[900]}`}
+        borderTop={`50px solid ${COLORS.raisin}`}
+        borderBottom={`50px solid ${COLORS.raisin}`}
       >
         <H2>The New Science of Personality Editing</H2>
         <Subtitle1 sx={{ marginTop: 0 }}>

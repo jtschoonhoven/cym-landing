@@ -9,6 +9,7 @@ import AboutBannerSecondary from './AboutBannerSecondary';
 import AboutStaff from './AboutStaff';
 import AboutFAQs, { ABOUT_FAQS_PRIMARY_ID } from './AboutFAQs';
 import AboutCredits from './AboutCredits';
+import AboutPressQuote from './AboutPressQuote';
 
 /**
  * The primary component for below-the-fold content.
@@ -17,6 +18,7 @@ const About: React.FC = () => {
   const theme = useTheme();
   return (
     <>
+      <AboutPressQuote />
       <AboutBannerPrimary />
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutSteps />} />
       <AboutBannerSecondary />
