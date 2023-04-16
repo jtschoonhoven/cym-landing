@@ -20,7 +20,7 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       <Bold>When can I experience Change Your Mind?</Bold>
       <ul>
         <li>
-          Tickets are available almost every Thurs-Sun throughout April 2023.{' '}
+          Tickets are available almost every Tues-Sun throughout April 2023.{' '}
           {isTicketsPage ? (
             'View specific timeslots below.'
           ) : (
@@ -68,7 +68,13 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       </ul>
       <Bold>What is your cancellation and refund policy?</Bold>
       <ul>
-        <li>We can offer full refunds if you contact us to cancel at least one week before your show time. Please contact <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Cancellation%20request">sayhi@saynothingandleave.com</Link> if you need to cancel or reschedule.</li>
+        <li>
+          We can offer full refunds if you contact us to cancel at least one week before your show time. Please contact{' '}
+          <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Cancellation%20request">
+            sayhi@saynothingandleave.com
+          </Link>{' '}
+          if you need to cancel or reschedule.
+        </li>
       </ul>
       <Bold>Is there an age limit?</Bold>
       <ul>
@@ -81,8 +87,8 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       <Bold>Is this wheelchair accessible?</Bold>
       <ul>
         <li>
-          Yes. Wheelchairs under 34" wide are fine. Note that there is a tight corner in the venue that may not
-          be accessible to some electric scooters. Please email{' '}
+          Yes. Wheelchairs under 34" wide are fine. Note that there is a tight corner in the venue that may not be
+          accessible to some electric scooters. Please email{' '}
           <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Accessibility inquiry">
             sayhi@saynothingandleave.com
           </Link>{' '}
