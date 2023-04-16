@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Unstable_Grid2 as Grid, Box } from '@mui/material';
+import { Typography, Unstable_Grid2 as Grid } from '@mui/material';
 import AboutCard from './AboutCard';
 import alex from '../../assets/images/alex.png';
 import ellie from '../../assets/images/ellie.png';
@@ -7,6 +7,7 @@ import jon from '../../assets/images/jon.png';
 import larry from '../../assets/images/larry.png';
 import H2 from '../typography/H2';
 import alyssa from '../../assets/images/alyssa.png';
+import bryan from '../../assets/images/bryan.png';
 import david from '../../assets/images/david.png';
 import dan from '../../assets/images/dan.png';
 import elise from '../../assets/images/elise.png';
@@ -62,6 +63,9 @@ const AboutStaff: React.FC = () => {
         </Grid>
         <Grid md={3} xs={6}>
           <AboutCard imgSrc={jae} title="Jae Starfox" text="CYM Head Technician" />
+        </Grid>
+        <Grid md={3} xs={6}>
+          <AboutCard imgSrc={bryan} title="Bryan  Bigler" text="CYM Technician" href="https://www.bryanbigler.com" />
         </Grid>
         <Grid md={3} xs={6}>
           <AboutCard imgSrc={dan} title="Danthony Jacobs" text="CYM Technician" href="https://danthony.website" />
