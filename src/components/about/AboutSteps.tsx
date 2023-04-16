@@ -11,7 +11,7 @@ import {
 } from '@mui/lab';
 import H3 from '../typography/H3';
 import HeroImage from '../util/hero-image/HeroImage';
-import larryHandsImg from '../../assets/images/larry-hands.png';
+import larryHandsImg from '../../assets/images/Dr-Masc-with-Folded-Hands-by-LM-Bogad-photographer-Alex-Howard.png';
 import wheelTeaserImg from '../../assets/images/wheel-teaser.png';
 import pillImg from '../../assets/images/pill.jpg';
 import balloonsImg from '../../assets/images/balloons.jpg';

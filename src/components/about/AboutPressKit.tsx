@@ -1,11 +1,11 @@
 import { Box, Fade, ImageList, ImageListItem, Modal } from '@mui/material';
 import React from 'react';
-import textLogoImg from '../../assets/images/cym-title.png';
+import textLogoImg from '../../assets/images/text-logo.png';
 import circleLogoImg from '../../assets/images/circle-logo.svg';
 import limbicImg from '../../assets/images/limbic-system.png';
-import larryHandsImg from '../../assets/images/larry-hands.png';
-import larrySincereImg from '../../assets/images/larry-sincere.png';
-import larryAliensImg from '../../assets/images/larry-aliens.png';
+import larryHandsImg from '../../assets/images/Dr-Masc-with-Folded-Hands-by-LM-Bogad-photographer-Alex-Howard.png';
+import larrySincereImg from '../../assets/images/Dr-Masc-looking-Sincere-by-LM-Bogad-photographer-Alex-Howard.png';
+import larryAliensImg from '../../assets/images/Dr-Masc-with-Open-Hands-by-LM-Bogad-photographer-Alex-Howard.png';
 
 interface ImgInfo {
   src: string;

@@ -4,7 +4,7 @@ import { TransitionProps } from '@mui/material/transitions';
 import EmailSignup from '../email-signup/EmailSignup';
 import Subtitle1 from '../typography/Subtitle1';
 import wheelIcon from '../../assets/images/wheel-icon.png';
-import cymLogo from '../../assets/images/cym-title.png';
+import cymLogo from '../../assets/images/text-logo.png';
 import Grid from '@mui/material/Unstable_Grid2';
 import CloseIcon from '@mui/icons-material/Close';
 
