@@ -55,37 +55,37 @@ const AboutStaff: React.FC = () => {
       </H2>
       <Typography variant="body1">Our expert technicians are eager to assist you.</Typography>
       <Grid container spacing={3} marginTop={1}>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={david} title="David Kaplan" text="Technical Support" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={alyssa} title="Alyssa Larson" text="CYM Head Technician" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={jae} title="Jae Starfox" text="CYM Head Technician" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={bryan} title="Bryan  Bigler" text="CYM Technician" href="https://www.bryanbigler.com" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={dan} title="Danthony Jacobs" text="CYM Technician" href="https://danthony.website" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={elise} title="Elise Liu" text="CYM Technician" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={evin} title="Evin Wolverton" text="CYM Technician" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={hannah} title="Hannah Schoonhoven" text="CYM Technician" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={lindsay} title="Lindsay Berkowitz" text="CYM Technician" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={ren} title="S. Caldwell" text="CYM Technician" />
         </Grid>
-        <Grid md={3} xs={6}>
+        <Grid md={2} xs={4}>
           <AboutCard imgSrc={ryan} title="Ryan Wolff" text="CYM Technician" />
         </Grid>
       </Grid>
