@@ -1,6 +1,6 @@
 import React from 'react';
 import { COLORS } from '../../providers/ThemeProvider';
-import { Box, useTheme } from '@mui/material';
+import { Box, Container, useTheme } from '@mui/material';
 import H2 from '../typography/H2';
 
 const AboutPressQuote: React.FC = () => {
@@ -14,10 +14,12 @@ const AboutPressQuote: React.FC = () => {
           borderBottom: `50px solid ${COLORS.raisin}`,
         }}
       >
-        <H2 sx={{ margin: 0, fontStyle: 'italic', display: 'block' }}>
-          “Gets right what much immersive theater gets wrong”
-        </H2>
-        <H2 sx={{ margin: 0, backgroundColor: COLORS.raisin }}>— SF Chronicle</H2>
+        <Container sx={{ backgroundColor: COLORS.raisin }}>
+          <H2 sx={{ margin: 0, fontStyle: 'italic', display: 'block' }}>
+            “Gets right what much immersive theater gets wrong”
+          </H2>
+          <H2 sx={{ margin: 0, backgroundColor: COLORS.raisin }}>— SF Chronicle</H2>
+        </Container>
       </Box>
     </>
   );
