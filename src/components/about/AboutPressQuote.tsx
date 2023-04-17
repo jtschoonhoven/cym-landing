@@ -1,10 +1,9 @@
 import React from 'react';
 import { COLORS } from '../../providers/ThemeProvider';
-import { Box, Container, useTheme } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import H2 from '../typography/H2';
 
 const AboutPressQuote: React.FC = () => {
-  const theme = useTheme();
   return (
     <>
       <Box
@@ -14,7 +13,7 @@ const AboutPressQuote: React.FC = () => {
           borderBottom: `50px solid ${COLORS.raisin}`,
         }}
       >
-        <Container sx={{ backgroundColor: COLORS.raisin }}>
+        <Container sx={{ backgroundColor: COLORS.raisin }} style={{ maxWidth: 'initial' }}>
           <H2 sx={{ margin: 0, fontStyle: 'italic', display: 'block' }}>
             “Gets right what much immersive theater gets wrong”
           </H2>
