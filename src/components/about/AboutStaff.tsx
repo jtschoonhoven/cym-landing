@@ -56,7 +56,12 @@ const AboutStaff: React.FC = () => {
       <Typography variant="body1">Our expert technicians are eager to assist you.</Typography>
       <Grid container spacing={3} marginTop={1}>
         <Grid lg={2} md={3} sm={4} xs={6}>
-          <AboutCard imgSrc={alyssa} title="Alyssa Larson" text="CYM Head Technician" />
+          <AboutCard
+            imgSrc={alyssa}
+            title="Alyssa Larson"
+            text="CYM Head Technician"
+            href="https://goodstuffevents.com"
+          />
         </Grid>
         <Grid lg={2} md={3} sm={4} xs={6}>
           <AboutCard imgSrc={jae} title="Jae Starfox" text="CYM Head Technician" />
