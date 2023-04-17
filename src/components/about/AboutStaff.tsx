@@ -47,7 +47,7 @@ const AboutStaff: React.FC = () => {
           />
         </Grid>
         <Grid md={3} xs={6}>
-          <AboutCard imgSrc={alex} title="Alex Howard" text="Tech Lead, Producer" />
+          <AboutCard imgSrc={alex} title="Alex Howard" text="Technical Director, Producer" />
         </Grid>
       </Grid>
       <H2 sx={{ marginBottom: 0 }} marginTop={5}>

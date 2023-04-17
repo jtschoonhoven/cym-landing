@@ -17,7 +17,7 @@ const AboutCredits: React.FC = () => {
           <br />
           <BoldItalic>Written by Jonathan Schoonhoven</BoldItalic>
           <br />
-          <BoldItalic>Technical Design & Fabrication by Alex Howard</BoldItalic>
+          <BoldItalic>Technical Direction & Fabrication by Alex Howard</BoldItalic>
           <br />
           <BoldItalic>A production by Say Nothing and Leave</BoldItalic>
         </Grid>
