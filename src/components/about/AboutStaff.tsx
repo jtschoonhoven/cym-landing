@@ -56,9 +56,6 @@ const AboutStaff: React.FC = () => {
       <Typography variant="body1">Our expert technicians are eager to assist you.</Typography>
       <Grid container spacing={3} marginTop={1}>
         <Grid md={2} xs={4}>
-          <AboutCard imgSrc={david} title="David Kaplan" text="Technical Support" />
-        </Grid>
-        <Grid md={2} xs={4}>
           <AboutCard imgSrc={alyssa} title="Alyssa Larson" text="CYM Head Technician" />
         </Grid>
         <Grid md={2} xs={4}>
@@ -71,7 +68,10 @@ const AboutStaff: React.FC = () => {
           <AboutCard imgSrc={dan} title="Danthony" text="CYM Technician" href="https://danthony.website" />
         </Grid>
         <Grid md={2} xs={4}>
-          <AboutCard imgSrc={elise} title="Elise Liu" text="CYM Technician" />
+          <AboutCard imgSrc={david} title="David Kaplan" text="CYM Technician" href="https://www.davidkaplan.io/" />
+        </Grid>
+        <Grid md={2} xs={4}>
+          <AboutCard imgSrc={elise} title="Elise Liu" text="CYM Technician" href="https://eliseliu.com/" />
         </Grid>
         <Grid md={2} xs={4}>
           <AboutCard imgSrc={evin} title="Evin Wolverton" text="CYM Technician" href="https://evinwolverton.com" />
@@ -83,7 +83,7 @@ const AboutStaff: React.FC = () => {
           <AboutCard imgSrc={lindsay} title="Lindsay Berkowitz" text="CYM Technician" />
         </Grid>
         <Grid md={2} xs={4}>
-          <AboutCard imgSrc={ren} title="S. Caldwell" text="CYM Technician" />
+          <AboutCard imgSrc={ren} title="S. Caldwell" text="CYM Technician" href="https://serenitycaldwell.com/" />
         </Grid>
         <Grid md={2} xs={4}>
           <AboutCard imgSrc={ryan} title="Ryan Wolff" text="CYM Technician" />

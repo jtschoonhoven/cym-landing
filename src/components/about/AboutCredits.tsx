@@ -43,7 +43,7 @@ const AboutCredits: React.FC = () => {
           <Bold>Diagnosis Tool: </Bold>
           <Italic>Ellie DiBerardino, Alex Howard</Italic>
           <br />
-          <Bold>Technical Support: </Bold>
+          <Bold>Asst. Technical Director: </Bold>
           <Italic>Dave Kaplan</Italic>
         </Grid>
         <Grid md={6} sm={12}>
