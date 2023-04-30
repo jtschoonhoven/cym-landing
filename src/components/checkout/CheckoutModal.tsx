@@ -7,9 +7,7 @@ import {
   Box,
   Container,
   Dialog,
-  Link,
   Typography,
-  useTheme,
 } from '@mui/material';
 import { CheckoutContext } from '../../providers/CheckoutProvider';
 import Bold from '../typography/Bold';
@@ -26,17 +24,11 @@ export const CHECKOUT_MODAL_CONTAINER_HEIGHT_PX = 500;
  */
 const CheckoutModal: React.FC = () => {
   const { isOpen, setIsOpen } = React.useContext(CheckoutContext);
-  const [isConfirmed, setIsConfirmed] = React.useState(false);
-  const theme = useTheme();
 
   return (
     <>
       <Dialog fullWidth maxWidth="xl" open={isOpen} onClose={() => setIsOpen(false)} keepMounted>
         <Container sx={{ marginBottom: 1, marginTop: 2 }}>
-          {/* <Alert severity="info" sx={{ justifyContent: 'center' }}>
-            Tickets available now!
-          </Alert> */}
-          {/* <EmailSignup /> */}
           <Accordion defaultExpanded>
             <AccordionSummary expandIcon={<ExpandMore />}>
               <Bold>

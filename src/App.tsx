@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import ToolbarAlert from './components/toolbar/ToolbarAlert';
 import About from './components/about/About';
 import CheckoutModal from './components/checkout/CheckoutModal';
+import EmailSignupModal from './components/email-signup/EmailSignupModal';
 import NoSleepLanding from './components/no-sleep/NoSleepLanding';
 
 const AppWrapper = styled(Paper)`
@@ -40,6 +41,7 @@ const App: React.FC = () => {
   return (
     <>
       <CheckoutModal />
+      <EmailSignupModal />
       <AppWrapper>
         <NoSleepLanding />
         <ToolbarAlert />
