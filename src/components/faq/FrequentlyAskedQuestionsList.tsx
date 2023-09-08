@@ -20,7 +20,7 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       <Bold>When can I experience Change Your Mind?</Bold>
       <ul>
         <li>
-          Tickets are available almost every Tues-Sun throughout April 2023.{' '}
+        Tickets are available Thursday through Sunday. We are currently booking through the month of October.{' '}
           {isTicketsPage ? (
             'View specific timeslots below.'
           ) : (
@@ -36,7 +36,7 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       </ul>
       <Bold>How long does this experience take?</Bold>
       <ul>
-        <li>Under one hour.</li>
+        <li>Approximately one hour.</li>
       </ul>
       <Bold>What time should I arrive?</Bold>
       <ul>
@@ -48,13 +48,12 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       <Bold>Can I book an appointment with friends?</Bold>
       <ul>
         <li>
-          You are welcome to book appointments as a group, but please note that you will each undergo your own
-          experience individually.
+        You are welcome to book appointments as a group, but please note that each person must go through the personality editing portion of the experience individually. Each appointment slot can only accommodate 6 individuals at a time. Be sure to get a ticket for every person in your group.
         </li>
       </ul>
       <Bold>How much do tickets cost?</Bold>
       <ul>
-        <li>Tickets are $49.</li>
+        <li>The base ticket price is $55. Peak hour appointments are $65.</li>
       </ul>
       <Bold>I’m really interested in buying a ticket, but I cannot afford it. What should I do?</Bold>
       <ul>

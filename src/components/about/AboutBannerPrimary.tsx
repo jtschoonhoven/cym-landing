@@ -21,7 +21,6 @@ const AboutBannerPrimary: React.FC = () => {
         sx={{ marginTop: 0 }}
         height="500px"
         borderTop={`50px solid ${COLORS.raisin}`}
-        borderBottom={`50px solid ${COLORS.raisin}`}
       >
         <H2>The New Science of Personality Editing</H2>
         <Subtitle1 sx={{ marginTop: 0 }}>

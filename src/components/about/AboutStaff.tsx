@@ -30,14 +30,7 @@ const AboutStaff: React.FC = () => {
         <Grid md={3} xs={6}>
           <AboutCard imgSrc={larry} title="Dr. Masc" text="Performed by L.M. Bogad" href="https://www.lmbogad.com/" />
         </Grid>
-        <Grid md={3} xs={6}>
-          <AboutCard
-            imgSrc={jon}
-            title="Jon Schoonhoven"
-            text="Director, Writer, Producer"
-            href="https://www.instagram.com/jtschoonhoven/"
-          />
-        </Grid>
+        
         <Grid md={3} xs={6}>
           <AboutCard
             imgSrc={ellie}
@@ -47,7 +40,15 @@ const AboutStaff: React.FC = () => {
           />
         </Grid>
         <Grid md={3} xs={6}>
-          <AboutCard imgSrc={alex} title="Alex Howard" text="Technical Director, Producer" />
+          <AboutCard imgSrc={alex} title="Alex Howard" text="Technology & Fabrication" />
+        </Grid>
+        <Grid md={3} xs={6}>
+          <AboutCard
+            imgSrc={jon}
+            title="Jon Schoonhoven"
+            text="Writer"
+            href="https://www.instagram.com/jtschoonhoven/"
+          />
         </Grid>
       </Grid>
       <H2 sx={{ marginBottom: 0 }} marginTop={5}>
@@ -59,12 +60,12 @@ const AboutStaff: React.FC = () => {
           <AboutCard
             imgSrc={alyssa}
             title="Alyssa Larson"
-            text="CYM Head Technician"
+            text="CYM Technician"
             href="https://goodstuffevents.com"
           />
         </Grid>
         <Grid lg={2} md={3} sm={4} xs={6}>
-          <AboutCard imgSrc={jae} title="Jae Starfox" text="CYM Head Technician" />
+          <AboutCard imgSrc={jae} title="Jae Starfox" text="CYM Technician" />
         </Grid>
         <Grid lg={2} md={3} sm={4} xs={6}>
           <AboutCard imgSrc={bryan} title="Bryan  Bigler" text="CYM Technician" href="https://www.bryanbigler.com" />

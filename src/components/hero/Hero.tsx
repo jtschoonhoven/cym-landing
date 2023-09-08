@@ -12,7 +12,7 @@ const Wrapper = styled(Box)`
   background-color: ${({ theme }) => theme.palette.grey[900]};
   width: 100vw;
   border-top: 20px solid black;
-  border-bottom: 30px solid ${({ theme }: { theme: Theme }) => theme.palette.primary.main};
+  border-bottom: 10px solid ${({ theme }: { theme: Theme }) => theme.palette.primary.main};
 `;
 
 /**

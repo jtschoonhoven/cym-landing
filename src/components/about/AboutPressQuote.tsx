@@ -1,7 +1,7 @@
 import React from 'react';
 import { COLORS } from '../../providers/ThemeProvider';
-import { Box, Container } from '@mui/material';
-import H2 from '../typography/H2';
+import { Box, Container, Link } from '@mui/material';
+import Text from '../typography/Subtitle1';
 
 const AboutPressQuote: React.FC = () => {
   return (
@@ -9,15 +9,19 @@ const AboutPressQuote: React.FC = () => {
       <Box
         sx={{
           marginTop: 0,
-          borderTop: `80px solid ${COLORS.raisin}`,
-          borderBottom: `50px solid ${COLORS.raisin}`,
+          borderTop: `50px solid ${COLORS.raisin}`,
         }}
       >
         <Container sx={{ backgroundColor: COLORS.raisin }} style={{ maxWidth: 'initial' }}>
-          <H2 sx={{ margin: 0, fontStyle: 'italic', display: 'block' }}>
+          <Text sx={{ margin: 0, fontSize: '1.5rem', fontStyle: 'italic', display: 'block' }}>
             “Gets right what much immersive theater gets wrong”
-          </H2>
-          <H2 sx={{ margin: 0, backgroundColor: COLORS.raisin }}>— SF Chronicle</H2>
+          </Text>
+
+          <Text sx={{ margin: 0, fontSize: '1.5rem', backgroundColor: COLORS.raisin }}>
+            <Link  target="_blank" style={{ color: 'black' }} href="https://datebook.sfchronicle.com/theater/immersive-theater-psych-experiment-personality-17896462#spotim-comments">
+              — SF Chronicle
+            </Link>
+          </Text>
         </Container>
       </Box>
     </>

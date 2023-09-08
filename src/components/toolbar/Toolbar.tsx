@@ -56,7 +56,7 @@ const Toolbar: React.FC = () => {
                 <MenuIcon />
               </IconButton>
             </Typography>
-            <ButtonGetTickets />
+            <ButtonGetTickets includeSubscribe />
           </XlToolBar>
         </VerticallyCentered>
       </AppBar>

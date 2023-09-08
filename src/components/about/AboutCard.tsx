@@ -19,7 +19,7 @@ const AboutCard: React.FC<Props> = ({ imgSrc, title, text, href }) => {
       <CardContent sx={{ padding: 0, textAlign: 'center' }}>
         <Typography variant="subtitle1" sx={{ padding: 0, marginTop: 1 }}>
           {href ? (
-            <Link href={href} style={{ color: theme.palette.grey[900] }}>
+            <Link target="_blank" href={href} style={{ color: theme.palette.grey[900] }}>
               {title}
             </Link>
           ) : (

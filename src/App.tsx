@@ -43,7 +43,6 @@ const App: React.FC = () => {
       <CheckoutModal />
       <EmailSignupModal />
       <AppWrapper>
-        <NoSleepLanding />
         <ToolbarAlert />
         <Toolbar />
         <Hero />

@@ -19,6 +19,7 @@ import recoveryImg from '../../assets/images/recovery.jpg';
 import headsetImg from '../../assets/images/headset.jpg';
 import ButtonGetTickets from '../button/ButtonGetTickets';
 import { useIsSmallerThan } from '../../services/size-service';
+import Bold from '../typography/Bold';
 
 const TimelineDot = styled(MuiTimelineDot)({
   backgroundColor: 'black',
@@ -52,7 +53,7 @@ const AboutSteps: React.FC = () => {
             <TimelineFlexBox>
               <H3>Book your first appointment</H3>
               <Typography variant="body1">
-                Appointments are available in 50 minute intervals at our Haight St. clinic in San Francisco.
+                Appointments are available in <Bold>hourly intervals</Bold> at our Haight St. clinic in San Francisco.
               </Typography>
               <ButtonGetTickets size="large" />
             </TimelineFlexBox>

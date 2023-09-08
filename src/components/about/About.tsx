@@ -36,7 +36,7 @@ const About: React.FC = () => {
         borderTop={`30px solid ${theme.palette.secondary.dark}`}
         borderBottom={`30px solid ${theme.palette.grey[700]}`}
       />
-      <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutCredits />} />
+      {/* <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutCredits />} /> */}
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutPress />} />
     </>
   );

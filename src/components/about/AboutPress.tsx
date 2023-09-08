@@ -17,7 +17,7 @@ const AboutPress: React.FC = () => {
       <Typography variant="body1">
         <Bold>Change Your Mind </Bold>
         is the first production by artist collective{' '}
-        <Link href="https://saynothingandleave.com">
+        <Link target="_blank" href="https://saynothingandleave.com">
           <Bold>[Say Nothing and Leave] </Bold>
         </Link>
         to be made available to the general public. Born in the seedy underbelly of the Bay Area's underground immersive
@@ -46,7 +46,7 @@ const AboutPress: React.FC = () => {
               Send us an email
             </Button>
           </Link>
-          <Link href="http://serve.saynothingandleave.com/share/taZ2kylX" target="_blank">
+          <Link href="http://serve.saynothingandleave.com/share/vuP2XYlx" target="_blank">
             <Button variant="contained" size="large">
               Download press kit
             </Button>

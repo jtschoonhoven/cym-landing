@@ -31,20 +31,20 @@ const ToolbarAlert: React.FC = () => {
   return (
     <AppBar position="static" color="secondary">
       <Toolbar>
-        {/* <AlertText>
-          In San Francisco through April, 2023.{' '}
-          <Link sx={{ color: 'white', cursor: 'pointer' }} onClick={() => setIsOpen(true)}>
-            Tickets on sale now
-          </Link>
-          !
-        </AlertText> */}
         <AlertText>
+         Now accepting appointments for October —{" "}
+          <Link sx={{ color: 'white', cursor: 'pointer' }} onClick={() => setIsOpen(true)}>
+            book yours today
+          </Link>
+          .
+        </AlertText>
+        {/* <AlertText>
           Thank you San Francisco!{' '}
           <Link sx={{ color: 'white', cursor: 'pointer' }} onClick={() => setIsOpen(true)}>
             Subscribe to hear about future shows
           </Link>
           .
-        </AlertText>
+        </AlertText> */}
       </Toolbar>
     </AppBar>
   );
