@@ -31,7 +31,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "echo 'changeyourmind.show' > ./build/CNAME && npx gh-pages -d build",
+    "deploy": "(echo 'changeyourmind.show' > ./build/CNAME || true) && npx gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
