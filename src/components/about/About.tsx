@@ -18,7 +18,7 @@ const About: React.FC = () => {
   const theme = useTheme();
   return (
     <>
-      <AboutPressQuote />
+      {/* <AboutPressQuote /> */}
       <AboutBannerPrimary />
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutSteps />} />
       <AboutBannerSecondary />
