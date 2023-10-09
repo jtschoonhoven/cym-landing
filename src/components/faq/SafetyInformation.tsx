@@ -5,7 +5,7 @@ import Bold from '../typography/Bold';
 const SafetyInformation = () => {
   return (
     <>
-      <Bold>Clothing:</Bold> Please wear comfortable shoes. Be prepared to remove your hat. (Glasses are fine.)
+      <Bold>Clothing:</Bold> Be prepared to remove your hat. (Glasses are fine.)
       <br />
       <br />
       <Bold>Contact Level:</Bold> Participants can expect light to moderate levels of incidental physical contact when
