@@ -6,7 +6,7 @@ import '@fontsource/prompt';
 export const COLORS = {
   raisin: '#2f3140',
   wintergreen: '#b93995',
-  opal: '#fcf5e3',
+  white: '#FFFFFF',
   cyan: '#00FFFF',
   yellow: '#FFFF00',
   magenta: '#FF00FF',
@@ -16,18 +16,18 @@ const defaultTheme = createTheme();
 
 const theme = createTheme({
   // @ts-expect-error
-  mode: 'dark',
+  mode: 'light',
   palette: {
     primary: {
-      main: COLORS.wintergreen,
+      main: COLORS.magenta,
     },
     secondary: {
-      main: COLORS.wintergreen,
-      light: COLORS.opal,
+      main: COLORS.magenta,
+      light: COLORS.white,
     },
     background: {
       default: grey[300],
-      paper: COLORS.opal,
+      paper: COLORS.white,
     },
     action: {
       disabledBackground: grey[400],
@@ -37,20 +37,20 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Prompt, Arial',
     h1: {
-      color: grey[100],
+      color: grey[900],
       fontSize: '7rem',
       letterSpacing: '-0.1rem',
       lineHeight: '7rem',
       textTransform: 'uppercase',
       fontWeight: 700,
       width: 'fit-content',
-      filter: 'drop-shadow(8px 4px 3px #000)',
+      // filter: 'drop-shadow(8px 4px 3px #000)',
       [defaultTheme.breakpoints.down('lg')]: { fontSize: '6.4rem', lineHeight: '6.7rem' },
       [defaultTheme.breakpoints.down('md')]: { fontSize: '5.4rem', lineHeight: '5.6rem' },
       [defaultTheme.breakpoints.down('sm')]: { fontSize: '4.2rem', lineHeight: '4.3rem' },
     },
     h2: {
-      color: grey[100],
+      color: grey[900],
       fontSize: '5rem',
       lineHeight: '5.3rem',
       letterSpacing: '-0.04rem',
@@ -61,7 +61,7 @@ const theme = createTheme({
       [defaultTheme.breakpoints.down('sm')]: { fontSize: '3rem', lineHeight: '3.1rem' },
     },
     h3: {
-      color: grey[100],
+      color: grey[900],
       fontSize: '3rem',
       lineHeight: '3rem',
       letterSpacing: '-0.03rem',

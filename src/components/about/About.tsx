@@ -27,14 +27,14 @@ const About: React.FC = () => {
       <Container
         id={ABOUT_FAQS_PRIMARY_ID}
         maxWidth="lg"
-        sx={{ marginTop: 5, paddingTop: 5, borderTop: `30px solid ${theme.palette.secondary.dark}` }}
+        sx={{ marginTop: 5, paddingTop: 5, borderTop: `30px solid ${theme.palette.secondary.main}` }}
         children={<AboutFAQs />}
       />
       <HeroImage
         src={axonImg}
         sx={{ marginTop: 4 }}
-        borderTop={`30px solid ${theme.palette.secondary.dark}`}
-        borderBottom={`30px solid ${theme.palette.grey[700]}`}
+        borderTop={`30px solid ${theme.palette.secondary.main}`}
+        borderBottom={`30px solid ${theme.palette.secondary.main}`}
       />
       {/* <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutCredits />} /> */}
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutPress />} />

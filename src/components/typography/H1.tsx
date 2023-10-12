@@ -23,7 +23,7 @@ const H1: React.FC<Props> = ({ children, variant, color, bgColor, noise = true, 
       sx={{
         marginBottom: 4,
         display: 'block',
-        textShadow: `4px 2px 0 rgb(0, 0, 0, 0.7)`,
+        // textShadow: `4px 2px 0 rgb(0, 0, 0, 0.7)`,
         ...sx,
       }}
     >

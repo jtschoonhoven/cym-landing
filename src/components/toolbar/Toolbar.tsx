@@ -4,15 +4,16 @@ import { Menu as MenuIcon } from '@mui/icons-material';
 import ToolbarDrawer from './ToolbarDrawer';
 import VerticallyCentered from '../util/vertically-centered/VerticallyCentered';
 import ButtonGetTickets from '../button/ButtonGetTickets';
+import { COLORS } from '../../providers/ThemeProvider';
 
 export interface ToolbarItem {
   text: string;
 }
 
-const TOOLBAR_HEIGHT_PX = 100;
+const TOOLBAR_HEIGHT_PX = 75;
 
 const AppBar = styled(MuiAppBar)`
-  background-color: rgba(16, 16, 16, 0.95);
+  background-color: rgba(200,200,200, 0.65);
   background-image: initial;
 `;
 
@@ -53,7 +54,7 @@ const Toolbar: React.FC = () => {
                 edge="start"
                 onClick={() => setIsDrawerOpen(!isDrawerOpen)}
               >
-                <MenuIcon />
+                <MenuIcon color="secondary" />
               </IconButton>
             </Typography>
             <ButtonGetTickets includeSubscribe />

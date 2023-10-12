@@ -14,7 +14,7 @@ const AboutBannerSecondary: React.FC = () => {
     <>
       <HeroImage
         src={phrenologyImg}
-        borderTop={`20px solid ${theme.palette.secondary.dark}`}
+        borderTop={`20px solid ${theme.palette.secondary.main}`}
         borderBottom={`30px solid ${theme.palette.grey[700]}`}
       >
         <Subtitle1>

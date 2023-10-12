@@ -32,11 +32,10 @@ const EmailSignupModal: React.FC = () => {
       <Dialog fullWidth maxWidth="xl" open={isOpen} onClose={() => setIsOpen(false)} keepMounted>
         <Container sx={{ marginBottom: 5, marginTop: 2 }}>
           <Box id={EMAIL_SIGNUP_MODAL_CONTAINER_ID}>
-            <H2>Subscribe to hear about future shows</H2>
+            <H2>SUBSCRIBE FOR CYM UPDATES AND TO HEAR ABOUT FUTURE SHOWS</H2>
             <Typography variant="body1">
-              <Bold>The current run of Change Your Mind ended April 30, 2023.</Bold>
               <br />
-              Subscribe below to hear about new shows and future productions from{' '}
+              Subscribe below for updates on all things Change Your Mind and to hear about future productions from{' '}
               <Bold>
                 <Link href="https://saynothingandleave.com/">SayNothingAndLeave</Link>
               </Bold>
@@ -46,7 +45,7 @@ const EmailSignupModal: React.FC = () => {
             <EmailSignup title={<></>} />
             <br />
             <Typography variant="body1">
-              Think we should re-open and extend the show? Drop us an email at{' '}
+            Questions? Comments? Concerns? Drop us an email at{' '}
               <Link rel="noopener noreferrer" href="mailto:sayhi@saynothingandleave.com">
                 sayhi@saynothingandleave.com
               </Link>
