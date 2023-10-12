@@ -94,10 +94,10 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
           with any questions.
         </li>
       </ul>
-      <Bold>Does it matter if English isn’t my first language?</Bold>
+      <Bold>What if I’m not fluent in English?</Bold>
       <ul>
         <li>
-          Some thematic elements of the experience may be harder to understand if English is not your first language,
+          Some thematic elements of the experience may be harder to understand if you are not fluent in English,
           though the technical artistry may still be impactful. Please email{' '}
           <Link href="mailto:sayhi@saynothingandleave.com?subject=CYM:%20Language information">
             sayhi@saynothingandleave.com

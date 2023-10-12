@@ -20,8 +20,8 @@ const About: React.FC = () => {
     <>
       {/* <AboutPressQuote /> */}
       <AboutBannerPrimary />
-      <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutSteps />} />
-      <AboutBannerSecondary />
+      
+      <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<><AboutBannerSecondary /><AboutSteps /></>} />
       {/* <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutIcons />} /> */}
       <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutStaff />} />
       <Container

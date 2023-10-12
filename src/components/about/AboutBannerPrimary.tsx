@@ -23,14 +23,16 @@ const AboutBannerPrimary: React.FC = () => {
           truly meant to be.
         </Subtitle1> */}
 
-        <H3 sx={{ margin: 0, fontStyle: 'italic', display: 'block' }}>
-          “Gets right what much immersive theater gets wrong”{" "}
-          <Link
-            target="_blank"
-            style={{ textDecoration: 'underline' }}
-            href="https://datebook.sfchronicle.com/theater/immersive-theater-psych-experiment-personality-17896462#spotim-comments"
-          >— SF Chronicle</Link>
-        </H3>
+        <Container>
+          <H3 sx={{ margin: 0, fontStyle: 'italic', display: 'block' }}>
+            “Gets right what much immersive theater gets wrong”{" "}
+            <Link
+              target="_blank"
+              style={{ textDecoration: 'underline' }}
+              href="https://datebook.sfchronicle.com/theater/immersive-theater-psych-experiment-personality-17896462#spotim-comments"
+            >— SF Chronicle</Link>
+          </H3>
+        </Container>
       </HeroImage>
     </>
   );
