@@ -32,24 +32,26 @@ const CheckoutModal: React.FC = () => {
           <Accordion defaultExpanded>
             <AccordionSummary expandIcon={<ExpandMore />}>
               <Bold>
-                By purchasing a ticket you confirm that you are at least 18 years old and have read the content
-                warnings.
+              By purchasing a ticket, you confirm that you are 18 years old and have read the content warnings.
               </Bold>
             </AccordionSummary>
             <AccordionDetails>
               <AlertTitle>
-                <Bold>Please note, this show includes the following:</Bold>
+                <Bold>CONTENT WARNINGS</Bold>
               </AlertTitle>
               <ul>
-                <li>Loud noises</li>
                 <li>Bright and flashing lights</li>
                 <li>Themes of mental illness and hospitalization</li>
-                <li>Movement that may be challenging for people with limited mobility (most wheelchairs OK)</li>
                 <li>Sight and hearing restricted by headphones and goggles</li>
               </ul>
-              <Typography variant="body2">
-                <Bold>That said, this is not a "scary" experience and we hope you leave feeling inspired!</Bold>
-              </Typography>
+              <AlertTitle>
+                <Bold>KNOW BEFORE YOU GO</Bold>
+              </AlertTitle>
+              <ul>
+                <li>Your appointment will last about one hour and you’ll be seated for most of that time.</li>
+                <li>We do not want you to “play a character” — please be your genuine, authentic self.</li>
+                <li>While some aspects of this experience may be psychologically challenging, Change Your Mind is not a “scary” experience.</li>
+              </ul>
             </AccordionDetails>
           </Accordion>
           <Accordion>
