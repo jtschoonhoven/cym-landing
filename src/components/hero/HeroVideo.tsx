@@ -1,11 +1,10 @@
 import { Box, Button, IconButton, Typography } from '@mui/material';
 import React, { PropsWithChildren } from 'react';
-import teaserShort from '../../assets/video/teaser-wide-short.mp4';
-import teaserRepeat from '../../assets/video/teaser-wide-repeat.mp4';
+import teaserShort from '../../assets/video/cym-website-bkgd-icons.mp4';
 import { VolumeDown, VolumeOff, VolumeUp } from '@mui/icons-material';
 
 interface Props extends PropsWithChildren {
-  height: number;
+  height: number | string;
   initialWidthPx?: number;
 }
 
@@ -33,12 +32,12 @@ const HeroVideo: React.FC<Props> = ({ height, initialWidthPx, children }) => {
   }, [containerRef]);
 
   return (
-    <Box ref={containerRef}>
+    <Box ref={containerRef} sx={{position: 'relative'}}>
       <Button
         variant="outlined"
         endIcon={isMuted ? <VolumeUp /> : <VolumeOff />}
         color="primary"
-        sx={{ float: 'right', position: 'absolute', right: 30, top: 690, zIndex: 3, color: 'white' }}
+        sx={{ position: 'absolute', right: 30, bottom: 20, zIndex: 3, color: 'white' }}
         onClick={() => setMuted(!isMuted)}
       >
         {isMuted ? 'Unmute' : 'Mute'}
@@ -47,7 +46,6 @@ const HeroVideo: React.FC<Props> = ({ height, initialWidthPx, children }) => {
       <video
         src={teaserShort}
         style={{
-          filter: 'grayscale(50%) brightness(50%)',
           display: 'block',
           objectFit: 'cover',
           objectPosition: '50% 50%',

@@ -33,7 +33,7 @@ const ToolbarAlert: React.FC = () => {
       <Toolbar>
         <AlertText>
          Now accepting appointments for October —{" "}
-          <Link sx={{ color: 'white', cursor: 'pointer' }} onClick={() => setIsOpen(true)}>
+          <Link sx={{ textDecoration: 'underline', color: 'white', cursor: 'pointer' }} onClick={() => setIsOpen(true)}>
             book yours today
           </Link>
           .

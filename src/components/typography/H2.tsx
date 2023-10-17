@@ -15,7 +15,7 @@ interface Props extends React.PropsWithChildren, TypographyProps {
 const H2: React.FC<Props> = ({ children, variant, color, bgColor, sx, ...typographyProps }) => {
   const theme = useTheme();
   // color = color === undefined ? theme.palette.secondary.light : color;
-  // bgColor = bgColor === undefined ? COLORS.raisin : bgColor;
+  bgColor = bgColor === undefined ? COLORS.raisin : bgColor;
   return (
     <Typography
       variant={variant || 'h2'}

@@ -6,10 +6,10 @@ import '@fontsource/prompt';
 export const COLORS = {
   raisin: '#2f3140',
   wintergreen: '#b93995',
-  white: '#FFFFFF',
-  cyan: '#00FFFF',
-  yellow: '#FFFF00',
-  magenta: '#FF00FF',
+  white: '#FAFAFA',
+  cyan: '#0093d3',
+  yellow: '#fcb316',
+  magenta: '#b93b95',
 };
 
 const defaultTheme = createTheme();
@@ -37,7 +37,7 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Prompt, Arial',
     h1: {
-      color: grey[900],
+      color: grey[100],
       fontSize: '7rem',
       letterSpacing: '-0.1rem',
       lineHeight: '7rem',
@@ -50,7 +50,7 @@ const theme = createTheme({
       [defaultTheme.breakpoints.down('sm')]: { fontSize: '4.2rem', lineHeight: '4.3rem' },
     },
     h2: {
-      color: grey[900],
+      color: grey[100],
       fontSize: '5rem',
       lineHeight: '5.3rem',
       letterSpacing: '-0.04rem',

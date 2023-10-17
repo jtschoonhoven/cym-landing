@@ -4,12 +4,13 @@ import axonImg from '../../assets/images/axon.jpg';
 import HeroImage from '../util/hero-image/HeroImage';
 import AboutSteps from './AboutSteps';
 import AboutPress from './AboutPress';
-import AboutBannerPrimary from './AboutBannerPrimary';
+import AboutBannerPrimary, { ABOUT_BANNER_PRIMARY_ID } from './AboutBannerPrimary';
 import AboutBannerSecondary from './AboutBannerSecondary';
 import AboutStaff from './AboutStaff';
 import AboutFAQs, { ABOUT_FAQS_PRIMARY_ID } from './AboutFAQs';
 import AboutCredits from './AboutCredits';
 import AboutPressQuote from './AboutPressQuote';
+import KnowBeforeYouGo from './KnowBeforeYouGo';
 
 /**
  * The primary component for below-the-fold content.
@@ -21,23 +22,23 @@ const About: React.FC = () => {
       {/* <AboutPressQuote /> */}
       <AboutBannerPrimary />
       
-      <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<><AboutBannerSecondary /><AboutSteps /></>} />
-      {/* <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutIcons />} /> */}
-      <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutStaff />} />
+      <Container id={ABOUT_BANNER_PRIMARY_ID} maxWidth="lg" sx={{ marginTop: 5 }} children={<><AboutBannerSecondary /><AboutSteps /></>} />
+      <KnowBeforeYouGo />
+      <Container id="staff" maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutStaff />} />
       <Container
         id={ABOUT_FAQS_PRIMARY_ID}
         maxWidth="lg"
         sx={{ marginTop: 5, paddingTop: 5, borderTop: `30px solid ${theme.palette.secondary.main}` }}
         children={<AboutFAQs />}
       />
-      <HeroImage
+      {/* <HeroImage
         src={axonImg}
         sx={{ marginTop: 4 }}
         borderTop={`30px solid ${theme.palette.secondary.main}`}
         borderBottom={`30px solid ${theme.palette.secondary.main}`}
-      />
+      /> */}
       {/* <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutCredits />} /> */}
-      <Container maxWidth="lg" sx={{ marginTop: 5 }} children={<AboutPress />} />
+      <AboutPress />
     </>
   );
 };

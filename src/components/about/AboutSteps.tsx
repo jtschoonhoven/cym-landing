@@ -13,10 +13,10 @@ import H3 from '../typography/H3';
 import HeroImage from '../util/hero-image/HeroImage';
 
 import pillImg from '../../assets/images/pills.jpg';
-import appointmentImg from '../../assets/images/appointment.jpg';
+import step1Img from '../../assets/images/step-1.png';
 import diagnoseImg from '../../assets/images/diagnose.jpg';
-import recoveryImg from '../../assets/images/recovery.jpg';
-import headsetImg from '../../assets/images/headset.jpg';
+import step4Img from '../../assets/images/step-4.jpg';
+import step5Img from '../../assets/images/step-5.png';
 import ButtonGetTickets from '../button/ButtonGetTickets';
 import { useIsSmallerThan } from '../../services/size-service';
 import Bold from '../typography/Bold';
@@ -55,7 +55,7 @@ const AboutSteps: React.FC = () => {
               <Typography variant="body1">
                 Appointments are available in <Bold>hourly intervals</Bold> at our Haight St. clinic in San Francisco.
               </Typography>
-              <ButtonGetTickets size="large" />
+              <ButtonGetTickets style={{display: 'block'}} size="large">BOOK APPOINTMENT</ButtonGetTickets>
             </TimelineFlexBox>
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -63,7 +63,7 @@ const AboutSteps: React.FC = () => {
             <TimelineConnector sx={{ backgroundColor: 'black' }} />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={appointmentImg} height="300px" objectPosition="50% 50%" />
+            <HeroImage src={step1Img} height="300px" objectPosition="50% 50%" />
           </TimelineContent>
         </TimelineItem>
         {/* ASSESS */}
@@ -122,7 +122,7 @@ const AboutSteps: React.FC = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={headsetImg} height="300px" />
+            <HeroImage src={step4Img} height="300px" />
           </TimelineContent>
         </TimelineItem>
         {/* END */}
@@ -137,7 +137,7 @@ const AboutSteps: React.FC = () => {
             <TimelineDot>5</TimelineDot>
           </TimelineSeparator>
           <TimelineContent display={isSm ? 'none' : 'block'}>
-            <HeroImage src={recoveryImg} height="300px" />
+            <HeroImage src={step5Img} height="300px" />
           </TimelineContent>
         </TimelineItem>
       </Timeline>

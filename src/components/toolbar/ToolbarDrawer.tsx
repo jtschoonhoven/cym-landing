@@ -59,7 +59,11 @@ const ToolbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
             </ListItem>
             <Divider />
             <ListItem>
-              <ToolbarDrawerButton text="FAQs" href={`#${ABOUT_FAQS_PRIMARY_ID}`} />
+              <ToolbarDrawerButton text="Team" href={`#staff`} />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ToolbarDrawerButton text="Safety & FAQs" href={`#${ABOUT_FAQS_PRIMARY_ID}`} />
             </ListItem>
             <Divider />
             <ListItem>
