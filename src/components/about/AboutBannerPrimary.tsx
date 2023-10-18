@@ -9,14 +9,15 @@ import H3 from '../typography/H3';
 
 export const ABOUT_BANNER_PRIMARY_ID = 'about';
 
-const foldStyles = {
-  backgroundImage: `linear-gradient(176deg, ${COLORS.yellow} 50%, ${COLORS.cyan} calc(50% + 2px))`,
+const foldStyles: React.CSSProperties = {
+  fontFamily: 'Prompt, Arial',
   borderBottom: `20px solid ${COLORS.magenta}`,
-  // height: '50vh',
+  display: 'flex',
+  flexDirection: 'column',
 };
 
 const satisfiedHeaderStyles: React.CSSProperties = {
-  font: 'Prompt, Arial',
+  fontFamily: 'Prompt, Arial',
   fontStyle: 'italic',
   color: COLORS.cyan,
   margin: 0,
@@ -40,7 +41,7 @@ const wrapStyles: React.CSSProperties = {
 
 const quoteBoxStyles = {
   position: 'relative',
-  font: 'Prompt, Arial',
+  fontFamily: 'Prompt, Arial',
   background: 'rgba(255,255,255,0.7)',
   color: '#2e2f3f',
   border: `6px solid ${COLORS.cyan}`,
@@ -54,6 +55,7 @@ const secondaryQuoteBoxStyles = {
 };
 
 const additionalListStyles: React.CSSProperties = {
+  fontFamily: 'Prompt, Arial',
   flexGrow: '1',
   flexShrink: '0',
   textAlign: 'right',
@@ -67,11 +69,12 @@ const secondaryAdditionalListStyles: React.CSSProperties = {
   ...additionalListStyles,
   textAlign: 'left',
   color: COLORS.white,
-  fontSize: '1.3rem',
-  lineHeight: '1.3rem',
+  fontSize: '1.5rem',
+  lineHeight: '1.5rem',
+  textShadow: '1px 1px 1px rgba(0,0,0,0.5)',
   padding: '0 10px',
   width: '30%',
-  paddingTop: 30,
+  minWidth: '200px',
 };
 
 const customerQuoteStyles = {
@@ -84,7 +87,7 @@ const customerQuoteStyles = {
 const AboutBannerPrimary: React.FC = () => {
   const theme = useTheme();
   return (
-    <div style={foldStyles}>
+    <div style={foldStyles} className="satisfied">
       <div style={wrapStyles}>
         <div style={{ flex: '1 1 65%' }}>
           <h2 style={satisfiedHeaderStyles}>SATISFIED JOURNALISTS</h2>
@@ -143,7 +146,7 @@ const AboutBannerPrimary: React.FC = () => {
         </div>
       </div>
 
-      <div style={wrapStyles}>
+      <div className="satisfied-customers" style={wrapStyles}>
         <div style={secondaryAdditionalListStyles}>
           <div style={customerQuoteStyles}>"Disorienting, moving, and visually stunning."</div>
           <div style={customerQuoteStyles}>"Like an enema for my brain!"</div>

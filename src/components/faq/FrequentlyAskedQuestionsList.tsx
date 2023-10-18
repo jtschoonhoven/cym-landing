@@ -53,7 +53,7 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       </ul>
       <Bold>How much do tickets cost?</Bold>
       <ul>
-        <li>The base ticket price is $55. Peak hour appointments are $65.</li>
+        <li>The base ticket price is $55. Peak hour appointments are $65. Your ticket will be cheaper if you purchase 2 ticket (Date Night) or 6 ticket (Clinic to Yourself) bundle pricing.</li>
       </ul>
       <Bold>I’m really interested in buying a ticket, but I cannot afford it. What should I do?</Bold>
       <ul>

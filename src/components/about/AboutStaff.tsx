@@ -44,11 +44,11 @@ const staff = [
   { name: 'Jeff Tratner', image: jeff },
   { name: 'Jordan Williams', image: jordan },
   { name: 'Kristen Ray', image: kristen  },
-  { name: 'Lindsay Berkowitz', image: lindsay  },
+  { name: 'Lindsay Berkowitz', image: lindsay, href: 'https://lindsayberkowitz.com' },
   { name: 'Netta Schwarz', image: netta  },
   { name: 'Ryan Wolff', image: ryan  },
   { name: 'S. Caldwell', image: ren, href: 'https://serenitycaldwell.com/'  },
-  { name: 'Sarah Lew', image: sarah  },
+  { name: 'Sarah Lew', image: sarah, href: 'https://www.instagram.com/dumbbabyofficial/?hl=en' },
   { name: 'Tess Bakke', image: tess  },
   { name: 'Zack Guiler', image: zack, href: 'https://venmo.com/u/Zack-Belac'  },
   { name: 'Zoe McCarty', image: zoe  },
@@ -62,9 +62,11 @@ const staff = [
   const bFirst = bSplit[0];
   const bLast = bSplit[1];
 
-  const result = aFirst.localeCompare(bFirst);
+  return (aLast||aFirst).localeCompare(bLast||bFirst);
 
-  return result !== 0 ? result : aLast.localeCompare(bLast);
+  // const result = aFirst.localeCompare(bFirst);
+
+  // return result !== 0 ? result : aLast.localeCompare(bLast);
 });
 
 /**

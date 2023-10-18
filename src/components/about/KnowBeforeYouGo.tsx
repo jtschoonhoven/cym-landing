@@ -12,10 +12,11 @@ import Bold from '../typography/Bold';
 export const ABOUT_BANNER_PRIMARY_ID = 'about';
 
 const containerStyles = {
+  fontFamily: 'Prompt, Arial',
   background: COLORS.yellow,
   borderTop: `20px solid ${COLORS.magenta}`,
   borderBottom: `20px solid ${COLORS.magenta}`,
-  padding: '16px 0',
+  padding: '16px 12px',
   // height: '50vh',
 };
 
@@ -31,6 +32,7 @@ const boxStyles: React.CSSProperties = {
   flexDirection: 'row',
   margin: '20px 0',
   padding: '16px 16px',
+  paddingBottom: '18px',
 };
 
 const headerStyles = {
@@ -49,7 +51,7 @@ const subHeaderStyles = {
   fontStyle: 'italic',
 };
 
-const emojiStyles = { fontSize: '4rem', lineHeight: '4rem', padding: '4px 8px', marginRight: '8px' };
+const emojiStyles = { fontSize: '4rem', lineHeight: '4rem', padding: '6px 8px', marginRight: '8px' };
 
 /**
  * The lead banner in the below-the-fold content section.
@@ -77,7 +79,7 @@ const KnowBeforeYouGo: React.FC = () => {
           <div style={emojiStyles}>♿</div>
           <div>
             <div style={headerStyles}>
-              <Bold>Your appointment will last about one hour and you’ll be seated for most of that time.</Bold>
+              <Bold>You will be seated for the majority of your appointment.</Bold>
             </div>
             <div style={subHeaderStyles}>We don't care what shoes you wear!</div>
           </div>
@@ -88,7 +90,7 @@ const KnowBeforeYouGo: React.FC = () => {
             <div style={headerStyles}>
               <Bold>We do not want you to “play a character” while in our clinic.</Bold>
             </div>
-            <div style={subHeaderStyles}>please be your genuine, authentic self</div>
+            <div style={subHeaderStyles}>Please be your genuine, authentic self.</div>
           </div>
         </div>
         <div style={boxStyles}>

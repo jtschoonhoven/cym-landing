@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar as MuiAppBar, Toolbar as MuiToolbar, Typography, styled, Link } from '@mui/material';
-import { EmailSignupContext } from '../../providers/EmailSignupProvider';
+import { CheckoutContext } from '../../providers/CheckoutProvider';
 
 const AppBar = styled(MuiAppBar)(({ theme }) => ({
   height: 'auto',
@@ -27,7 +27,7 @@ const AlertText = styled(Typography)`
  * Alert text that displays above the primary toolbar, used for ticketing announcements, etc.
  */
 const ToolbarAlert: React.FC = () => {
-  const { setIsOpen } = React.useContext(EmailSignupContext);
+  const { setIsOpen } = React.useContext(CheckoutContext);
   return (
     <AppBar position="static" color="secondary">
       <Toolbar>

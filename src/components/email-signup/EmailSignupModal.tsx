@@ -37,7 +37,7 @@ const EmailSignupModal: React.FC = () => {
               <br />
               Subscribe below for updates on all things Change Your Mind and to hear about future productions from{' '}
               <Bold>
-                <Link href="https://saynothingandleave.com/">SayNothingAndLeave</Link>
+                <Link target="_blank" href="https://saynothingandleave.com/">SayNothingAndLeave</Link>
               </Bold>
               .
               <br />

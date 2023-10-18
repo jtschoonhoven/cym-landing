@@ -10,9 +10,7 @@ import EmailSignupModal from './components/email-signup/EmailSignupModal';
 import NoSleepLanding from './components/no-sleep/NoSleepLanding';
 import './viewportHeightFix';
 
-const AppWrapper = styled(Paper)`
-  padding-bottom: 30px;
-`;
+const AppWrapper = styled(Paper)``;
 
 const App: React.FC = () => {
   const { hash } = window.location;

@@ -70,13 +70,13 @@ export const ABOUT_BANNER_PRIMARY_ID = 'about';
 const containerStyles = {
   background: COLORS.cyan,
   borderTop: `20px solid ${COLORS.magenta}`,
-  padding: '16px 0',
+  padding: '16px 12px',
   // height: '50vh',
 };
 
 const wrapStyles: React.CSSProperties = {
   margin: '0px auto',
-  maxWidth: '780px',
+  maxWidth: '1100px',
 };
 
 const boxStyles: React.CSSProperties = {

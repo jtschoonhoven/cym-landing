@@ -12,27 +12,11 @@ interface Props extends PropsWithChildren {
  * Video background content for the landing page "hero" banner.
  */
 const HeroVideo: React.FC<Props> = ({ height, initialWidthPx, children }) => {
-  const [width, setWidth] = React.useState(initialWidthPx || window.outerWidth);
   const containerRef = React.createRef<HTMLDivElement>();
   const [isMuted, setMuted] = React.useState(true);
 
-  // Watch for resize events and change the video width
-  React.useEffect(() => {
-    let resizeObserver: ResizeObserver | null = null;
-    if (containerRef.current) {
-      resizeObserver = new ResizeObserver(() => {
-        const newWidth = containerRef.current?.offsetWidth;
-        newWidth && setWidth(newWidth);
-      });
-      resizeObserver.observe(containerRef.current);
-    }
-    return () => {
-      resizeObserver && resizeObserver.disconnect();
-    };
-  }, [containerRef]);
-
   return (
-    <Box ref={containerRef} sx={{position: 'relative'}}>
+    <Box ref={containerRef} sx={{ position: 'absolute', inset: 0 }}>
       <Button
         variant="outlined"
         endIcon={isMuted ? <VolumeUp /> : <VolumeOff />}
@@ -42,19 +26,26 @@ const HeroVideo: React.FC<Props> = ({ height, initialWidthPx, children }) => {
       >
         {isMuted ? 'Unmute' : 'Mute'}
       </Button>
-      <Box sx={{ position: 'absolute', float: 'left', zIndex: 1, width: '100%' }}>{children}</Box>
+      {/* <Box sx={{ position: 'absolute', float: 'left', zIndex: 1, width: '100%' }}>{children}</Box> */}
       <video
         src={teaserShort}
         style={{
           display: 'block',
           objectFit: 'cover',
           objectPosition: '50% 50%',
-          height,
-          width,
+          height: '100%',
+          width: '100%',
+          position: 'relative',
+          left: '50%',
+          right: 0,
+          bottom: 0,
+          top: "50%",
+          transform: "translate(-50%, -50%)",
         }}
         autoPlay
         loop
         muted={isMuted}
+        playsInline
       />
     </Box>
   );
