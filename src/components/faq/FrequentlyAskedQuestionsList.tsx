@@ -20,7 +20,7 @@ const FrequentlyAskedQuestionsList = ({ isTicketsPage }: Props) => {
       <Bold>When can I experience Change Your Mind?</Bold>
       <ul>
         <li>
-        Tickets are available Thursday through Sunday. We are currently booking through the month of October.{' '}
+        Tickets are available Thursday through Sunday. We are currently booking for Fall 2023.{' '}
           {isTicketsPage ? (
             'View specific timeslots below.'
           ) : (
