@@ -48,6 +48,7 @@ const CheckoutModal: React.FC = () => {
                 <Bold>KNOW BEFORE YOU GO</Bold>
               </AlertTitle>
               <ul>
+                <li>The set of this immersive experience is a (fictional) medical facility — think “doctor’s office.” If you’re worried you may be uncomfortable in this kind of environment, feel free to check in with us before booking.</li>
                 <li>Your appointment will last about one hour and you’ll be seated for most of that time.</li>
                 <li>We do not want you to “play a character” — please be your genuine, authentic self.</li>
                 <li>While some aspects of this experience may be psychologically challenging, Change Your Mind is not a “scary” experience.</li>
