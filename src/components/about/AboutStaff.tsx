@@ -28,6 +28,7 @@ import sarah from '../../assets/images/sarah.png';
 import tess from '../../assets/images/Tess.png';
 import zack from '../../assets/images/zack.png';
 import zoe from '../../assets/images/Zoe.png';
+import lily from '../../assets/images/lily-scared.png';
 import H3 from '../typography/H3';
 
 const staff = [
@@ -43,15 +44,16 @@ const staff = [
   { name: 'Hannah Schoonhoven', image: hannah },
   { name: 'Jeff Tratner', image: jeff },
   { name: 'Jordan Williams', image: jordan },
-  { name: 'Kristen Ray', image: kristen  },
+  { name: 'Kristen Ray', image: kristen },
+  { name: 'Lily Lamboy', image: lily, href: 'https://lilylamboy.com/' },
   { name: 'Lindsay Berkowitz', image: lindsay, href: 'https://lindsayberkowitz.com' },
-  { name: 'Netta Schwarz', image: netta  },
-  { name: 'Ryan Wolff', image: ryan  },
-  { name: 'S. Caldwell', image: ren, href: 'https://serenitycaldwell.com/'  },
+  { name: 'Netta Schwarz', image: netta },
+  { name: 'Ryan Wolff', image: ryan },
+  { name: 'S. Caldwell', image: ren, href: 'https://serenitycaldwell.com/' },
   { name: 'Sarah Lew', image: sarah, href: 'https://www.instagram.com/dumbbabyofficial/?hl=en' },
-  { name: 'Tess Bakke', image: tess  },
-  { name: 'Zack Guiler', image: zack, href: 'https://venmo.com/u/Zack-Belac'  },
-  { name: 'Zoe McCarty', image: zoe  },
+  { name: 'Tess Bakke', image: tess },
+  { name: 'Zack Guiler', image: zack, href: 'https://venmo.com/u/Zack-Belac' },
+  { name: 'Zoe McCarty', image: zoe },
 ].sort((a, b) => {
   const aSplit = a.name.split(' ');
   const bSplit = b.name.split(' ');
@@ -62,7 +64,7 @@ const staff = [
   const bFirst = bSplit[0];
   const bLast = bSplit[1];
 
-  return (aLast||aFirst).localeCompare(bLast||bFirst);
+  return (aLast || aFirst).localeCompare(bLast || bFirst);
 
   // const result = aFirst.localeCompare(bFirst);
 
