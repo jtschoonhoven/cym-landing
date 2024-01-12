@@ -9,6 +9,7 @@ import CheckoutModal from './components/checkout/CheckoutModal';
 import EmailSignupModal from './components/email-signup/EmailSignupModal';
 import NoSleepLanding from './components/no-sleep/NoSleepLanding';
 import './viewportHeightFix';
+import ShopModal from './components/checkout/ShopModal';
 
 const AppWrapper = styled(Paper)``;
 
@@ -40,6 +41,7 @@ const App: React.FC = () => {
   return (
     <>
       <CheckoutModal />
+      <ShopModal />
       <EmailSignupModal />
       <AppWrapper>
         <ToolbarAlert />

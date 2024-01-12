@@ -5,6 +5,7 @@ import ToolbarDrawer from './ToolbarDrawer';
 import VerticallyCentered from '../util/vertically-centered/VerticallyCentered';
 import ButtonGetTickets from '../button/ButtonGetTickets';
 import { COLORS } from '../../providers/ThemeProvider';
+import ButtonShop from '../button/ButtonShop';
 
 export interface ToolbarItem {
   text: string;
@@ -57,6 +58,7 @@ const Toolbar: React.FC = () => {
                 <MenuIcon color="secondary" />
               </IconButton>
             </Typography>
+            {/* <ButtonShop /> */}
             <ButtonGetTickets includeSubscribe />
           </XlToolBar>
         </VerticallyCentered>

@@ -20,9 +20,9 @@ const ButtonGetTickets: React.FC<Props> = ({ children, variant, style, includeSu
       {includeSubscribe && <Button sx={{pointerEvents: 'all', marginRight: '6px'}} variant={variant || 'contained'} {...btnProps} onClick={() => setIsOpen(true)}>
         {children || DEFAULT_TEXT}
       </Button>}
-      <Button sx={{pointerEvents: 'all'}} variant={variant || 'contained'} {...btnProps} onClick={() => setIsCheckoutOpen(true)}>
+      {/* <Button sx={{pointerEvents: 'all'}} variant={variant || 'contained'} {...btnProps} onClick={() => setIsCheckoutOpen(true)}>
         {children || "Get tickets"}
-      </Button>
+      </Button> */}
     </div>
   );
 };
