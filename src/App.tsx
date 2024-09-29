@@ -10,6 +10,7 @@ import EmailSignupModal from './components/email-signup/EmailSignupModal';
 import NoSleepLanding from './components/no-sleep/NoSleepLanding';
 import './viewportHeightFix';
 import ShopModal from './components/checkout/ShopModal';
+import { Gallery } from './components/gallery/gallery';
 
 const AppWrapper = styled(Paper)``;
 
@@ -27,14 +28,16 @@ const App: React.FC = () => {
       }
 
       // only attempt to scroll if we haven't yet (this could have just reset above if hash changed)
-      if (!scrolledRef.current) {
-        const id = hash.replace('#', '');
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-          scrolledRef.current = true;
+      requestAnimationFrame(() => {
+        if (!scrolledRef.current) {
+          const id = hash.replace('#', '');
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            scrolledRef.current = true;
+          }
         }
-      }
+      });
     }
   };
 
@@ -45,9 +48,17 @@ const App: React.FC = () => {
       <EmailSignupModal />
       <AppWrapper>
         <ToolbarAlert />
-        <Toolbar />
-        <Hero />
-        <About />
+        {
+          (hashRef.current === '#gallery' ? (
+            <Gallery />
+          ) : (
+            <>
+              <Toolbar />
+              <Hero />
+              <About />
+            </>
+          ))
+        }
       </AppWrapper>
     </>
   );

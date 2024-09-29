@@ -1,0 +1,25 @@
+prepare:
+    - process: image
+      path: staging/
+      blob: ^([\w\W]*?)\.(png|jpe?g)$
+      recursive: True
+      convert: webp
+      resize:
+          maxWidth: 2560
+      codeOutput:
+          prefix: gallery
+          path: src/galleryAssets.ts
+          include:
+              - outputPath
+              - list
+              - metadata
+      output: ./public/$1.webp
+
+    - process: image
+      path: staging/
+      blob: ^([\w\W]*?)\.(png|jpe?g)$
+      recursive: True
+      convert: webp
+      resize:
+          maxWidth: 512
+      output: ./public/$1-thumb.webp
