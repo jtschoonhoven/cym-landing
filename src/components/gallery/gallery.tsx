@@ -1,29 +1,29 @@
-import { galleryFiles, galleryMetadata, galleryPath } from '../../galleryAssets';
+import { ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
 import {
   Button,
-  ButtonGroup,
   Container,
   Dialog,
   Grid,
   ImageList,
   ImageListItem,
-  ImageListItemBar,
   TextField,
   ToggleButton,
-  ToggleButtonGroup,
   Typography,
   useMediaQuery,
-  useTheme,
+  useTheme
 } from '@mui/material';
-import React, { useCallback, useMemo, useState } from 'react';
-import { ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
 import fuzzysort from 'fuzzysort';
+import React, { useCallback, useMemo, useState } from 'react';
+import { galleryFiles } from '../../galleryAssets';
 
 const filters: {
   [filter: string]: string[];
 } = {};
 
-galleryFiles.forEach((f) => {
+const sortedGalleryFiles = [...galleryFiles].sort((a, b) => {
+  return a.includes('polaroid') ? -1 : 1;
+});
+sortedGalleryFiles.forEach((f) => {
   const [, filter] = f.match(/\/Gallery\/([\w ]*?)\//i) || [];
 
   if (filter) {
@@ -35,6 +35,7 @@ galleryFiles.forEach((f) => {
   }
 });
 
+
 // const filterKeys = Object.keys(filters).sort((a, b) => (a > b ? 1 : -1));
 // const filterOptions = ['All', ...filterKeys];
 const filterOptions: {[key: string]: string} = {
@@ -45,7 +46,7 @@ const filterOptions: {[key: string]: string} = {
   Fodder: 'Fodder',
 };
 
-const filterOrder = ['All', 'Polaroids', 'Drawings', 'Feedback', 'Fodder'];
+const filterOrder = ['All', 'Drawings', 'Polaroids', 'Feedback', 'Fodder'];
 
 export function Gallery() {
   const [searchQuery, setSearchQuery] = useState<string>(() => '');
@@ -67,7 +68,7 @@ export function Gallery() {
   );
   
   const files = useMemo(() => {
-    const filteredFiles = filter !== 'All' ? filters[filter] : galleryFiles;
+    const filteredFiles = filter !== 'All' ? filters[filter] : sortedGalleryFiles;
 
     if (searchQuery) {
       return fuzzysort.go(searchQuery, filteredFiles, {
@@ -137,10 +138,10 @@ export function Gallery() {
               <TextField sx={{ top: '-5px' }} label="Search" variant="outlined" size="small" value={searchQuery} onChange={handleSearchQuery} />
             </Grid>
             <ImageList cols={matchDownMd ? 2 : 4} variant="quilted" gap={6}>
-              {galleryFiles.map((item, index) => (
+              {sortedGalleryFiles.map((item, index) => (
                 <ImageListItem
                   sx={{ cursor: 'pointer', display: files.includes(item) ? 'initial' : 'none' }}
-                  key={item}
+                  key={index}
                   onClick={() => openLightbox(files.indexOf(item))}
                 >
                   <img
