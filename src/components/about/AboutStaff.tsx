@@ -21,7 +21,6 @@ import jeff from '../../assets/images/Jeff.png';
 import jordan from '../../assets/images/Jordan.png';
 import kristen from '../../assets/images/kristen.png';
 import lindsay from '../../assets/images/lindsay.png';
-import netta from '../../assets/images/Netta.png';
 import ren from '../../assets/images/ren.png';
 import ryan from '../../assets/images/ryan.png';
 import sarah from '../../assets/images/sarah.png';
@@ -47,7 +46,6 @@ const staff = [
   { name: 'Kristen Ray', image: kristen },
   { name: 'Lily Lamboy', image: lily, href: 'https://lilylamboy.com/' },
   { name: 'Lindsay Berkowitz', image: lindsay, href: 'https://lindsayberkowitz.com' },
-  { name: 'Netta Schwarz', image: netta },
   { name: 'Ryan Wolff', image: ryan },
   { name: 'S. Caldwell', image: ren, href: 'https://serenitycaldwell.com/' },
   { name: 'Sarah Lew', image: sarah, href: 'https://www.instagram.com/dumbbabyofficial/?hl=en' },
