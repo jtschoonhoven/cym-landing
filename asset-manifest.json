@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a1743eb5.css",
-    "main.js": "/static/js/main.9080e87c.js",
+    "main.js": "/static/js/main.bf45b89a.js",
     "static/media/cym-website-bkgd-icons.mp4": "/static/media/cym-website-bkgd-icons.a523bd0be86e1ae14faa.mp4",
     "static/media/lily-scared.png": "/static/media/lily-scared.8e9b86c609fca1834304.png",
     "static/media/step-1.png": "/static/media/step-1.bac3dc9ae43490a6e79c.png",
@@ -12,7 +12,6 @@
     "static/media/Tess.png": "/static/media/Tess.577b6887cfb833b22cfb.png",
     "static/media/sarah.png": "/static/media/sarah.6b5d3d0fa54d308b7759.png",
     "static/media/Jeff.png": "/static/media/Jeff.dc3f2e49e49fb7e2dffa.png",
-    "static/media/Netta.png": "/static/media/Netta.5703f35eb3415c151b21.png",
     "static/media/Fiona.png": "/static/media/Fiona.7cbf9b5feec1270ac5a4.png",
     "static/media/alex.png": "/static/media/alex.b99b44211233d1540041.png",
     "static/media/Adair.png": "/static/media/Adair.7829affd49ba7df0835a.png",
@@ -44,10 +43,10 @@
     "static/media/prompt-vietnamese-400-normal.woff2": "/static/media/prompt-vietnamese-400-normal.68d14b8a66db1db3d189.woff2",
     "index.html": "/index.html",
     "main.a1743eb5.css.map": "/static/css/main.a1743eb5.css.map",
-    "main.9080e87c.js.map": "/static/js/main.9080e87c.js.map"
+    "main.bf45b89a.js.map": "/static/js/main.bf45b89a.js.map"
   },
   "entrypoints": [
     "static/css/main.a1743eb5.css",
-    "static/js/main.9080e87c.js"
+    "static/js/main.bf45b89a.js"
   ]
 }
